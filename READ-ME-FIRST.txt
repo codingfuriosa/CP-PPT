@@ -1,0 +1,10 @@
+LIMITLESS SUCCESS - how to open
+
+1. Right-click the downloaded ZIP > Extract All (do not run from inside the ZIP).
+2. Open this folder and double-click START.bat.
+   (If Windows says "protected your PC", click More info > Run anyway.)
+3. Chrome/Edge opens the presentation. Click once on the screen, then press Space to advance.
+   Keep the black window open while presenting; close it to stop.
+
+For the projector use:  http://localhost:4173/#/audience   (press F for fullscreen)
+Presenter laptop:        http://localhost:4173/#/presenter  (same browser)
