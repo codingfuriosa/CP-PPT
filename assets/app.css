@@ -734,3 +734,13 @@ img {
 .ls-strobe {
   animation: 1.4s infinite pulse;
 }
+
+/* Earnings calculator — clickable steppers */
+.calc-step{width:52px;height:52px;border-radius:50%;border:1px solid rgba(244,197,109,.55);background:rgba(244,197,109,.08);color:#F4C56D;font:300 34px/1 Jost,system-ui;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .3s}
+.calc-step:hover{background:rgba(244,197,109,.22)}
+
+/* Takeoff headline — airliner climbing out with a contrail */
+.tk-plane{position:absolute;left:0;top:0;transform-origin:50% 50%;filter:drop-shadow(0 0 18px rgba(244,197,109,.35));animation:tkFly 11s cubic-bezier(.25,.6,.35,1) .3s both}
+.tk-trail{position:absolute;left:0;top:0;height:7px;width:900px;transform-origin:100% 50%;border-radius:7px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.85));filter:blur(2px);animation:tkTrail 11s cubic-bezier(.25,.6,.35,1) .3s both}
+@keyframes tkFly{0%{transform:translate(-460px,1000px) rotate(-12deg) scale(.7);opacity:0}8%{opacity:1}100%{transform:translate(1300px,560px) rotate(-12deg) scale(1);opacity:1}}
+@keyframes tkTrail{0%{transform:translate(-1249px,1114px) rotate(-12deg) scaleX(.15);opacity:0}10%{opacity:.9}100%{transform:translate(438px,689px) rotate(-12deg) scaleX(1);opacity:.8}}

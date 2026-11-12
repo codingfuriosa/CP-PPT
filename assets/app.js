@@ -15987,14 +15987,14 @@ var Wi = (e) => `./assets/${e}`,
       note: `Official Ananta brand animation. Never re-graded, re-drawn or re-voiced.`,
     },
     anantaOverview: {
-      src: null,
+      src: Wi(`media/ananta-film.mp4`),
       altSrc: null,
-      poster: null,
-      enabled: !1,
+      poster: Wi(`media/ananta-film-poster.jpg`),
+      enabled: !0,
       hasAudio: !0,
       placement: `limitless-living`,
-      endStill: Wi(`deck/ananta-aerial.jpg`),
-      note: `PENDING ASSET – professionally produced overview film not yet supplied.`,
+      endStill: Wi(`media/ananta-film-end.jpg`),
+      note: `Ananta project film — played right after the Ananta reveal.`,
     },
     backgroundMusic: {
       src: Wi(`media/ambient-bed.wav`),
@@ -16082,7 +16082,7 @@ var Wi = (e) => `./assets/${e}`,
         {
           id: `incentive`,
           title: `Executive Incentives`,
-          line: `Over and above brokerage, per booking — payable to your executive.`,
+          line: `Part of the Ongoing Brokerage Plan, per booking — payable to your executive.`,
         },
         {
           id: `rewards`,
@@ -16298,8 +16298,8 @@ var Wi = (e) => `./assets/${e}`,
   oa = {
     name: `Ananta`,
     at: `at Dream Gurukul`,
-    location: `Near NSCBI Airport, Madhyamgram`,
-    airportMinutes: { value: `15 min`, label: `NSCBI Airport`, source: `Ananta brochure p.8` },
+    location: `Near Kolkata Airport, Madhyamgram`,
+    airportMinutes: { value: `10 min`, label: `the Airport`, source: `Ananta brochure p.8` },
     residences: { value: 296, label: `Limited Residences`, source: `Source deck slide 38` },
     configurations: [`2 BHK`, `3 BHK`, `4 BHK`],
     pillars: [
@@ -16401,6 +16401,7 @@ var Wi = (e) => `./assets/${e}`,
       id: `entrance`,
       title: `Limitless Entrance`,
       hero: z(`photos/entrance.jpg`),
+      heroFlip: !0,
       line: `Taller doors and an extra-wide main entrance create a grander arrival — easier furniture movement, wheelchair access and double-stretcher access in emergencies.`,
       here: `Taller, extra-wide entrance doors`,
       elsewhere: `Standard height doors · average proportions`,
@@ -16411,8 +16412,8 @@ var Wi = (e) => `./assets/${e}`,
       id: `security`,
       title: `Limitless Security`,
       hero: z(`photos/phone.jpg`),
-      line: `Smart digital locks replace traditional key-operated systems — keyless access with fingerprint access and an anti-theft alarm.`,
-      here: `Smart digital locks · fingerprint access · anti-theft alarm`,
+      line: `Smart digital locks replace traditional key-operated systems — keyless access with fingerprint access.`,
+      here: `Smart digital locks · fingerprint access`,
       elsewhere: `Conventional key-based locks`,
       imgHere: z(`specs/smart-locks.png`),
       imgElse: z(`specs/locks-basic.png`),
@@ -16505,9 +16506,9 @@ var Wi = (e) => `./assets/${e}`,
     finalSub: `Complete Your Qualifying Bookings by 31 December 2026.`,
     additional: `These rewards are in addition to your brokerage and executive incentives.`,
     tiers: [
-      { id: `macbook`, bookings: 2, title: `1 MacBook Neo`, kind: `laptop`, photo: null },
+      { id: `macbook`, bookings: 2, title: `1 MacBook Neo`, kind: `laptop`, photo: z(`rewards/macbook.png`) },
       { id: `trip`, bookings: 3, title: `International Trip for 1 Person`, kind: `travel`, photo: null },
-      { id: `bullet`, bookings: 5, title: `1 Royal Enfield Bullet`, kind: `vehicle`, photo: null },
+      { id: `bullet`, bookings: 5, title: `1 Royal Enfield Bullet`, kind: `vehicle`, photo: z(`rewards/royal-enfield-sand.png`) },
     ],
   };
 da.tiers;
@@ -16596,8 +16597,9 @@ var fa = [
     ...ma(`high-flyers`, [`Somani Realtors Pvt Ltd`, `The HomeStore`, `Get My Ghar`]),
   ],
   ga = {
-    url: null,
-    caption: `Scan to explore — Project Details · Brochures · Commercials`,
+    // Registration link for the closing-slide QR. Replace with the CP registration form URL.
+    url: `https://www.thejaingroup.com/`,
+    caption: `Scan to register as a Channel Partner`,
     source: `Source deck slide 69: QR currently points to thejaingroup.com; "swap for the CP registration link if needed".`,
   },
   _a = [
@@ -16667,19 +16669,19 @@ var fa = [
     "her-tl-b": `On-going projects: Dream Gurukul near the airport at Madhyamgram — home of Ananta — and the recently launched Dream Eco City Bungalows, Durgapur.`,
     "her-tl-c": `Upcoming projects: Dream One Phase II (New Town), B.T. Road (300 apartments), Tollygunge (410 apartments), Durgapur (450 apartments) and the Madhyamgram Garment Park (1.6 million sq. ft.). Then bring it home to Ananta.`,
     "fly-airport-1": `The Ananta gate dissolves through a golden light bloom into the brochure jet visual; slow push-in. CONNECTED TO THE CITY. CLOSER TO THE WORLD.`,
-    "fly-airport-2": `ANANTA | NEAR KOLKATA AIRPORT. The brochure states NSCBI Airport at about 15 minutes. Next cue returns to the master Ananta view.`,
+    "fly-airport-2": `ANANTA | NEAR KOLKATA AIRPORT. Approx. 10 minutes from the airport. Next cue returns to the master Ananta view.`,
     "fly-runway": `Chapter 5 begins. A calm dusk runway; the camera creeps forward. Let it breathe before the takeoff.`,
     "fly-takeoff": `THE takeoff — ~10 s first-person takeoff with engine sound (advance blocked ~9.5 s). P pauses picture and sound; R replays.`,
     "fly-headline": `YOUR SUCCESS IS READY FOR TAKEOFF. With Ananta, Aim Higher. Achieve More.`,
-    "fly-path": `The trail morphs into the Flight Path of Success: Stage 1 Build Momentum (Ongoing Brokerage Plan) · Stage 2 Rise Higher (Executive Incentives) · Stage 3 Reach New Heights (Limitless Bonus Rewards).`,
+    "fly-path": `The trail morphs into the Flight Path of Success: Stage 1 Build Momentum (Ongoing Brokerage Plan, including Executive Incentives) · Stage 2 Reach New Heights (Limitless Bonus Rewards).`,
     "val-smartness": `Opens on Conventional (basic switches, manual control only), then turns to Ananta by itself. Click the CONVENTIONAL / ANANTA toggle to compare, or the Morning / Dinner / Movie / Away chips to change the scene — smart touch panels with app and voice-enabled control. Any click stops the auto-play.`,
     "val-grandeur": `Opens on Conventional: 600 × 600 mm tiles, 24 tiles and many joints. It turns to Ananta: 1800 × 1200 mm slabs — 4 slabs, joints fade away (illustration). Click the toggle to switch back and forth.`,
     "val-entrance": `Opens on a standard-height door, then grows to the taller, extra-wide Ananta entrance. Click Furniture / Wheelchair / Double stretcher to show what passes through. Drawings are illustrative — no dimensions are stated.`,
-    "val-security": `Opens on a conventional key lock, then the Ananta smart digital lock. Click Digital lock / Fingerprint / Anti-theft alarm (or the toggle) to demonstrate each.`,
+    "val-security": `Opens on a conventional key lock, then the Ananta smart digital lock. Click Digital lock / Fingerprint (or the toggle) to demonstrate each.`,
     "val-luxury": `Opens on a basic shower fitting, then the Ananta shower panel. Click Rainfall / Multi-flow / Body jets to show each mode.`,
     "val-final": `LIMITLESS VALUE. Five Meaningful Differences. One Compelling Reason to Choose Ananta. When the Difference Is Easy to See, the Value Is Easier to Explain.`,
     "rew-platforms": `"Your Success Deserves More." — a quiet beat before the challenge.`,
-    "rew-welcome": `LIMITLESS REWARDS — THE 45-DAY SUCCESS CHALLENGE. Deadline 31 December 2026. Set the start date in the console (Rewards panel) if it has been fixed. These rewards are ADDITIONAL to brokerage and executive incentives.`,
+    "rew-welcome": `LIMITLESS REWARDS — THE 45-DAY SUCCESS CHALLENGE. Deadline 31 December 2026. Set the start date in the console (Rewards panel) if it has been fixed.`,
     "rew-macbook": `2 bookings → 1 MacBook Neo. Pause here. (Not stated whether rewards are cumulative — do not imply it.) Illustration only until an official product photo is supplied.`,
     "rew-trip": `3 bookings → International Trip for 1 Person. No destination is stated or implied.`,
     "rew-bullet": `5 bookings → 1 Royal Enfield Bullet. Illustration only until an official product photo is supplied.`,
@@ -16713,10 +16715,10 @@ var fa = [
     "liv-return": `Return to the approved Ananta architectural composition. The camera now drifts towards the entrance — "Let's step inside."`,
     "val-interior": `Chapter 4 — Limitless Value. Golden-hour light inside a premium apartment. "A product worth believing in." Five things you get here that you usually don't get elsewhere.`,
     "val-offer": `LAUNCH OFFER. Guaranteed launching rate and the special limited-period benefit; then 2, 3 and 4 BHK starting prices.`,
-    "opp-intro": `Chapter 5 — Limitless Opportunities. Three separate components: Standard Brokerage, Executive Incentives (Part A) and Bonus Rewards (Part B). Never add them into one headline number.`,
+    "opp-intro": `Chapter 5 — Limitless Opportunities. Three components: Ongoing Brokerage, Executive Incentives (part of the Ongoing Brokerage Plan) (Part A) and Bonus Rewards (Part B). Never add them into one headline number.`,
     "opp-brokerage": `Quarterly brokerage tiers: 3 %, 3.5 %, 4 % — the more you book, the higher your percentage climbs. Paid on agreement value (+ car parking, if any). This is earned by your organisation.`,
-    "opp-incentive": `Executive incentives — over and above brokerage, per booking: ₹20,000 (2 BHK), ₹25,000 (3 BHK), ₹35,000 (4 BHK). Payable to the individual executive, not to the organisation.`,
-    "opp-payout": `The payout promise: settled within 7 days of confirmation, subject to approved commercial terms. Clear, agreed slabs, no surprises.`,
+    "opp-incentive": `Executive incentives — part of the Ongoing Brokerage Plan, per booking: ₹20,000 (2 BHK), ₹25,000 (3 BHK), ₹35,000 (4 BHK). Payable to the individual executive, not to the organisation.`,
+    "opp-payout": `The payout promise: settled within 7 days of confirmation. Clear, agreed slabs, no surprises.`,
     "opp-conversion": `Proof of momentum. The claim is 71 % in the slide and 67 % in its notes — DO NOT PRESENT until verified. Cue is hidden in Live mode until approved.`,
     "opp-calc": `EARNINGS CALCULATOR. Use the console panel to choose configuration, agreement value, number of bookings. Brokerage (organisation) and executive incentive (individual) are displayed separately and never combined.`,
     "rew-dark": `Part B. The golden landscape darkens. Let it go quiet. This is a recognition programme, not a prize draw.`,
@@ -17002,6 +17004,21 @@ function Ca() {
         lockMs: 2500,
       }),
     ),
+    Gi.anantaOverview.enabled &&
+      Gi.anantaOverview.src &&
+      e.push(
+        B({
+          id: `liv-overview`,
+          chapter: 3,
+          scene: `living`,
+          step: 1.5,
+          title: `Ananta project film`,
+          kind: `media`,
+          media: `overview`,
+          horizonVisible: !1,
+          lockMs: 900,
+        }),
+      ),
     e.push(
       B({
         id: `liv-approach`,
@@ -17072,21 +17089,6 @@ function Ca() {
         lockMs: 900,
       }),
     ),
-    Gi.anantaOverview.enabled &&
-      Gi.anantaOverview.src &&
-      e.push(
-        B({
-          id: `liv-overview`,
-          chapter: 3,
-          scene: `living`,
-          step: 6,
-          title: `Project overview film`,
-          kind: `media`,
-          media: `overview`,
-          horizonVisible: !1,
-          lockMs: 900,
-        }),
-      ),
     e.push(
       B({
         id: `liv-return`,
@@ -58703,7 +58705,7 @@ function CE() {
         dur: 2.2,
         y: 0,
         className: `abs center`,
-        style: { left: 0, right: 0, top: 64 },
+        style: { left: 0, right: 0, top: 34 },
         children: (0, Q.jsx)(`img`, {
           src: z(`deck/jain-logo.png`),
           alt: `Jain Group`,
@@ -58713,7 +58715,7 @@ function CE() {
       (0, Q.jsx)(SE, {
         lines: [`LIMITLESS`, `SUCCESS`],
         className: `hero center abs`,
-        style: { left: 0, right: 0, top: 118, fontSize: 158, lineHeight: 1.04 },
+        style: { left: 0, right: 0, top: 168, fontSize: 158, lineHeight: 1.04 },
         from: 1,
         delay: 4.4,
         dur: 2.4,
@@ -62766,7 +62768,7 @@ function DO() {
               (0, Q.jsx)(`div`, {
                 className: `h2`,
                 style: { fontSize: 66 },
-                children: (0, Q.jsx)(SO, { to: 15, from: 3, delay: 1.8, suffix: ` min` }),
+                children: (0, Q.jsx)(SO, { to: 10, from: 3, delay: 1.8, suffix: ` min` }),
               }),
               (0, Q.jsxs)(`div`, { className: `small`, children: [`to `, oa.airportMinutes.label] }),
             ],
@@ -62889,8 +62891,8 @@ function DO() {
       Gi.anantaOverview.enabled &&
         Gi.anantaOverview.src &&
         (0, Q.jsx)($, {
-          from: 6,
-          until: 7,
+          from: 1.5,
+          until: 2,
           y: 0,
           dur: 1.6,
           className: `fill`,
@@ -63353,7 +63355,7 @@ function vxEntr({ d: e }) {
   );
 }
 // 04 · Security — key cylinder vs smart lock (digital code / fingerprint / anti-theft alarm).
-var vxSecItems = [`Digital lock`, `Fingerprint`, `Anti-theft alarm`];
+var vxSecItems = [`Digital lock`, `Fingerprint`];
 function vxSec({ d: e }) {
   let a = e.mode === `ana`,
     m = e.sub;
@@ -63512,7 +63514,7 @@ var vxDemos = {
   smartness: [vxSmart, 4],
   grandeur: [vxGrand, 1],
   entrance: [vxEntr, 3],
-  security: [vxSec, 3],
+  security: [vxSec, 2],
   luxury: [vxLux, 3],
 };
 // One feature screen.
@@ -63533,7 +63535,7 @@ function vxFeature({ t: t, n: n }) {
         className: `photo`,
         style: {
           backgroundImage: `url(${t.hero})`,
-          transform: act ? `scale(1.09)` : `scale(1)`,
+          transform: `${t.heroFlip ? `scaleX(-1) ` : ``}${act ? `scale(1.09)` : `scale(1)`}`,
           transition: act ? `transform 16s linear` : `transform 1.2s ease`,
         },
       }),
@@ -64029,12 +64031,13 @@ function $O({ i: e, final: t }) {
       transformOrigin: `50% 100%`,
       display: `flex`,
       justifyContent: `center`,
+      ...(n.photo ? { height: 380, alignItems: `flex-end` } : {}),
     },
     children: n.photo
       ? (0, Q.jsx)(`img`, {
           src: n.photo,
           alt: n.title,
-          style: { maxHeight: 400, maxWidth: 460, objectFit: `contain` },
+          style: { maxHeight: 380, maxWidth: 560, objectFit: `contain`, filter: `drop-shadow(0 18px 40px rgba(0,0,0,0.55)) drop-shadow(0 0 30px rgba(244,197,109,0.25))` },
         })
       : (0, Q.jsx)(QO, { kind: n.kind }),
   });
@@ -64119,16 +64122,6 @@ function tk() {
           n ? (0, Q.jsxs)(Q.Fragment, { children: [` \xA0·\xA0 Starts `, r(n)] }) : null,
         ],
       }),
-      (0, Q.jsx)($, {
-        from: 9,
-        until: 10,
-        delay: 4.2,
-        dur: 2,
-        y: 0,
-        className: `small center abs`,
-        style: { left: 120, right: 120, top: 640 },
-        children: da.additional,
-      }),
       da.tiers.map((n, r) => {
         let i = e === 10 + r;
         return (0, Q.jsxs)(
@@ -64211,16 +64204,6 @@ function tk() {
                   (0, Q.jsx)(`div`, { style: { marginTop: 6 } }),
                 ],
               }),
-              (0, Q.jsxs)($, {
-                from: 10 + r,
-                until: 11 + r,
-                delay: 3.2,
-                dur: 1.6,
-                y: 0,
-                className: `abs small center`,
-                style: { left: 120, right: 120, bottom: 50, fontSize: 22 },
-                children: [`Additional to brokerage & executive incentives · by `, da.deadlineLabel],
-              }),
             ],
           },
           n.id,
@@ -64293,22 +64276,6 @@ function tk() {
         className: `h3 gold center abs`,
         style: { left: 0, right: 0, top: 262, fontWeight: 200, fontSize: 40 },
         children: da.finalSub,
-      }),
-      (0, Q.jsxs)($, {
-        from: 13,
-        delay: 3.6,
-        dur: 2,
-        y: 0,
-        className: `abs center`,
-        style: { left: 120, right: 120, bottom: 44 },
-        children: [
-          (0, Q.jsx)(`div`, { className: `small`, style: { fontSize: 24 }, children: da.additional }),
-          (0, Q.jsx)(`div`, {
-            className: `small`,
-            style: { fontSize: 18, marginTop: 4, color: `rgba(248,235,209,0.6)` },
-            children: Yi.opportunities.rewardsDisclaimer,
-          }),
-        ],
       }),
       i && null,
     ],
@@ -64485,13 +64452,21 @@ function dk() {
           (0, Q.jsx)(`div`, { className: `tag`, style: { marginBottom: 14, fontSize: 20 }, children: `Configuration` }),
           (0, Q.jsx)(`div`, {
             style: { display: `flex`, gap: 14, marginBottom: 28 },
+            "data-no-shortcuts": !0,
             children: ck.map((t) =>
               (0, Q.jsx)(
-                `div`,
+                `button`,
                 {
                   className: `h3`,
+                  "data-testid": `calc-pick-${t.id}`,
+                  onClick: (ev) => (vxStop(ev), to({ t: `calc`, patch: { configId: t.id, pctOverride: null } })),
+                  onPointerDown: vxStop,
+                  onMouseDown: (ev) => ev.preventDefault(),
+                  tabIndex: -1,
                   style: {
                     flex: 1,
+                    cursor: `pointer`,
+                    fontFamily: `inherit`,
                     textAlign: `center`,
                     padding: `12px 0`,
                     fontSize: 38,
@@ -64526,7 +64501,31 @@ function dk() {
                     style: { marginBottom: 6, fontSize: 20 },
                     children: `Bookings`,
                   }),
-                  (0, Q.jsx)(`div`, { className: `h2`, style: { fontSize: 66 }, children: e.bookings }),
+                  (0, Q.jsxs)(`div`, {
+                    "data-no-shortcuts": !0,
+                    style: { display: `flex`, alignItems: `center`, gap: 16 },
+                    children: [
+                      (0, Q.jsx)(`button`, {
+                        className: `calc-step`,
+                        "data-testid": `calc-minus`,
+                        onClick: (ev) => (vxStop(ev), to({ t: `calc`, patch: { bookings: Math.max(1, e.bookings - 1), pctOverride: null } })),
+                        onPointerDown: vxStop,
+                        onMouseDown: (ev) => ev.preventDefault(),
+                        tabIndex: -1,
+                        children: `−`,
+                      }),
+                      (0, Q.jsx)(`div`, { className: `h2`, style: { fontSize: 66, minWidth: 54, textAlign: `center` }, children: e.bookings }),
+                      (0, Q.jsx)(`button`, {
+                        className: `calc-step`,
+                        "data-testid": `calc-plus`,
+                        onClick: (ev) => (vxStop(ev), to({ t: `calc`, patch: { bookings: Math.min(99, e.bookings + 1), pctOverride: null } })),
+                        onPointerDown: vxStop,
+                        onMouseDown: (ev) => ev.preventDefault(),
+                        tabIndex: -1,
+                        children: `+`,
+                      }),
+                    ],
+                  }),
                 ],
               }),
               (0, Q.jsxs)(`div`, {
@@ -64631,7 +64630,7 @@ function dk() {
           }),
           (0, Q.jsxs)(`div`, {
             className: `small`,
-            children: [ik(t.incentivePerBooking), ` per booking × `, e.bookings, ` · over and above brokerage`],
+            children: [ik(t.incentivePerBooking), ` per booking × `, e.bookings, ` · part of the Ongoing Brokerage Plan`],
           }),
         ],
       }),
@@ -64846,11 +64845,6 @@ function hk() {
                       children: e.title,
                     }),
                     (0, Q.jsx)(`div`, { className: `small`, style: { fontSize: 25, lineHeight: 1.4 }, children: e.line }),
-                    (0, Q.jsx)(`div`, {
-                      className: `tag`,
-                      style: { fontSize: 16, lineHeight: 1.4, marginTop: `auto`, paddingTop: 22, color: t === 2 ? `var(--ivory)` : `var(--gold)` },
-                      children: t === 2 ? `Promotional · subject to conditions` : `Per approved commercial terms`,
-                    }),
                   ],
                 }),
               ],
@@ -64871,7 +64865,7 @@ function hk() {
               style: { left: 120, top: 80 },
               children: [
                 (0, Q.jsx)(fk, { children: `Part A · The Financial Opportunity` }),
-                (0, Q.jsx)(`div`, { className: `h1`, style: { fontSize: 88 }, children: `Standard Brokerage` }),
+                (0, Q.jsx)(`div`, { className: `h1`, style: { fontSize: 88 }, children: `Ongoing Brokerage` }),
                 (0, Q.jsx)(`div`, {
                   className: `small`,
                   style: { marginTop: 10 },
@@ -64884,16 +64878,6 @@ function hk() {
               className: `fill`,
               style: { opacity: +(n === 1), transition: `opacity 1s` },
               children: (0, Q.jsx)(pk, {}),
-            }),
-            (0, Q.jsx)($, {
-              from: 1,
-              until: 2,
-              delay: 4,
-              dur: 1.6,
-              y: 0,
-              className: `abs small`,
-              style: { left: 120, right: 120, bottom: 54, fontSize: 24 },
-              children: la.basis,
             }),
             (0, Q.jsxs)($, {
               from: 2,
@@ -64908,7 +64892,7 @@ function hk() {
                 (0, Q.jsx)(`div`, {
                   className: `small`,
                   style: { marginTop: 10 },
-                  children: `Over and above brokerage · per booking · payable to your individual executive`,
+                  children: `Part of the Ongoing Brokerage Plan · per booking · payable to your individual executive`,
                 }),
               ],
             }),
@@ -64939,16 +64923,6 @@ function hk() {
                   e.id,
                 ),
               ),
-            }),
-            (0, Q.jsx)($, {
-              from: 2,
-              until: 3,
-              delay: 3.6,
-              dur: 1.6,
-              y: 0,
-              className: `abs small`,
-              style: { left: 120, right: 120, bottom: 54, fontSize: 24 },
-              children: `Not added to brokerage — a separate incentive for the executive who closes the booking.`,
             }),
             (0, Q.jsx)($, {
               from: 3,
@@ -65023,16 +64997,6 @@ function hk() {
                 );
               }),
             }),
-            (0, Q.jsx)($, {
-              from: 3,
-              until: 4,
-              delay: 3.8,
-              dur: 1.6,
-              y: 0,
-              className: `abs small`,
-              style: { left: 150, bottom: 60, fontSize: 22, color: `rgba(248,235,209,0.6)` },
-              children: `Subject to approved commercial terms.`,
-            }),
           ],
         }),
       t.show &&
@@ -65077,8 +65041,8 @@ function hk() {
             ],
           }),
         }),
-      e.show && (0, Q.jsx)(dk, {}),
       (0, Q.jsx)(tk, {}),
+      e.show && (0, Q.jsx)(dk, {}),
     ],
   });
 }
@@ -65509,11 +65473,12 @@ function Ok({ name: e, category: t, no: n, style: r }) {
           left: 0,
           right: 0,
           top: 160,
-          fontWeight: 200,
-          fontSize: 46,
-          letterSpacing: `0.18em`,
+          fontWeight: 300,
+          fontSize: String(t ?? ``).length > 20 ? 42 : 48,
+          letterSpacing: `0.14em`,
+          textTransform: `uppercase`,
         },
-        children: `CERTIFICATE OF ACHIEVEMENT`,
+        children: t,
       }),
       (0, Q.jsx)(`div`, {
         style: {
@@ -65552,7 +65517,7 @@ function Ok({ name: e, category: t, no: n, style: r }) {
         children: e,
       }),
       (0, Q.jsxs)(`div`, {
-        style: { position: `absolute`, left: 60, right: 60, top: 436, fontSize: 19, lineHeight: 1.5, opacity: 0.9 },
+        style: { position: `absolute`, left: 60, right: 60, top: 460, fontSize: 21, lineHeight: 1.5, opacity: 0.9 },
         children: [
           `in recognition of outstanding partnership and achievement at the`,
           (0, Q.jsx)(`br`, {}),
@@ -65560,31 +65525,6 @@ function Ok({ name: e, category: t, no: n, style: r }) {
           ` `,
           Ki.title,
         ],
-      }),
-      (0, Q.jsxs)(`div`, {
-        style: {
-          position: `absolute`,
-          left: 0,
-          right: 0,
-          top: 520,
-          fontSize: 14,
-          letterSpacing: `0.4em`,
-          opacity: 0.7,
-        },
-        children: [`AWARD CATEGORY`, n == null ? `` : ` · ${n}`],
-      }),
-      (0, Q.jsx)(`div`, {
-        style: {
-          position: `absolute`,
-          left: 0,
-          right: 0,
-          top: 546,
-          fontWeight: 300,
-          fontSize: 40,
-          letterSpacing: `0.12em`,
-          textTransform: `uppercase`,
-        },
-        children: t,
       }),
       (0, Q.jsx)(`div`, {
         style: {
@@ -67317,17 +67257,19 @@ function sA() {
         delay: 3.4,
         dur: 2,
         y: 26,
-        className: `abs glass`,
+        className: `abs`,
         style: {
           left: 190,
-          top: 700,
-          width: 520,
-          height: 170,
+          top: 640,
+          width: 480,
+          height: 260,
           display: `flex`,
           alignItems: `center`,
           justifyContent: `center`,
+          background: `#ffffff`,
+          boxShadow: `0 10px 60px rgba(0,0,0,0.4)`,
         },
-        children: (0, Q.jsx)(`img`, { src: z(`deck/jain-logo.png`), alt: `Jain Group`, style: { height: 96 } }),
+        children: (0, Q.jsx)(`img`, { src: z(`deck/jain-logo-original.png`), alt: `Jain Group`, style: { width: 420, objectFit: `contain` } }),
       }),
       (0, Q.jsx)($, {
         from: 6,
@@ -67336,10 +67278,10 @@ function sA() {
         y: 26,
         className: `abs`,
         style: {
-          left: 750,
-          top: 700,
-          width: 520,
-          height: 170,
+          left: 700,
+          top: 640,
+          width: 660,
+          height: 260,
           display: `flex`,
           alignItems: `center`,
           justifyContent: `center`,
@@ -67347,9 +67289,9 @@ function sA() {
           boxShadow: `0 10px 60px rgba(0,0,0,0.4)`,
         },
         children: (0, Q.jsx)(`img`, {
-          src: Gi.officialLogoAnimation.endStill ?? z(`media/ananta-logo-still.png`),
+          src: z(`deck/ananta-logo-tight.png`),
           alt: `Ananta`,
-          style: { height: 170, objectFit: `contain` },
+          style: { width: 600, objectFit: `contain` },
         }),
       }),
       (0, Q.jsx)($, {
@@ -67358,7 +67300,7 @@ function sA() {
         dur: 2,
         y: 20,
         className: `abs`,
-        style: { left: 190, top: 920, width: 1080 },
+        style: { left: 190, top: 930, width: 1170 },
         children: (0, Q.jsx)(`div`, {
           className: `small gold`,
           style: { letterSpacing: `0.1em` },
@@ -67373,9 +67315,14 @@ function sA() {
           dur: 2,
           y: 20,
           className: `abs`,
-          style: { left: 1430, top: 640, width: 330 },
+          style: { left: 1420, top: 560, width: 340 },
           children: [
-            (0, Q.jsx)(`img`, { src: t, alt: `QR`, style: { width: 330, height: 330, border: `8px solid #F8EBD1` } }),
+            (0, Q.jsx)(`div`, {
+              className: `tag center`,
+              style: { marginBottom: 12, fontSize: 22 },
+              children: `Register Here`,
+            }),
+            (0, Q.jsx)(`img`, { src: t, alt: `Registration QR code`, style: { width: 340, height: 340, border: `8px solid #F8EBD1`, display: `block` } }),
             (0, Q.jsx)(`div`, {
               className: `small center`,
               style: { marginTop: 12, fontSize: 22 },
@@ -67817,18 +67764,6 @@ function bA() {
         __h($, { from: r, until: i, y: 0, dur: 1, className: `fill` }, __h(yA, { at: n })),
       );
     }),
-    __h(
-      $,
-      {
-        from: 8,
-        delay: 2.6,
-        dur: 1.6,
-        y: 0,
-        className: `abs center`,
-        style: { left: 120, right: 120, top: 840, fontSize: 34, fontWeight: 300, color: `var(--ivory)` },
-      },
-      `…and Ananta at Dream Gurukul is where it all comes together.`,
-    ),
   );
 }
 function xA() {
@@ -67864,9 +67799,8 @@ var __hf = (t, p, ...c) => v.createElement(t, p, ...c),
     return { x: r(e[0], e[2], e[4], e[6]), y: r(e[1], e[3], e[5], e[7]) };
   },
   EA = [
-    { n: 1, title: `Build Momentum`, sub: `Ongoing Brokerage Plan`, t: 0.1 },
-    { n: 2, title: `Rise Higher`, sub: `Executive Incentives`, t: 0.5 },
-    { n: 3, title: `Reach New Heights`, sub: `Limitless Bonus Rewards`, t: 0.92 },
+    { n: 1, title: `Build Momentum`, sub: `Ongoing Brokerage Plan`, sub2: `incl. Executive Incentives`, t: 0.14 },
+    { n: 2, title: `Reach New Heights`, sub: `Limitless Bonus Rewards`, t: 0.92 },
   ],
   __tkCtx = null;
 // ---------- Synthesized takeoff sound (WebAudio, no files) ----------
@@ -68364,7 +68298,7 @@ function OA() {
             className: `h3`,
             style: { fontWeight: 300, fontSize: 36, letterSpacing: `0.16em`, color: `#F8EBD1`, textShadow: `0 2px 22px rgba(12,9,20,1)` },
           },
-          `NSCBI Airport · approx. 15 min`,
+          `Just 10 min from the Airport`,
         ),
       ),
     )
@@ -68401,6 +68335,35 @@ function kA() {
           pointerEvents: `none`,
         },
       }),
+      // Airliner climbing out across the sky — makes the "takeoff" read instantly.
+      e === 4 &&
+        __hf(
+          `div`,
+          { key: `tk-plane`, className: `abs tk-plane-wrap`, style: { left: 0, top: 0, width: 1920, height: 1080, pointerEvents: `none` } },
+          __hf(`div`, { className: `tk-trail` }),
+          __hf(
+            `svg`,
+            { className: `tk-plane`, width: 560, height: 165, viewBox: `-40 -60 680 200` },
+            __hf(
+              `defs`,
+              null,
+              __hf(
+                `linearGradient`,
+                { id: `tkBody`, x1: `0`, y1: `0`, x2: `0`, y2: `1` },
+                __hf(`stop`, { offset: `0`, stopColor: `#F8EBD1` }),
+                __hf(`stop`, { offset: `0.22`, stopColor: `#5b4a5e` }),
+                __hf(`stop`, { offset: `1`, stopColor: `#1c1828` }),
+              ),
+            ),
+            __hf(`path`, { d: `M 22 22 L -6 -48 L 34 -48 L 116 22 Z`, fill: `url(#tkBody)` }),
+            __hf(`path`, { d: `M 40 46 L -6 74 L 24 74 L 112 50 Z`, fill: `#1c1828` }),
+            __hf(`path`, { d: `M 0 38 C 0 26 22 20 64 20 L 520 20 C 566 20 596 30 606 40 C 596 50 566 58 520 58 L 64 58 C 22 58 0 50 0 38 Z`, fill: `url(#tkBody)` }),
+            __hf(`path`, { d: `M 236 50 L 168 120 L 206 120 L 336 52 Z`, fill: `#241e30` }),
+            __hf(`ellipse`, { cx: 252, cy: 74, rx: 38, ry: 13, fill: `#2c2438` }),
+            __hf(`path`, { d: `M 64 21 L 520 21 C 560 21 590 30 604 39`, fill: `none`, stroke: `#F4C56D`, strokeOpacity: 0.85, strokeWidth: 2.5 }),
+            Array.from({ length: 16 }, (_, i) => __hf(`rect`, { key: i, x: 120 + i * 24, y: 30, width: 9, height: 7, rx: 3, fill: `#F8EBD1`, opacity: 0.55 })),
+          ),
+        ),
       __hf(
         $,
         {
@@ -68493,11 +68456,12 @@ function kA() {
             dur: 1.8,
             y: 18,
             className: `abs glass`,
-            style: { left: Math.min(t.x - 250, 1920 - 80 - 500), top: t.y - 196, width: 500, padding: `18px 26px`, textAlign: `center` },
+            style: { left: Math.max(80, Math.min(t.x - 250, 1920 - 80 - 500)), top: t.y - (n.sub2 ? 236 : 196), width: 500, padding: `18px 26px`, textAlign: `center` },
           },
           __hf(`div`, { className: `tag`, style: { marginBottom: 6 } }, `Stage `, n.n),
           __hf(`div`, { className: `h3`, style: { fontSize: 42 } }, n.title),
           __hf(`div`, { className: `small gold`, style: { marginTop: 4, fontSize: 26 } }, n.sub),
+          n.sub2 ? __hf(`div`, { className: `small`, style: { marginTop: 2, fontSize: 22, color: `var(--ivory)` } }, n.sub2) : null,
         );
       }),
     )
