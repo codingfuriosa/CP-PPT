@@ -15997,12 +15997,12 @@ var Wi = (e) => `./assets/${e}`,
       note: `Ananta project film — played right after the Ananta reveal.`,
     },
     backgroundMusic: {
-      src: Wi(`media/ambient-bed.wav`),
+      src: Wi(`media/score/legacy.ogg`),
       poster: null,
       enabled: !0,
       hasAudio: !0,
       placement: `global`,
-      note: `Original ambient bed (synthesized, royalty-free, 96 s seamless loop). Ducks under video and the takeoff sound.`,
+      note: `Section score: eight original seamless loops in media/score (tools/make-score.py). Crossfades by chapter; ducks under video, the takeoff and the big reveals.`,
     },
   },
   z = Wi,
@@ -16027,7 +16027,7 @@ var Wi = (e) => `./assets/${e}`,
   },
   Ji = {
     portfolioPricing: `Portfolio price points`,
-    launchOffer: `Launch rate, benefit & Ananta configurations`,
+    launchOffer: `Ananta configuration-wise prices`,
     brokerage: `Brokerage tiers, executive incentives & payout promise`,
     conversion: `Spot-booking conversion claim`,
     rewardSlabs: `Bonus reward slabs / thresholds`,
@@ -16046,8 +16046,8 @@ var Wi = (e) => `./assets/${e}`,
     partnerships: {
       eyebrow: `Chapter 2`,
       title: `Limitless Partnerships`,
-      sub: `The Power of Together`,
-      streamLine: `Behind many milestones, there was one of you.`,
+      sub: `The Power of Togetherness`,
+      streamLine: `Only team work can make the Dream Work.`,
       streamTags: [`Trusted Advisors`, `Shared Growth`, `Celebrated Wins`],
       headline: [`Different Journeys.`, `One Shared Success.`],
     },
@@ -16109,7 +16109,7 @@ var Wi = (e) => `./assets/${e}`,
       line: `Honouring the few who lead.`,
     },
     closing: {
-      eyebrow: `Chapter 8`,
+      eyebrow: `Chapter 7`,
       title: `Limitless Success`,
       sub: `The Future Starts Together`,
       lines: [
@@ -16137,8 +16137,8 @@ var Wi = (e) => `./assets/${e}`,
   ],
   Zi = [
     { id: `prem`, name: `Mr. Prem Jain`, role: `Chairman`, photo: z(`legacy/leader-prem.jpg`) },
-    { id: `shrayans`, name: `Mr. Shrayans Jain`, role: `Vice Chairman`, photo: z(`legacy/leader-shrayans.jpg`) },
-    { id: `rishi`, name: `Mr. Rishi Jain`, role: `Managing Director`, photo: z(`legacy/leader-rishi.jpg`) },
+    { id: `shrayans`, name: `Mr. Shrayans Jain`, role: `Vice Chairman`, photo: z(`legacy/leader-shrayans-v3.jpg`) },
+    { id: `rishi`, name: `Mr. Rishi Jain`, role: `Managing Director`, photo: z(`legacy/leader-rishi-v3.jpg`) },
   ],
   Qi = z(`legacy/team-jain-group.jpg`),
   $i = z(`legacy/wall-of-honour.jpg`),
@@ -16150,10 +16150,11 @@ var Wi = (e) => `./assets/${e}`,
       name: `Kolkata Airport`,
       location: `Kolkata`,
       rooms: 137,
-      photo: z(`legacy/hotel-kolkata-airport.jpg`),
+      photo: z(`legacy/hotel-kolkata-airport-elev.jpg`),
+      pos: `50% 40%`,
       logo: z(`legacy/logo-holiday-inn.png`), brand: `Holiday Inn`,
     },
-    { id: `newtown`, name: `New Town`, location: `Kolkata`, rooms: 130, photo: z(`legacy/hotel-newtown.jpg`), logo: z(`legacy/logo-sarovar-portico.png`), brand: `Sarovar Portico` },
+    { id: `newtown`, name: `New Town`, location: `Kolkata`, rooms: 130, photo: z(`legacy/hotel-newtown-elev.jpg`), pos: `50% 55%`, logo: z(`legacy/logo-sarovar-portico.png`), brand: `Sarovar Portico` },
     { id: `durgapur`, name: `Durgapur`, location: `Durgapur`, rooms: 140, photo: z(`legacy/hotel-durgapur.jpg`), logo: z(`legacy/logo-holiday-inn.png`), brand: `Holiday Inn` },
     { id: `siliguri`, name: `Siliguri`, location: `Siliguri`, rooms: 160, photo: z(`legacy/hotel-siliguri.jpg`), logo: z(`legacy/logo-holiday-inn.png`), brand: `Holiday Inn` },
   ],
@@ -16164,41 +16165,56 @@ var Wi = (e) => `./assets/${e}`,
     {
       label: `Past Projects`,
       title: `Delivered Landmarks`,
-      sub: `Communities delivered across Kolkata and Bengal.`,
-      items: [
-        ra(`arcadia`, `Dream Arcadia`, `Garia`, `proj-dream-arcadia.jpg`),
-        ra(`park`, `Dream Park`, `Garia`, `proj-dream-park.jpg`),
-        ra(`apartments`, `Dream Apartments`, `Rajarhat`, `proj-dream-apartments.jpg`),
-        ra(`manor`, `Dream Residency Manor`, `Rajarhat`, `proj-dream-residency-manor.jpg`),
-        ra(`excellency`, `Dream Excellency`, `Rajarhat`, `proj-dream-excellency.jpg`),
-        ra(`palazzo`, `Dream Palazzo`, `Rajarhat`, `proj-dream-palazzo.jpg`),
-        ra(`residency`, `Dream Residency`, `Rajarhat`, `proj-dream-residency.jpg`),
-        ra(`one`, `Dream One`, `New Town`, `proj-dream-one.jpg`),
-        ra(`exotica`, `Dream Exotica`, `Madhyamgram`, `proj-dream-exotica.jpg`),
-        ra(`worldcity`, `Dream World City`, `Joka`, `proj-dream-world-city.jpg`),
-        ra(`valley`, `Dream Valley`, `Siliguri`, `proj-dream-valley.jpg`),
-        ra(`ecocity`, `Dream Eco City`, `Durgapur`, `proj-dream-eco-city.jpg`),
+      sub: `3.5 Million sq ft developed`,
+      rows: [
+        {
+          cols: 6,
+          h: 232,
+          fs: 26,
+          items: [
+            ra(`arcadia`, `Dream Arcadia`, `Garia`, `proj-dream-arcadia.jpg`),
+            ra(`park`, `Dream Park`, `Garia`, `proj-dream-park.jpg`),
+            ra(`apartments`, `Dream Apartments`, `Rajarhat`, `proj-dream-apartments.jpg`),
+            ra(`manor`, `Dream Residency Manor`, `Rajarhat`, `proj-dream-residency-manor.jpg`),
+            ra(`excellency`, `Dream Excellency`, `Rajarhat`, `proj-dream-excellency.jpg`),
+            ra(`palazzo`, `Dream Palazzo`, `Rajarhat`, `proj-dream-palazzo.jpg`),
+            ra(`residency`, `Dream Residency`, `Rajarhat`, `proj-dream-residency.jpg`),
+            ra(`one`, `Dream One`, `New Town`, `proj-dream-one.jpg`),
+            ra(`exotica`, `Dream Exotica`, `Madhyamgram`, `proj-dream-exotica.jpg`),
+            ra(`worldcity`, `Dream World City`, `Joka`, `proj-dwc-elev.jpg`),
+            ra(`valley`, `Dream Valley`, `Siliguri`, `proj-dream-valley.jpg`),
+            ra(`ecocity`, `Dream Eco City`, `Durgapur`, `proj-dream-eco-city.jpg`),
+          ],
+        },
       ],
     },
     {
       label: `On-Going Projects`,
       title: `Rising Today`,
-      sub: `Recently launched and taking shape.`,
-      items: [
-        ra(`gurukul`, `Dream Gurukul`, `Near Airport, Madhyamgram`, `proj-dream-gurukul-launch.jpg`, `Under construction`),
-        ra(`bungalows`, `Dream Eco City Bungalows`, `Durgapur`, `proj-dream-ecocity-bungalows.jpg`, `Recently launched`),
-      ],
-    },
-    {
-      label: `Upcoming Projects`,
-      title: `The Road Ahead`,
-      sub: `The next chapter of the Jain Group skyline.`,
-      items: [
-        ra(`one2`, `Dream One Phase II`, `New Town`, `proj-up-dream-one-phase2.jpg`),
-        ra(`bt`, `B.T. Road`, `Kolkata`, `proj-up-bt-road.jpg`, `300 apartments`),
-        ra(`tolly`, `Tollygunge`, `Kolkata`, `proj-up-tollygunge.jpg`, `410 apartments`),
-        ra(`durg`, `Durgapur`, `Durgapur`, `proj-up-durgapur.jpg`, `450 apartments`),
-        ra(`garment`, `Garment Park`, `Madhyamgram`, `proj-up-madhyamgram.jpg`, `1.6 million sq. ft.`),
+      sub: `Projects in progress and the road ahead.`,
+      rows: [
+        {
+          cols: 3,
+          h: 268,
+          fs: 34,
+          items: [
+            ra(`og-worldcity`, `Dream World City`, `Joka`, `proj-dwc-elev.jpg`),
+            ra(`gurukul`, `Dream Gurukul`, `Near Airport, Madhyamgram`, `proj-dream-gurukul-launch.jpg`, `Under construction`),
+            ra(`og-one`, `Dream One`, `New Town`, `proj-dream-one.jpg`),
+          ],
+        },
+        {
+          cols: 5,
+          h: 168,
+          fs: 26,
+          items: [
+            ra(`one2`, `Dream One Phase II`, `New Town`, `proj-up-dream-one-phase2.jpg`),
+            ra(`bt`, `Dream B.T. Road`, `Kolkata`, `proj-up-bt-road.jpg`, `300 apartments`),
+            ra(`tolly`, `Dream Tollygunge`, `Kolkata`, `proj-up-tollygunge.jpg`, `410 apartments`),
+            ra(`durg`, `Dream Durgapur`, `Durgapur`, `proj-up-durgapur.jpg`, `450 apartments`),
+            ra(`garment`, `Dream Garment Park`, `Madhyamgram`, `proj-up-madhyamgram.jpg`, `1.6 million sq. ft.`),
+          ],
+        },
       ],
     },
   ],
@@ -16299,8 +16315,9 @@ var Wi = (e) => `./assets/${e}`,
     name: `Ananta`,
     at: `at Dream Gurukul`,
     location: `Near Kolkata Airport, Madhyamgram`,
-    airportMinutes: { value: `10 min`, label: `the Airport`, source: `Ananta brochure p.8` },
-    residences: { value: 296, label: `Limited Residences`, source: `Source deck slide 38` },
+    airportMinutes: { value: `10 mins`, label: `the Airport`, source: `Ananta brochure p.8` },
+    residences: { value: 232, label: `Limited Residences`, source: `Client correction (Nov 2026)` },
+    landArea: { value: `5.1 Acres`, label: `Ananta at Dream Gurukul Campus`, source: `Online listings (housing.com 5.12 acres; others 5.13 acres) — confirm` },
     configurations: [`2 BHK`, `3 BHK`, `4 BHK`],
     pillars: [
       {
@@ -16317,7 +16334,7 @@ var Wi = (e) => `./assets/${e}`,
       },
       {
         id: `talent`,
-        title: `Here, Talent Grows Limitless`,
+        title: `Child Centric Homes`,
         line: `Guided by gurus: music, dance, art and sport studios shaped by renowned names.`,
         photo: z(`photos/gurus.jpg`),
       },
@@ -16371,8 +16388,9 @@ var Wi = (e) => `./assets/${e}`,
         view: `amenities`,
         note: `Safe, secure common spaces.`,
       },
-      { id: `courts`, label: `Badminton Court`, legend: `12`, uv: [0.77, 0.542], view: `amenities`, note: `` },
-      { id: `pond`, label: `Pond with Promenade`, legend: `17`, uv: [0.633, 0.841], view: `landscape`, note: `` },
+      { id: `courts`, label: `Badminton Court`, legend: `12`, uv: [0.77, 0.542], view: `amenities`, note: `Everyday fitness, steps from home.` },
+      { id: `adda`, label: `Adda Zone`, legend: `13`, uv: [0.836, 0.658], view: `amenities`, note: `An open-air lawn for conversation, community evenings and celebrations.` },
+      { id: `pond`, label: `Pond with Promenade`, legend: `17`, uv: [0.633, 0.841], view: `landscape`, note: `A landscaped waterside walk for calm evenings.` },
     ],
     modelPath: null,
   },
@@ -16411,7 +16429,8 @@ var Wi = (e) => `./assets/${e}`,
     {
       id: `security`,
       title: `Limitless Security`,
-      hero: z(`photos/phone.jpg`),
+      hero: z(`photos/cctv.jpg`),
+      heroFlip: !0,
       line: `Smart digital locks replace traditional key-operated systems — keyless access with fingerprint access.`,
       here: `Smart digital locks · fingerprint access`,
       elsewhere: `Conventional key-based locks`,
@@ -16447,19 +16466,19 @@ var Wi = (e) => `./assets/${e}`,
         id: `2bhk`,
         label: `2 BHK`,
         size: `940 – 1015 sq. ft.`,
-        from: { value: `₹65 L`, source: `Source deck slide 41`, approved: !1 },
+        from: { value: `₹65 L`, source: `Client update`, approved: !0 },
       },
       {
         id: `3bhk`,
         label: `3 BHK`,
         size: `1075 – 1405 sq. ft. (2T + 3T)`,
-        from: { value: `₹75 L`, source: `Source deck slide 41`, approved: !1 },
+        from: { value: `₹80 L`, source: `Client update`, approved: !0 },
       },
       {
         id: `4bhk`,
         label: `4 BHK`,
         size: `1790 – 1805 sq. ft.`,
-        from: { value: `₹1.25 Cr`, source: `Source deck slide 41`, approved: !1 },
+        from: { value: `₹1.2 Cr`, source: `Client update`, approved: !0 },
       },
     ],
     footnote: `Sizes in sq. ft. · Prices onward · Specification highlights subject to the final project specification.`,
@@ -16486,7 +16505,7 @@ var Wi = (e) => `./assets/${e}`,
       source: `Source deck slides 34/43`,
       approved: !1,
     },
-    defaultValues: { "2bhk": 65e5, "3bhk": 75e5, "4bhk": 125e5 },
+    defaultValues: { "2bhk": 65e5, "3bhk": 8e6, "4bhk": 12e6 },
   },
   ua = {
     value: { percent: 71, of: 100 },
@@ -16527,7 +16546,7 @@ var fa = [
     },
     {
       id: `registration`,
-      title: `Client Registration`,
+      title: `Lead Protection`,
       detail: `Register your clients instantly and lock your lead from the first contact.`,
       angle: 80,
     },
@@ -16563,7 +16582,7 @@ var fa = [
     },
     {
       id: `payout`,
-      title: `Payout Support`,
+      title: `Payout in 7 Days`,
       detail: `Clear, agreed slabs and a transparent payout process.`,
       angle: 320,
     },
@@ -16589,17 +16608,17 @@ var fa = [
       source: `Award list supplied in the enhancement brief`,
     })),
   ha = [
-    ...ma(`hustle-heroes`, [`Shiv Shakti Realty`, `Oneview Realty`, `Homestead Property`, `UG Real estate company`]),
-    ...ma(`trailblazers`, [`MG Global`, `360 Realtors LLP`, `Uniacres Realty Pvt.Ltd.`, `JJ Properties`]),
-    ...ma(`emerging-icon`, [`KOHO Infra Pvt.Ltd`, `Exact Match`, `Wordsmith Realty`]),
+    ...ma(`hustle-heroes`, [`Shiv Shakti Realty`, `Oneview Realty`, `Homestead Property`, `UG Real Estate`]),
+    ...ma(`trailblazers`, [`MG Global`, `360 Realtors`, `Uniacres Realty`, `JJ Properties`]),
+    ...ma(`emerging-icon`, [`KOHO Infra`, `Exact Match`, `Wordsmith Realty`]),
     ...ma(`next-big-name`, [`Blox.xyz`, `PropNex`, `Adobe Home`]),
     ...ma(`deal-ninjas`, [`UV Realtors`, `Property Beach`, `A.R. Realtors`]),
-    ...ma(`high-flyers`, [`Somani Realtors Pvt Ltd`, `The HomeStore`, `Get My Ghar`]),
+    ...ma(`high-flyers`, [`Somani Realtors`, `The HomeStore`, `Get My Ghar`]),
   ],
   ga = {
     // Registration link for the closing-slide QR. Replace with the CP registration form URL.
-    url: `https://www.thejaingroup.com/`,
-    caption: `Scan to register as a Channel Partner`,
+    url: `https://drive.google.com/drive/folders/1sMO8YbsVPRXOYiQKHxDOe2drOPsIxa1E`,
+    caption: `Scan to gain access to the Channel Partner Digital Kit of Ananta`,
     source: `Source deck slide 69: QR currently points to thejaingroup.com; "swap for the CP registration link if needed".`,
   },
   _a = [
@@ -16662,18 +16681,18 @@ var fa = [
     "her-miles": `The Jain Group at a glance — flows straight on from the Legacy title. 6M sq ft developed, 20M under planning, 7,000+ customers, 45+ awards, 600+ room keys. Headline figures, not a timeline.`,
     "her-leaders": `Introduce the leadership with exact designations: Mr. Prem Jain, Chairman; Mr. Shrayans Jain, Vice Chairman; Mr. Rishi Jain, Managing Director.`,
     "her-team": `ONE TEAM. ONE DREAM. / LIMITLESS POSSIBILITIES. Let the team photograph hold; this is the people behind the buildings.`,
-    "her-honour": `Wall of Honour — the Group's corporate recognition (separate from tonight's channel-partner awards in Chapter 7).`,
+    "her-honour": `Wall of Honour — the Group's corporate recognition.`,
     "her-achieve": `NOTABLE ACHIEVEMENTS (no year in the title). Photographs are from the Jain Group source deck.`,
     "her-hotels": `Four hotels: Kolkata Airport 137, New Town 130, Durgapur 140, Siliguri 160 rooms. Status is not stated in the source and is not shown.`,
     "her-tl-a": `Past projects — delivered communities: Dream Arcadia & Dream Park (Garia), Rajarhat (Apartments, Residency Manor, Excellency, Palazzo, Residency), Dream One (New Town), Dream Exotica (Madhyamgram), Dream World City (Joka), Dream Valley (Siliguri), Dream Eco City (Durgapur).`,
-    "her-tl-b": `On-going projects: Dream Gurukul near the airport at Madhyamgram — home of Ananta — and the recently launched Dream Eco City Bungalows, Durgapur.`,
+    "her-tl-b": `On-going projects: Dream World City (Joka), Dream Gurukul near the airport — home of Ananta — and Dream One (New Town). Below: what's next — Dream One Phase II, Dream B.T. Road, Dream Tollygunge, Dream Durgapur and Dream Garment Park. Then bring it home to Ananta.`,
     "her-tl-c": `Upcoming projects: Dream One Phase II (New Town), B.T. Road (300 apartments), Tollygunge (410 apartments), Durgapur (450 apartments) and the Madhyamgram Garment Park (1.6 million sq. ft.). Then bring it home to Ananta.`,
     "fly-airport-1": `The Ananta gate dissolves through a golden light bloom into the brochure jet visual; slow push-in. CONNECTED TO THE CITY. CLOSER TO THE WORLD.`,
-    "fly-airport-2": `ANANTA | NEAR KOLKATA AIRPORT. Approx. 10 minutes from the airport. Next cue returns to the master Ananta view.`,
+    "fly-airport-2": `ANANTA | NEAR KOLKATA AIRPORT. 10 mins from the airport. Next cue returns to the master Ananta view.`,
     "fly-runway": `Chapter 5 begins. A calm dusk runway; the camera creeps forward. Let it breathe before the takeoff.`,
     "fly-takeoff": `THE takeoff — ~10 s first-person takeoff with engine sound (advance blocked ~9.5 s). P pauses picture and sound; R replays.`,
     "fly-headline": `YOUR SUCCESS IS READY FOR TAKEOFF. With Ananta, Aim Higher. Achieve More.`,
-    "fly-path": `The trail morphs into the Flight Path of Success: Stage 1 Build Momentum (Ongoing Brokerage Plan, including Executive Incentives) · Stage 2 Reach New Heights (Limitless Bonus Rewards).`,
+    "fly-path": `The trail morphs into the Flight Path of Success: The path climbs through the Ongoing Brokerage Plan slabs — 3% (1–2 bookings), 3.5% (3–4), 4% (5 & above), with Executive Incentives on top — and culminates in the Limitless Bonus Rewards.`,
     "val-smartness": `Opens on Conventional (basic switches, manual control only), then turns to Ananta by itself. Click the CONVENTIONAL / ANANTA toggle to compare, or the Morning / Dinner / Movie / Away chips to change the scene — smart touch panels with app and voice-enabled control. Any click stops the auto-play.`,
     "val-grandeur": `Opens on Conventional: 600 × 600 mm tiles, 24 tiles and many joints. It turns to Ananta: 1800 × 1200 mm slabs — 4 slabs, joints fade away (illustration). Click the toggle to switch back and forth.`,
     "val-entrance": `Opens on a standard-height door, then grows to the taller, extra-wide Ananta entrance. Click Furniture / Wheelchair / Double stretcher to show what passes through. Drawings are illustrative — no dimensions are stated.`,
@@ -16690,6 +16709,7 @@ var fa = [
     "two-2": `The Achiever: OR TAKE OFF WITH ANANTA. Choose your next chapter of success. (Stand-in imagery — replace with a boarding-gate photo when supplied.)`,
     "two-3": `The Achiever's side brightens; the Observer's dims. Hold, then advance back to the horizon.`,
     "clo-choice": `Back to the golden horizon. THE CHOICE IS YOURS. YOUR NEXT TAKEOFF BEGINS WITH ANANTA.`,
+    "clo-qr": `Final slide: the QR to the Channel Partner Digital Kit, full size. Invite everyone to scan now.`,
     "clo-final": `REGISTER YOUR BUYERS. SCHEDULE YOUR SITE VISITS. START YOUR JOURNEY. Jain Group and Ananta logos. No QR is shown until a real registration link is set in content.ts (qr.url).`,
     "ach-intro": `Chapter 7 — Limitless Achievements. 20 recipients across 6 categories. Category numbers are identifiers only, not rankings. Jump to any category from the console list. Certificates are generated from data; print them at #/certificates.`,
     "ach-cat-hustle-heroes": `Category: The Hustle Heroes (Category 6). Numbers are identifiers, not rankings. Announce the category, then advance to call each recipient.`,
@@ -16702,13 +16722,13 @@ var fa = [
     "open-2": `The pathway extends, the camera travels, the horizon becomes sunrise. Stay silent for the first few seconds. When LIMITLESS SUCCESS lands, say the tagline: "Together, Beyond Every Limit." The frame then holds.`,
     "leg-intro": `Chapter 1 — Limitless Legacy. Purpose: establish trust. One promise for decades: caring for your dreams. Read the four numbers slowly — 6 million sq. ft. developed, 20 million under planning, 7,000+ happy customers, 45+ awards.`,
     "leg-pull": `Pull back. Golden pathways begin to emerge from the city. "Every one of these addresses was brought to families — with your help."`,
-    "par-streams": `Chapter 2 — Limitless Partnerships. "Behind many milestones, there was one of you." Name the effort, not the numbers: every site visit arranged, every doubt settled, every family walked to the door of their first home. Streams of light = your individual journeys.`,
+    "par-streams": `Chapter 2 — Limitless Partnerships. "Only team work can make the Dream Work." Name the effort, not the numbers: every site visit arranged, every doubt settled, every family walked to the door of their first home. Streams of light = your individual journeys.`,
     "par-converge": `The streams converge. "Different Journeys. One Shared Success." Pause. Let the line sit.`,
     "par-silhouette": `The unified pathway leads to a new silhouette on the horizon. "What if we show you where it leads next?" Turn the room towards the airport.`,
     "liv-emerge": `Chapter 3 — Limitless Living. The golden horizon. Something is emerging through the light… Stay quiet through the reveal (about 6 seconds).`,
-    "liv-approach": `Ananta. Limitless Living begins here. The camera approaches the development. Premium residential positioning, close to the airport.`,
+    "liv-positioning": `Premium residences close to the airport — the building appears, then the headline, line and figures build in one at a time.`,
     "liv-logo": `OFFICIAL BRAND MOMENT — plays BEFORE the Ananta reveal. The screen blooms to light, then the supplied Ananta animation plays with its original sound. First Space/→ plays it; Space again skips; use the console to pause, restart, mute. Do not talk over the voice-over.`,
-    "liv-positioning": `Premium residences moments from the airport corridor at Madhyamgram. 2, 3 and 4 BHK homes. 296 limited residences in a gated community. Keep this short — no technical detail.`,
+    "liv-positioning": `Premium residences moments from the airport corridor at Madhyamgram. 2, 3 and 4 BHK homes. 232 limited residences in a gated community. Keep this short — no technical detail.`,
     "liv-lifestyle": `Lifestyle promise: mornings that give you more room to breathe, evenings that stretch longer. Three highlights: Miyawaki-inspired forest greenery; Club Ujjivan; spaces where talent grows — music, dance, art and sport.`,
     "liv-explore": `EXPLORE MODE. Press E (or the console button) to unlock orbit/zoom on the master plan. Use the buttons: Entrance, Landscape, Amenities, Cinematic. Press Esc to exit and return instantly to the cinematic camera.`,
     "liv-overview": `PROJECT OVERVIEW FILM. Play on command; use the console for pause / resume / replay / skip / mute. When it ends the Ananta render returns. (This cue only exists once the video file is supplied and enabled in media.ts.)`,
@@ -16791,6 +16811,34 @@ var fa = [
       e
     );
   })();
+// Award certificates are presented in two parts: part 1 after "Beyond Brokerage", part 2 in Chapter 7.
+var achPart1 = [`hustle-heroes`, `trailblazers`, `emerging-icon`];
+function achCues(list, introId, introTitle) {
+  return [
+    B({ id: introId, chapter: 7, scene: `achievements`, step: 0, title: introTitle, kind: `hero`, lockMs: 2500 }),
+    ...list.map((t) =>
+      t.kind === `category`
+        ? B({
+            id: `ach-cat-${t.slug}`,
+            chapter: 7,
+            scene: `achievements`,
+            step: t.step,
+            title: `Category ${t.categoryNo} · ${t.categoryName}`,
+            lockMs: 1500,
+          })
+        : B({
+            id: `ach-r-${t.recipient.id}`,
+            chapter: 7,
+            scene: `achievements`,
+            step: t.step,
+            title: `Award · ${t.recipient.name}`,
+            recipientId: t.recipient.id,
+            kind: `hero`,
+            lockMs: 2200,
+          }),
+    ),
+  ];
+}
 function Ca() {
   let e = [];
   e.push(
@@ -16905,20 +16953,9 @@ function Ca() {
         chapter: 1,
         scene: `heritage`,
         step: 7,
-        title: `Real Estate · On-Going Projects`,
+        title: `Real Estate · On-Going Projects (incl. upcoming)`,
         horizon: t,
         lockMs: 3200,
-      }),
-    ),
-    e.push(
-      B({
-        id: `her-tl-c`,
-        chapter: 1,
-        scene: `heritage`,
-        step: 8,
-        title: `Real Estate · Upcoming Projects`,
-        horizon: t,
-        lockMs: 4800,
       }),
     ),
     e.push(
@@ -17021,28 +17058,20 @@ function Ca() {
       ),
     e.push(
       B({
-        id: `liv-approach`,
-        chapter: 3,
-        scene: `living`,
-        step: 2,
-        title: `The camera approaches`,
-        kind: `hero`,
-        horizonVisible: !1,
-        horizonDur: 3,
-        lockMs: 2500,
-        horizon: xa({ dawn: 1, travel: 23 }),
-      }),
-    ),
-    e.push(
-      B({
         id: `liv-positioning`,
         chapter: 3,
         scene: `living`,
         step: 3,
         title: `Positioning · airport · configurations`,
         horizonVisible: !1,
+        lockMs: 1500,
       }),
     ),
+    // floor-plan explorer: only in the standalone specs file
+    window.__SPECS_ONLY &&
+      e.push(
+        B({ id: `liv-floorplans`, chapter: 3, scene: `floorplans`, step: 0, title: `Floor plans · block → floor → flat`, horizonVisible: !1, lockMs: 900 }),
+      ),
     e.push(
       B({
         id: `fly-airport-1`,
@@ -17091,19 +17120,6 @@ function Ca() {
     ),
     e.push(
       B({
-        id: `liv-return`,
-        chapter: 3,
-        scene: `living`,
-        step: 7,
-        title: `Return to Ananta · toward the entrance`,
-        horizonVisible: !1,
-        kind: `hero`,
-        horizonDur: 3,
-        lockMs: 3500,
-      }),
-    ),
-    e.push(
-      B({
         id: `val-interior`,
         chapter: 4,
         scene: `value`,
@@ -17139,11 +17155,24 @@ function Ca() {
     ),
     e.push(
       B({
+        chapter: 4,
+        scene: `opportunities`,
+        id: `opp-conversion`,
+        step: 4,
+        title: `Spot-booking momentum (after the five differences)`,
+        requires: [`conversion`],
+        horizonVisible: !0,
+        horizon: xa({ dawn: 0.55, dim: 0.45, path: 0.5, travel: 24 }),
+        lockMs: 2600,
+      }),
+    ),
+    e.push(
+      B({
         id: `val-offer`,
         chapter: 4,
         scene: `value`,
         step: 7,
-        title: `Launch offer & pricing`,
+        title: `Configuration-wise prices`,
         requires: [`launchOffer`],
         kind: `hero`,
         lockMs: 2500,
@@ -17252,18 +17281,6 @@ function Ca() {
     e.push(
       B({
         ...r,
-        id: `opp-conversion`,
-        step: 4,
-        title: `Spot-booking momentum`,
-        requires: [`conversion`],
-        horizonVisible: !0,
-        horizon: xa({ dawn: 0.55, dim: 0.45, path: 0.5, travel: 26.8 }),
-        lockMs: 2600,
-      }),
-    ),
-    e.push(
-      B({
-        ...r,
         id: `opp-calc`,
         step: 5,
         title: `Earnings calculator`,
@@ -17312,6 +17329,8 @@ function Ca() {
         lockMs: 1800,
       }),
     ),
+    // Awards part 1 (Hustle Heroes · Trailblazers · Emerging Icon) — shown here, before the Bonus Rewards reveal
+    achCues(Sa.filter((t) => achPart1.includes(t.slug)), `ach-intro-1`, `The trophy arch · Awards part 1`).forEach((c) => e.push(c)),
     e.push(
       B({
         ...r,
@@ -17341,7 +17360,7 @@ function Ca() {
           horizonVisible: !0,
           horizonDur: 3.2,
           kind: `hero`,
-          lockMs: 4200,
+          lockMs: [2200, 3200, 6000][n],
         }),
       );
     }),
@@ -17397,42 +17416,7 @@ function Ca() {
         lockMs: 3e3,
       }),
     ),
-    e.push(
-      B({
-        id: `ach-intro`,
-        chapter: 7,
-        scene: `achievements`,
-        step: 0,
-        title: `The trophy arch`,
-        kind: `hero`,
-        lockMs: 2500,
-      }),
-    ),
-    Sa.forEach((t) => {
-      t.kind === `category`
-        ? e.push(
-            B({
-              id: `ach-cat-${t.slug}`,
-              chapter: 7,
-              scene: `achievements`,
-              step: t.step,
-              title: `Category ${t.categoryNo} · ${t.categoryName}`,
-              lockMs: 1500,
-            }),
-          )
-        : e.push(
-            B({
-              id: `ach-r-${t.recipient.id}`,
-              chapter: 7,
-              scene: `achievements`,
-              step: t.step,
-              title: `Award · ${t.recipient.name}`,
-              recipientId: t.recipient.id,
-              kind: `hero`,
-              lockMs: 2200,
-            }),
-          );
-    });
+    achCues(Sa.filter((t) => !achPart1.includes(t.slug)), `ach-intro`, `The trophy arch · Awards part 2`).forEach((c) => e.push(c));
   let a = Sa.length + 1;
   return (
     e.push(
@@ -17550,9 +17534,26 @@ function Ca() {
         lockMs: 3500,
       }),
     ),
-    e
+    e.push(
+      B({
+        id: `clo-qr`,
+        chapter: 8,
+        scene: `closing`,
+        step: 7,
+        title: `Big QR · Channel Partner Digital Kit`,
+        kind: `hero`,
+        horizon: xa({ dawn: 0.6, beacon: 0.2, lights: 0.6, path: 0.6, travel: 44 }),
+        horizonDur: 2,
+        horizonVisible: !0,
+        lockMs: 1500,
+      }),
+    ),
+    e.filter((c) => !omitCue(c))
   );
 }
+// The award-certificate / trophy sections (parts 1 and 2) are omitted from the show; their code is kept so they can be restored.
+var omitAwards = !0,
+  omitCue = (c) => omitAwards && (/^ach-/.test(c.id) || c.scene === `achievements`);
 var wa = Ca();
 function Ta(e) {
   return wa.filter((t) => !e || !t.requires || t.requires.every((e) => qi[e]));
@@ -17576,6 +17577,8 @@ var Da = (e) => wa.find((t) => t.id === e),
     volume: 1,
     muted: !1,
     music: !0,
+    sfxOn: !0,
+    tour: 0,
     slab: !1,
     challengeStart: da.startDate,
     calc: { configId: `2bhk`, value: la.defaultValues[`2bhk`], bookings: 1, pctOverride: null },
@@ -17594,6 +17597,7 @@ function ka(e, t) {
           token: e.token + 1,
           explore: !1,
           view: `cinematic`,
+          tour: 0,
           slab: e.slab && n.scene === `opportunities`,
         },
         i = [`logo`, `overview`].filter((t) => e.media[t] !== `idle`);
@@ -17633,7 +17637,7 @@ function ka(e, t) {
       return { ...e, armed: !0 };
     case `media`: {
       let n = e.mediaCmd.n + 1,
-        r = { target: t.target, type: t.type, n },
+        r = { target: t.target, type: t.type, n, time: t.time },
         i = { ...e.media },
         a = t.target === `logo` ? `overview` : `logo`;
       return (
@@ -17652,6 +17656,10 @@ function ka(e, t) {
       return { ...e, volume: t.volume ?? e.volume, muted: t.muted ?? e.muted };
     case `music`:
       return { ...e, music: t.value };
+    case `sfx`:
+      return { ...e, sfxOn: t.value };
+    case `tour`:
+      return { ...e, tour: t.value };
     case `cam`:
       return { ...e, camCmd: { n: e.camCmd.n + 1, az: t.az ?? 0, zoom: t.zoom ?? 1 } };
     case `slab`:
@@ -17810,6 +17818,10 @@ function oo() {
   let e = Ma(),
     t = ro();
   if (Date.now() < Va) return;
+  if (!window.__SPECS_ONLY && t.id === `liv-explore` && (e.tour || 0) < oa.hotspots.length) {
+    (Va = Date.now() + 900), to({ t: `tour`, value: (e.tour || 0) + 1 });
+    return;
+  }
   if (t.media) {
     let n = e.media[t.media];
     if (n === `idle`) {
@@ -17828,6 +17840,10 @@ function oo() {
 function so() {
   let e = ro();
   if (Date.now() < Math.min(Va, Ha + 900)) return;
+  if (!window.__SPECS_ONLY && e.id === `liv-explore` && (Ma().tour || 0) > 0) {
+    to({ t: `tour`, value: Ma().tour - 1 });
+    return;
+  }
   let t = no(),
     n = io(t, e.id);
   n > 0 && ao(t[n - 1].id);
@@ -17943,7 +17959,7 @@ function bo() {
     t(z(`legacy/wall-of-honour-photo.jpg`)),
     HONOURS.forEach((e, n) => t(z(`legacy/honours/${String(n + 1).padStart(2, `0`)}.png`))),
     [`photos/smart-entry.jpg`, `photos/entrance.jpg`, `photos/phone.jpg`, `photos/shower.jpg`, `photos/runway.jpg`, `photos/sky.jpg`].forEach((e) => t(z(e))),
-    ia.forEach((e) => e.items.forEach((e) => t(e.photo))),
+    ia.forEach((e) => e.rows.forEach((r) => r.items.forEach((e) => t(e.photo)))),
     [`flight/observer.jpg`, `flight/achiever.jpg`, `photos/runway.jpg`, `photos/sky.jpg`, `photos/jet.jpg`, `photos/ananta-gate.jpg`].forEach((e) =>
       t(`./assets/${e}`),
     ),
@@ -58542,6 +58558,11 @@ function vE(e, t) {
       else if (r.type === `pause`) n.pause();
       else if (r.type === `skip`)
         n.pause(), n.duration && isFinite(n.duration) && (n.currentTime = Math.max(0, n.duration - 0.04));
+      else if (r.type === `seek`) {
+        try {
+          n.currentTime = Math.max(0, Math.min((n.duration || 0) - 0.05, r.time || 0));
+        } catch {}
+      }
       else if (r.type === `stop`) {
         n.pause();
         try {
@@ -58584,35 +58605,18 @@ function yE() {
     n = Fa((e) => e.volume),
     r = Fa((e) => e.muted),
     i = Fa((e) => e.armed),
-    a = Fa((e) => e.paused),
-    o = (0, v.useRef)(null),
-    s = Gi.backgroundMusic,
     c = e === `playing` || t === `playing`,
-    l = (0, v.useRef)({ v: 0 }),
     __mus = Fa((e) => e.music !== !1),
     [__dk, __setDk] = (0, v.useState)(!1);
   (0, v.useEffect)(() => (__duckSubs.add(__setDk), __setDk(__duckKeys.size > 0), () => void __duckSubs.delete(__setDk)), []),
     (0, v.useEffect)(() => {
       i && __warmLogo();
-    }, [i]);
-  return (
+    }, [i]),
+    // section score level: silent under films / when muted or music is off; dips under the takeoff and the big reveals
     (0, v.useEffect)(() => {
-      let e = o.current;
-      if (!e || !s.enabled || !s.src) return;
-      let t = c || r || a || !i || !__mus ? 0 : (__dk ? 0.06 : 0.35) * n;
-      R.to(l.current, {
-        v: t,
-        duration: 1.2,
-        ease: `power1.inOut`,
-        overwrite: !0,
-        onUpdate: () => {
-          e.volume = l.current.v;
-        },
-      }),
-        i && e.paused && e.play().catch(() => void 0);
-    }, [c, r, a, i, n, __mus, __dk, s.enabled, s.src]),
-    !s.enabled || !s.src ? null : (0, Q.jsx)(`audio`, { ref: o, src: s.src, loop: !0, preload: `auto` })
-  );
+      scoreLevel(c || r || !i || !__mus ? 0 : (__dk ? 0.28 : 1) * n);
+    }, [c, r, i, n, __mus, __dk]);
+  return null;
 }
 var bE = (0, v.createContext)({ step: 0 }),
   xE = () => (0, v.useContext)(bE);
@@ -58777,6 +58781,20 @@ function wE() {
           }),
         ],
       }),
+      (0, Q.jsx)($, {
+        from: 0,
+        until: 1,
+        delay: 0.6,
+        dur: 1.6,
+        y: 0,
+        className: `abs`,
+        style: { right: 120, top: 92, padding: `18px 28px`, background: `#ffffff`, boxShadow: `0 10px 50px rgba(0,0,0,0.35)` },
+        children: (0, Q.jsx)(`img`, {
+          src: z(`deck/jain-logo-original.png`),
+          alt: `Jain Group`,
+          style: { height: 104, display: `block` },
+        }),
+      }),
     ],
   });
 }
@@ -58899,54 +58917,118 @@ function jE() {
     })
   );
 }
+// Pathways converge: golden lines from every direction draw in and meet at the horizon point, which flares and
+// resolves into LIMITLESS SUCCESS ("as the lines come together they lead to Limitless Success").
 function ME() {
-  return (0, Q.jsx)($, {
-    from: 2,
-    dur: 3.2,
-    y: 50,
-    className: `abs`,
-    style: { left: EE.x - 180, top: EE.y - 210, width: 360, height: 220 },
-    children: (0, Q.jsxs)(`svg`, {
-      width: `360`,
-      height: `220`,
-      viewBox: `-180 -210 360 220`,
-      children: [
-        (0, Q.jsx)(`defs`, {
-          children: (0, Q.jsxs)(`linearGradient`, {
-            id: `sl`,
-            x1: `0`,
-            y1: `0`,
-            x2: `0`,
-            y2: `1`,
-            children: [
-              (0, Q.jsx)(`stop`, { offset: `0`, stopColor: `#F8EBD1`, stopOpacity: `0.95` }),
-              (0, Q.jsx)(`stop`, { offset: `1`, stopColor: `#C48746`, stopOpacity: `0.15` }),
-            ],
-          }),
-        }),
-        [
-          [-110, 120, 70],
-          [-40, 190, 80],
-          [50, 150, 70],
-          [120, 100, 60],
-        ].map(([e, t, n], r) =>
-          (0, Q.jsx)(
-            `rect`,
-            {
-              x: e - n / 2,
-              y: -t,
-              width: n,
-              height: t,
-              fill: `url(#sl)`,
-              stroke: `#F4C56D`,
-              strokeOpacity: 0.7,
-              strokeWidth: 1.5,
-            },
-            r,
+  let { step: st } = xE(),
+    on = st === 2,
+    h = (t, p, ...c) => v.createElement(t, p, ...c),
+    ends = [[-140, 1080], [260, 1080], [640, 1080], [1280, 1080], [1660, 1080], [2060, 1080], [-40, 760], [1960, 760], [-60, 420], [1980, 420]];
+  return h(
+    `div`,
+    { className: `fill`, style: { pointerEvents: `none`, opacity: on ? 1 : 0, transition: `opacity 1.2s` } },
+    on &&
+      h(
+        `svg`,
+        { key: `conv`, className: `abs`, width: 1920, height: 1080, viewBox: `0 0 1920 1080`, style: { left: 0, top: 0, overflow: `visible` } },
+        h(
+          `defs`,
+          null,
+          h(
+            `radialGradient`,
+            { id: `cvFlare` },
+            h(`stop`, { offset: `0`, stopColor: `#FFF6E0`, stopOpacity: `1` }),
+            h(`stop`, { offset: `0.25`, stopColor: `#F4C56D`, stopOpacity: `0.8` }),
+            h(`stop`, { offset: `1`, stopColor: `#F4C56D`, stopOpacity: `0` }),
           ),
         ),
-      ],
-    }),
+        h(
+          `linearGradient`,
+          { id: `cvBeam`, x1: `0`, y1: `1`, x2: `0`, y2: `0` },
+          h(`stop`, { offset: `0`, stopColor: `#FFF3D6`, stopOpacity: `1` }),
+          h(`stop`, { offset: `0.7`, stopColor: `#F4C56D`, stopOpacity: `0.55` }),
+          h(`stop`, { offset: `1`, stopColor: `#F4C56D`, stopOpacity: `0` }),
+        ),
+        // travelling sparks: light flows along every path into the meeting point
+        ends.map(([x, y], k) =>
+          h(
+            `circle`,
+            { key: `sp${k}`, r: k < 6 ? 7 : 5, fill: `#FFF2CF`, opacity: 0, style: { filter: `drop-shadow(0 0 10px #F4C56D)` } },
+            h(`animateMotion`, {
+              dur: `1.8s`,
+              begin: `${(1.2 + k * 0.1).toFixed(2)}s`,
+              repeatCount: `indefinite`,
+              keyPoints: `0;1`,
+              keyTimes: `0;1`,
+              calcMode: `spline`,
+              keySplines: `.5 0 .9 .6`,
+              path: `M ${x} ${y} Q ${(x + EE.x) / 2} ${(y + EE.y) / 2 + (k % 2 ? 40 : -40)} ${EE.x} ${EE.y}`,
+            }),
+            h(`animate`, { attributeName: `opacity`, values: `0;1;1;0`, keyTimes: `0;0.15;0.85;1`, dur: `1.8s`, begin: `${(1.2 + k * 0.1).toFixed(2)}s`, repeatCount: `indefinite` }),
+          ),
+        ),
+        // the meeting point sends a beam of light up into the title
+        h(`rect`, {
+          x: EE.x - 70,
+          y: 300,
+          width: 140,
+          height: EE.y - 300,
+          fill: `url(#cvBeam)`,
+          opacity: 0.35,
+          style: { filter: `blur(14px)`, transformOrigin: `${EE.x}px ${EE.y}px`, transform: `scaleY(0)`, animation: `cvRise 1.6s cubic-bezier(.2,.7,.2,1) 2.5s forwards` },
+        }),
+        h(`rect`, {
+          x: EE.x - 3,
+          y: 300,
+          width: 6,
+          height: EE.y - 300,
+          fill: `url(#cvBeam)`,
+          style: { transformOrigin: `${EE.x}px ${EE.y}px`, transform: `scaleY(0)`, animation: `cvRise 1.6s cubic-bezier(.2,.7,.2,1) 2.5s forwards` },
+        }),
+        ends.map(([x, y], k) =>
+          h(`path`, {
+            key: k,
+            d: `M ${x} ${y} Q ${(x + EE.x) / 2} ${(y + EE.y) / 2 + (k % 2 ? 40 : -40)} ${EE.x} ${EE.y}`,
+            fill: `none`,
+            stroke: `#F4C56D`,
+            strokeWidth: k < 6 ? 3 : 2,
+            strokeOpacity: k < 6 ? 0.9 : 0.6,
+            pathLength: 1,
+            style: {
+              strokeDasharray: 1,
+              strokeDashoffset: 1,
+              filter: `drop-shadow(0 0 8px rgba(244,197,109,0.85))`,
+              animation: `cvDraw 2.2s cubic-bezier(.4,.1,.2,1) ${(0.3 + k * 0.12).toFixed(2)}s forwards`,
+            },
+          }),
+        ),
+        h(`circle`, { cx: EE.x, cy: EE.y, r: 220, fill: `url(#cvFlare)`, style: { transformOrigin: `${EE.x}px ${EE.y}px`, animation: `cvFlare 2.4s ease-out 2.4s both` } }),
+      ),
+  );
+}
+// Channel-partner moments (cheque handovers) framed in the negative space either side of the streams.
+// Streams of Light: six channel-partner handover photos per part (part 2 and part 3 each have their own set),
+// three stacked on each side. Drawn last in the scene so no light line, spark or heading ever sits on top of them.
+function PartnerPics({ step: n, set: set }) {
+  let tile = (src, side, i) =>
+    (0, Q.jsx)(
+      $,
+      {
+        from: n,
+        until: n + 1,
+        delay: 1.4 + i * 0.35 + (side === `r` ? 0.18 : 0),
+        dur: 1.6,
+        x: side === `l` ? -50 : 50,
+        y: 0,
+        className: `abs partner-pic`,
+        style: { [side === `l` ? `left` : `right`]: 46, top: 352 + i * 232 },
+        children: (0, Q.jsx)(`img`, { src: z(src), alt: `Channel partner recognition` }),
+      },
+      src,
+    );
+  let f = set.map((k) => `partners/${k}.jpg`);
+  return (0, Q.jsxs)(Q.Fragment, {
+    children: [...f.slice(0, 3).map((s, i) => tile(s, `l`, i)), ...f.slice(3).map((s, i) => tile(s, `r`, i))],
   });
 }
 function NE() {
@@ -59002,13 +59084,17 @@ function NE() {
       (0, Q.jsx)(ME, {}),
       (0, Q.jsx)($, {
         from: 2,
-        delay: 2,
-        dur: 1.8,
-        y: 0,
-        className: `eyebrow center abs`,
-        style: { left: 0, right: 0, top: 150 },
-        children: Yi.living.title,
+        until: 3,
+        delay: 3.1,
+        dur: 2.2,
+        y: 24,
+        blur: 8,
+        className: `hero center abs`,
+        style: { left: 0, right: 0, top: 170, fontSize: 132, letterSpacing: `0.08em` },
+        children: (0, Q.jsx)(`span`, { className: `ls-shine`, children: `LIMITLESS SUCCESS` }),
       }),
+      (0, Q.jsx)(PartnerPics, { step: 1, set: [`cpw-1`, `cpw-2`, `cpw-3`, `cpw-4`, `cpw-5`, `cpw-6`] }),
+      (0, Q.jsx)(PartnerPics, { step: 2, set: [`cpb-1`, `cpb-2`, `cpb-3`, `cpb-4`, `cpb-5`, `cpb-6`] }),
     ],
   });
 }
@@ -62152,6 +62238,10 @@ var uO = v.forwardRef(
     landscape: { pos: [0.9, 2.8, 4.1], target: pO(...mO(`landscape`)) },
     amenities: { pos: [0.4, 3.3, 3.6], target: [-0.3, 0, 0.1] },
   };
+oa.hotspots.forEach((h) => {
+  let t = pO(h.uv[0], h.uv[1]);
+  hO[`hs-${h.id}`] = { pos: [t[0] + 0.9, 2.3, t[2] + 2.9], target: t };
+});
 function gO() {
   let e = aO(z(`photos/masterplan.png`));
   return (
@@ -62323,10 +62413,13 @@ function bO({ view: e, explore: t }) {
   );
 }
 function xO({ active: e }) {
-  let t = Fa((e) => e.view),
+  let tour = Fa((e) => e.tour || 0),
+    hs = tour > 0 ? oa.hotspots[tour - 1] : null,
+    sv = Fa((e) => e.view),
+    t = hs ? `hs-${hs.id}` : sv,
     n = Fa((e) => e.explore),
     r = (0, v.useRef)([]),
-    i = oa.hotspots.filter((e) => n && t !== `cinematic` && e.view === t);
+    i = hs ? [hs] : oa.hotspots.filter((e) => n && t !== `cinematic` && e.view === t);
   return (0, Q.jsxs)(`div`, {
     className: `fill`,
     "data-testid": `explorer`,
@@ -62509,6 +62602,7 @@ function wO({ visible: e }) {
         n !== `playing` &&
         n !== `paused` &&
         (0, Q.jsx)(`div`, { className: `photo`, style: { backgroundImage: `url(${i})` } }),
+      (0, Q.jsx)(FilmCtl, { vid: t, target: `overview`, status: n }),
       (0, Q.jsxs)(`video`, {
         ref: t,
         poster: r.poster ?? void 0,
@@ -62610,7 +62704,7 @@ function EO() {
     }, [e === 1, e > 1]),
     (0, Q.jsxs)($, {
       from: 1,
-      until: 2,
+      until: 1.5,
       y: 0,
       dur: 0.9,
       className: `fill`,
@@ -62646,7 +62740,7 @@ function DO() {
         }),
       (0, Q.jsx)($, {
         from: 1,
-        until: 2,
+        until: 1.5,
         delay: 2.2,
         dur: 2.4,
         y: 0,
@@ -62658,7 +62752,7 @@ function DO() {
       }),
       (0, Q.jsxs)($, {
         from: 1,
-        until: 2,
+        until: 1.5,
         delay: 2.6,
         dur: 2.4,
         y: 20,
@@ -62675,21 +62769,11 @@ function DO() {
             style: { fontWeight: 300, textShadow: `0 3px 30px rgba(8,10,24,0.95), 0 0 10px rgba(8,10,24,0.85)` },
             children: Yi.living.title,
           }),
-          (0, Q.jsx)(`div`, {
-            className: `h3`,
-            style: {
-              marginTop: 10,
-              fontWeight: 300,
-              color: `#F8EBD1`,
-              textShadow: `0 2px 22px rgba(8,10,24,1), 0 0 8px rgba(8,10,24,0.9)`,
-            },
-            children: Yi.living.sub,
-          }),
         ],
       }),
       (0, Q.jsx)(TO, {
         src: z(`photos/ananta-gate.jpg`),
-        from: 2,
+        from: 3,
         until: 5,
         s0: 1,
         s1: 1.22,
@@ -62701,12 +62785,14 @@ function DO() {
         style: { background: `rgba(14,16,32,0.18)`, opacity: +(e >= 3 && e < 5), transition: `opacity 1.6s`, pointerEvents: `none` },
       }),
       (0, Q.jsx)(`div`, { className: `fill shade-bottom`, style: { opacity: +(e === 2), transition: `opacity 1.6s` } }),
+
       (0, Q.jsxs)($, {
         from: 2,
         until: 3,
-        delay: 1.2,
-        dur: 2.4,
-        y: 26,
+        delay: 3.45,
+        dur: 1.5,
+        y: 18,
+        scale: 0.96,
         className: `abs center`,
         style: { left: 0, right: 0, bottom: 108 },
         children: [
@@ -62733,23 +62819,23 @@ function DO() {
         ],
       }),
 
-      (0, Q.jsx)($, { from: 3, until: 5, y: 0, dur: 1.6, className: `fill shade-left` }),
-      (0, Q.jsxs)($, {
-        from: 3,
-        until: 4,
-        delay: 0.6,
-        dur: 1.8,
-        y: 24,
+      // Normal transition into the building photo; the content then builds in one element at a time.
+      (0, Q.jsx)($, { from: 3, until: 5, delay: 0.3, y: 0, dur: 1.4, className: `fill shade-left` }),
+      (0, Q.jsxs)(`div`, {
         className: `abs`,
-        style: { left: 120, top: 118, width: 920 },
+        style: { left: 120, top: 110, width: 1000, pointerEvents: `none` },
         children: [
-          (0, Q.jsx)(`div`, { className: `eyebrow`, style: { marginBottom: 20 }, children: `The Address` }),
-          (0, Q.jsxs)(`div`, {
-            className: `h1`,
+          (0, Q.jsx)($, { from: 3, until: 4, delay: 0.6, dur: 1.2, y: 16, style: { marginBottom: 20 }, children: (0, Q.jsx)(`div`, { className: `eyebrow`, children: `The Address` }) }),
+          (0, Q.jsx)($, {
+            from: 3,
+            until: 4,
+            delay: 1.1,
+            dur: 1.6,
+            y: 24,
             style: { marginBottom: 26 },
-            children: [`Premium residences,`, (0, Q.jsx)(`br`, {}), `limitlessly connected.`],
+            children: (0, Q.jsxs)(`div`, { className: `h1`, children: [`Premium residences,`, (0, Q.jsx)(`br`, {}), `limitlessly connected.`] }),
           }),
-          (0, Q.jsx)(`div`, { className: `body`, style: { width: 800 }, children: Yi.living.positioning }),
+          (0, Q.jsx)($, { from: 3, until: 4, delay: 1.7, dur: 1.4, y: 18, style: { width: 820 }, children: (0, Q.jsx)(`div`, { className: `body`, children: Yi.living.positioning }) }),
         ],
       }),
       (0, Q.jsxs)(`div`, {
@@ -62759,8 +62845,8 @@ function DO() {
           (0, Q.jsxs)($, {
             from: 3,
             until: 4,
-            delay: 1.6,
-            dur: 1.4,
+            delay: 2.3,
+            dur: 1.2,
             y: 26,
             className: `glass`,
             style: { padding: `24px 34px`, width: 320 },
@@ -62768,16 +62854,16 @@ function DO() {
               (0, Q.jsx)(`div`, {
                 className: `h2`,
                 style: { fontSize: 66 },
-                children: (0, Q.jsx)(SO, { to: 10, from: 3, delay: 1.8, suffix: ` min` }),
+                children: (0, Q.jsx)(SO, { to: 10, from: 3, delay: 2.4, suffix: ` mins` }),
               }),
-              (0, Q.jsxs)(`div`, { className: `small`, children: [`to `, oa.airportMinutes.label] }),
+              (0, Q.jsxs)(`div`, { className: `small`, children: [`from `, oa.airportMinutes.label] }),
             ],
           }),
           (0, Q.jsxs)($, {
             from: 3,
             until: 4,
-            delay: 2,
-            dur: 1.4,
+            delay: 2.8,
+            dur: 1.2,
             y: 26,
             className: `glass`,
             style: { padding: `24px 34px`, width: 320 },
@@ -62789,8 +62875,8 @@ function DO() {
           (0, Q.jsxs)($, {
             from: 3,
             until: 4,
-            delay: 2.4,
-            dur: 1.4,
+            delay: 3.3,
+            dur: 1.2,
             y: 26,
             className: `glass`,
             style: { padding: `24px 34px`, width: 360 },
@@ -62798,7 +62884,7 @@ function DO() {
               (0, Q.jsx)(`div`, {
                 className: `h2`,
                 style: { fontSize: 66 },
-                children: (0, Q.jsx)(SO, { to: oa.residences.value, from: 3, delay: 2.6, dur: 2.2 }),
+                children: (0, Q.jsx)(SO, { to: oa.residences.value, from: 3, delay: 3.4, dur: 2.0 }),
               }),
               (0, Q.jsx)(`div`, { className: `small`, children: oa.residences.label }),
             ],
@@ -62872,34 +62958,33 @@ function DO() {
           (0, Q.jsx)(`div`, { className: `fill shade-bottom`, style: { pointerEvents: `none`, opacity: 0.6 } }),
           (0, Q.jsxs)(`div`, {
             className: `abs`,
-            style: { left: 120, top: 84, pointerEvents: `none` },
+            style: { left: 120, top: 84, pointerEvents: `none`, display: `flex`, flexDirection: `column`, alignItems: `flex-start` },
             children: [
+              // glass plate so the heading stays readable over every part of the master plan
               (0, Q.jsxs)(`div`, {
-                className: `eyebrow`,
-                style: { marginBottom: 14 },
-                children: [oa.name, ` · `, oa.at],
+                className: `mp-head`,
+                children: [
+                  (0, Q.jsxs)(`div`, { className: `eyebrow`, style: { marginBottom: 10 }, children: [oa.name, ` · `, oa.at] }),
+                  (0, Q.jsx)(`div`, { className: `h2`, style: { textShadow: `0 3px 24px rgba(22,29,51,0.6)` }, children: Yi.living.title }),
+                ],
               }),
-              (0, Q.jsx)(`div`, {
-                className: `h2`,
-                style: { textShadow: `0 3px 24px rgba(22,29,51,0.6)` },
-                children: Yi.living.title,
+              (0, Q.jsxs)(`div`, {
+                className: `acre-badge`,
+                children: [(0, Q.jsx)(`span`, { className: `n`, children: oa.landArea.value }), (0, Q.jsx)(`span`, { children: oa.landArea.label })],
               }),
             ],
           }),
+          (0, Q.jsx)(HsCard, {}),
+          window.__SPECS_ONLY && (0, Q.jsx)(HsButtons, {}),
         ],
       }),
+      // the film layer exists only on its own cue, so no frozen thumbnail lingers when the presenter moves on
       Gi.anantaOverview.enabled &&
         Gi.anantaOverview.src &&
-        (0, Q.jsx)($, {
-          from: 1.5,
-          until: 2,
-          y: 0,
-          dur: 1.6,
-          className: `fill`,
-          children: (0, Q.jsx)(wO, { visible: !0 }),
-        }),
+        e === 1.5 &&
+        (0, Q.jsx)(`div`, { className: `fill film-in`, children: (0, Q.jsx)(wO, { visible: !0 }) }),
       (0, Q.jsx)(TO, { src: z(`photos/ananta-gate.jpg`), from: 7, s0: 1, s1: 1.6, dur: 7, origin: `70% 56%` }),
-      (0, Q.jsx)(`div`, { className: `fill shade-bottom`, style: { opacity: +(e >= 7), transition: `opacity 1.6s` } }),
+      (0, Q.jsx)(`div`, { className: `fill shade-bottom`, style: { opacity: +(e >= 7), transition: `opacity 1.6s`, pointerEvents: `none` } }),
       (0, Q.jsxs)($, {
         from: 7,
         delay: 0.8,
@@ -62932,6 +63017,12 @@ var __hv = (t, p, ...c) => v.createElement(t, p, ...c),
 @keyframes vxBlink { 0%, 100% { opacity: .25 } 50% { opacity: 1 } }
 @keyframes vxPass { 0% { transform: translateX(-250px); opacity: 0 } 15% { opacity: 1 } 85% { opacity: 1 } 100% { transform: translateX(250px); opacity: 0 } }
 @keyframes vxBreath { 0%, 100% { opacity: .55 } 50% { opacity: 1 } }
+@keyframes vxThru { 0% { transform: translateY(40px); opacity: 0 } 12% { opacity: 1 } 82% { opacity: 1 } 100% { transform: translateY(-330px); opacity: 0 } }
+@keyframes vxBlock { 0% { transform: translateY(40px); opacity: 0 } 12% { opacity: 1 } 48% { transform: translateY(var(--stop)) } 54% { transform: translateY(calc(var(--stop) + 12px)) } 60% { transform: translateY(var(--stop)) } 66% { transform: translateY(calc(var(--stop) + 6px)) } 72%, 90% { transform: translateY(var(--stop)); opacity: 1 } 100% { transform: translateY(var(--stop)); opacity: 0 } }
+@keyframes vxKeyIn { 0% { transform: translateX(60px); opacity: 0 } 12% { opacity: 1 } 40%, 88% { transform: translateX(-72px); opacity: 1 } 100% { transform: translateX(-72px); opacity: 0 } }
+@keyframes vxKeyTurn { 0%, 48% { transform: scaleY(1) } 62%, 100% { transform: scaleY(0.25) } }
+@keyframes vxHoleTurn { 0%, 48% { transform: rotate(0deg) } 62%, 100% { transform: rotate(-90deg) } }
+@keyframes vxRain { 0% { transform: translateY(0); opacity: 0 } 10% { opacity: .9 } 100% { transform: translateY(300px); opacity: .1 } }
 .vx-seg button { all: unset; cursor: pointer; }
 .vx-chip { all: unset; cursor: pointer; }
 `;
@@ -62964,6 +63055,9 @@ function vxUseDemo(active, subCount) {
     },
     pickSub: (i) => {
       setAuto(!1), setMode(`ana`), setSub(i);
+    },
+    pickSubKeep: (i) => {
+      setAuto(!1), setSub(i);
     },
   };
 }
@@ -63236,7 +63330,7 @@ function vxGrand({ d: e }) {
     null,
     __hv(
       vxStage,
-      { caption: `Illustrative` },
+      { caption: `` },
       __hv(
         `defs`,
         null,
@@ -63291,70 +63385,150 @@ function vxGrand({ d: e }) {
     ),
   );
 }
-// 03 · Entrance — standard vs taller, wider door, with a person for scale and objects passing.
+// 03 · Entrance — front view (door height, person for scale) + top view (objects passing through the opening).
 var vxPassItems = [`Furniture`, `Wheelchair`, `Double stretcher`];
+var vxPassObjs = [
+  {
+    // sofa, seen from above
+    h: 70,
+    draw: () => [
+      __hv(`rect`, { key: `a`, x: -78, y: -35, width: 156, height: 70, rx: 10, fill: `rgba(244,197,109,0.22)`, ...vxLine, strokeWidth: 2.5 }),
+      __hv(`rect`, { key: `b`, x: -78, y: -35, width: 156, height: 18, rx: 8, fill: `rgba(244,197,109,0.35)`, stroke: `none` }),
+      __hv(`rect`, { key: `c`, x: -78, y: -35, width: 16, height: 70, rx: 7, fill: `rgba(244,197,109,0.35)`, stroke: `none` }),
+      __hv(`rect`, { key: `d`, x: 62, y: -35, width: 16, height: 70, rx: 7, fill: `rgba(244,197,109,0.35)`, stroke: `none` }),
+      __hv(`path`, { key: `e`, d: `M -20 -17 L -20 35 M 20 -17 L 20 35`, ...vxLine, strokeOpacity: 0.6 }),
+    ],
+  },
+  {
+    // wheelchair with occupant, from above
+    h: 104,
+    draw: () => [
+      __hv(`rect`, { key: `a`, x: -62, y: -44, width: 14, height: 80, rx: 7, fill: `#3b3247`, ...vxLine }),
+      __hv(`rect`, { key: `b`, x: 48, y: -44, width: 14, height: 80, rx: 7, fill: `#3b3247`, ...vxLine }),
+      __hv(`rect`, { key: `c`, x: -44, y: -36, width: 88, height: 66, rx: 10, fill: `rgba(244,197,109,0.22)`, ...vxLine }),
+      __hv(`rect`, { key: `d`, x: -26, y: 34, width: 52, height: 16, rx: 5, fill: `rgba(244,197,109,0.3)`, ...vxLine, strokeWidth: 1.5 }),
+      __hv(`ellipse`, { key: `e`, cx: 0, cy: -8, rx: 30, ry: 15, fill: `rgba(248,235,209,0.25)`, stroke: vxIvory, strokeWidth: 1.5 }),
+      __hv(`circle`, { key: `f`, cx: 0, cy: -10, r: 12, fill: vxIvory, fillOpacity: 0.8 }),
+    ],
+  },
+  {
+    // stretcher with an attendant on each side, from above
+    h: 180,
+    draw: () => [
+      __hv(`rect`, { key: `a`, x: -30, y: -90, width: 60, height: 180, rx: 8, fill: `rgba(244,197,109,0.22)`, ...vxLine, strokeWidth: 2.5 }),
+      __hv(`path`, { key: `b`, d: `M -22 -98 L -22 -90 M 22 -98 L 22 -90 M -22 90 L -22 98 M 22 90 L 22 98`, ...vxLine }),
+      __hv(`ellipse`, { key: `c`, cx: 0, cy: -48, rx: 16, ry: 20, fill: `rgba(248,235,209,0.3)`, stroke: vxIvory, strokeWidth: 1.2 }),
+      [-1, 1].map((s) =>
+        __hv(
+          `g`,
+          { key: `p${s}`, transform: `translate(${s * 58} 0)` },
+          __hv(`ellipse`, { cx: 0, cy: 0, rx: 15, ry: 26, fill: `rgba(248,235,209,0.22)`, stroke: vxIvory, strokeWidth: 1.5 }),
+          __hv(`circle`, { cx: 0, cy: 0, r: 10, fill: vxIvory, fillOpacity: 0.8 }),
+        ),
+      ),
+    ],
+  },
+];
 function vxEntr({ d: e }) {
   let a = e.mode === `ana`,
-    obj = [
-      // sofa
-      `M -46 0 L -46 -40 L 46 -40 L 46 0 M -46 -22 L 46 -22 M -38 -40 L -38 -58 L 38 -58 L 38 -40`,
-      // wheelchair
-      `M -10 0 m -26 0 a 26 26 0 1 0 52 0 a 26 26 0 1 0 -52 0 M -10 -26 L -10 -70 L -30 -70 M -10 -36 L 26 -36 L 30 -6 M 30 -6 m -6 0 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0`,
-      // stretcher
-      `M -64 -26 L 64 -26 M -64 -34 L 64 -34 M -50 -26 L -50 -6 M 50 -26 L 50 -6 M -50 -6 m -6 0 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0 M 50 -6 m -6 0 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0`,
-    ][e.sub];
+    m = e.sub,
+    o = vxPassObjs[m],
+    cx = 545,
+    wallY = 150,
+    gap = a ? 200 : 112,
+    startY = 300,
+    stop = wallY + 10 - (startY - o.h / 2),
+    ok = a,
+    jambL = cx - gap / 2,
+    jambR = cx + gap / 2;
   return __hv(
     v.Fragment,
     null,
     __hv(
       vxStage,
-      { caption: `Illustrative · not to scale` },
-      __hv(`line`, { x1: 30, y1: 350, x2: 710, y2: 350, ...vxLine, strokeOpacity: 0.55 }),
-      // door (drawn at Ananta size; scaled down for conventional)
+      { caption: `` },
+      // ---- front view ----
+      __hv(`text`, { x: 170, y: 34, textAnchor: `middle`, fill: vxDim, fontFamily: `Jost, system-ui`, fontSize: 16, letterSpacing: 4 }, `FRONT VIEW`),
+      __hv(`line`, { x1: 30, y1: 352, x2: 310, y2: 352, ...vxLine, strokeOpacity: 0.55 }),
       __hv(
         `g`,
         {
           style: {
             transformBox: `fill-box`,
             transformOrigin: `50% 100%`,
-            transform: a ? `scale(1,1)` : `scale(.74,.8)`,
+            transform: a ? `scale(1,1)` : `scale(.72,.78)`,
             transition: `transform 1.6s ${vxEase}`,
           },
         },
-        __hv(`rect`, { x: 300, y: 60, width: 170, height: 290, fill: `rgba(244,197,109,0.07)`, ...vxLine, strokeWidth: 3 }),
-        __hv(`line`, { x1: 446, y1: 190, x2: 446, y2: 240, ...vxLine, strokeWidth: 3 }),
+        __hv(`rect`, { x: 74, y: 62, width: 136, height: 290, fill: `rgba(244,197,109,0.10)`, ...vxLine, strokeWidth: 4 }),
+        __hv(`rect`, { x: 86, y: 74, width: 112, height: 278, fill: `none`, ...vxLine, strokeOpacity: 0.35 }),
+        __hv(`circle`, { cx: 184, cy: 220, r: 5, fill: vxGold }),
       ),
-      // person for scale
       __hv(
         `g`,
-        { stroke: vxIvory, strokeOpacity: 0.7, fill: `none`, strokeWidth: 2 },
-        __hv(`circle`, { cx: 560, cy: 196, r: 15 }),
-        __hv(`path`, { d: `M 560 211 L 560 290 M 560 290 L 546 350 M 560 290 L 574 350 M 560 228 L 538 270 M 560 228 L 582 270` }),
+        { stroke: vxIvory, strokeOpacity: 0.75, fill: `none`, strokeWidth: 2.5, strokeLinecap: `round` },
+        __hv(`circle`, { cx: 262, cy: 200, r: 14 }),
+        __hv(`path`, { d: `M 262 214 L 262 290 M 262 290 L 249 352 M 262 290 L 275 352 M 262 230 L 242 272 M 262 230 L 282 272` }),
       ),
-      __hv(
-        `text`,
-        { x: 385, y: 40, textAnchor: `middle`, fill: vxIvory, fontFamily: `Jost, system-ui`, fontSize: 26, letterSpacing: 3 },
-        a ? `Taller · extra-wide main door` : `Standard height · average width`,
-      ),
-      // passing object (Ananta only)
+      __hv(`line`, { x1: 330, y1: 30, x2: 330, y2: 380, stroke: `rgba(244,197,109,0.18)`, strokeWidth: 1 }),
+      // ---- top view ----
+      __hv(`text`, { x: cx, y: 34, textAnchor: `middle`, fill: vxDim, fontFamily: `Jost, system-ui`, fontSize: 16, letterSpacing: 4 }, `TOP VIEW`),
+      __hv(`text`, { x: 712, y: wallY - 22, textAnchor: `end`, fill: vxDim, fontFamily: `Jost, system-ui`, fontSize: 14, letterSpacing: 3 }, `INSIDE`),
+      __hv(`text`, { x: 712, y: wallY + 34, textAnchor: `end`, fill: vxDim, fontFamily: `Jost, system-ui`, fontSize: 14, letterSpacing: 3 }, `OUTSIDE`),
+      // moving object (drawn before the wall so the wall overlaps it)
       __hv(
         `g`,
-        { transform: `translate(385 350)`, style: vxFade(a) },
+        { transform: `translate(${cx} ${startY})` },
         __hv(
           `g`,
-          { key: e.sub, style: { animation: a ? `vxPass 3.2s ${vxEase} infinite` : `none` } },
-          __hv(`path`, { d: obj, ...vxLine, strokeWidth: 2.5 }),
+          {
+            key: `${m}-${a}`,
+            style: {
+              "--stop": `${stop}px`,
+              animation: ok ? `vxThru 3.6s ${vxEase} infinite` : `vxBlock 3.6s ease-in-out infinite`,
+            },
+          },
+          o.draw(),
         ),
+      ),
+      // wall with the door opening
+      __hv(`rect`, { x: 350, y: wallY - 10, width: jambL - 350, height: 20, fill: `#2a2436`, ...vxLine }),
+      __hv(`rect`, { x: jambR, y: wallY - 10, width: 730 - jambR, height: 20, fill: `#2a2436`, ...vxLine }),
+      // door leaf swung open + swing arc
+      __hv(`line`, { x1: jambL, y1: wallY - 10, x2: jambL, y2: wallY - 10 - gap * 0.55, ...vxLine, strokeWidth: 4, strokeOpacity: 0.8 }),
+      __hv(`path`, {
+        d: `M ${jambL} ${wallY - 10 - gap * 0.55} Q ${jambR - 10} ${wallY - 10 - gap * 0.55} ${jambR} ${wallY - 10}`,
+        fill: `none`,
+        stroke: vxGold,
+        strokeOpacity: 0.35,
+        strokeDasharray: `4 6`,
+      }),
+      // width marker
+      __hv(`path`, {
+        d: `M ${jambL + 4} ${wallY + 26} L ${jambR - 4} ${wallY + 26} M ${jambL + 4} ${wallY + 19} L ${jambL + 4} ${wallY + 33} M ${jambR - 4} ${wallY + 19} L ${jambR - 4} ${wallY + 33}`,
+        ...vxLine,
+        strokeWidth: 1.5,
+      }),
+      // jamb warning flash when it doesn't fit
+      !ok
+        ? [jambL, jambR].map((x) =>
+            __hv(`circle`, { key: x, cx: x, cy: wallY, r: 14, fill: `#ff7a5a`, opacity: 0.5, style: { animation: `vxBlink 1.2s ease-in-out infinite` } }),
+          )
+        : null,
+      __hv(
+        `text`,
+        { x: cx, y: 386, textAnchor: `middle`, fill: ok ? vxGold : `#ff9a7a`, fontFamily: `Jost, system-ui`, fontSize: 22, letterSpacing: 2 },
+        ok ? `✓ Passes through with ease` : `✕ Too tight for the opening`,
       ),
     ),
     __hv(
       `div`,
       { style: { marginTop: 18 } },
-      __hv(vxChips, { items: vxPassItems, value: a ? e.sub : -1, onPick: e.pickSub, enabled: a }),
+      __hv(vxChips, { items: vxPassItems, value: m, onPick: e.pickSubKeep, enabled: !0 }),
     ),
   );
 }
-// 04 · Security — key cylinder vs smart lock (digital code / fingerprint / anti-theft alarm).
+// 04 · Security — mechanical key into a brass keyhole vs smart lock (digital code / fingerprint).
 var vxSecItems = [`Digital lock`, `Fingerprint`];
 function vxSec({ d: e }) {
   let a = e.mode === `ana`,
@@ -63364,22 +63538,67 @@ function vxSec({ d: e }) {
     null,
     __hv(
       vxStage,
-      { caption: a ? vxSecItems[m] : `Key-operated` },
-      // conventional key lock
+      { caption: a ? vxSecItems[m] : `Mechanical key` },
+      __hv(
+        `defs`,
+        null,
+        __hv(
+          `linearGradient`,
+          { id: `secBrass`, x1: `0`, y1: `0`, x2: `1`, y2: `1` },
+          __hv(`stop`, { offset: `0`, stopColor: `#f6dc9a` }),
+          __hv(`stop`, { offset: `0.45`, stopColor: `#c99a4a` }),
+          __hv(`stop`, { offset: `1`, stopColor: `#7a5a26` }),
+        ),
+        __hv(
+          `linearGradient`,
+          { id: `secSteel`, x1: `0`, y1: `0`, x2: `0`, y2: `1` },
+          __hv(`stop`, { offset: `0`, stopColor: `#f4f1ea` }),
+          __hv(`stop`, { offset: `0.5`, stopColor: `#b9b4aa` }),
+          __hv(`stop`, { offset: `1`, stopColor: `#77736c` }),
+        ),
+      ),
+      // conventional: key slides into a brass keyhole and turns
       __hv(
         `g`,
         { style: vxFade(!a) },
-        __hv(`circle`, { cx: 370, cy: 190, r: 70, ...vxLine, stroke: vxDim }),
-        __hv(`circle`, { cx: 370, cy: 190, r: 46, ...vxLine, stroke: vxDim }),
-        __hv(`path`, { d: `M 362 160 L 378 160 L 378 222 L 362 222 Z`, ...vxLine, stroke: vxDim }),
-        __hv(`path`, { d: `M 470 190 L 600 190 L 600 206 M 560 190 L 560 204 M 580 190 L 580 200 M 470 178 a 12 12 0 1 0 0.1 0`, ...vxLine, stroke: vxDim }),
+        // key (drawn first so the plate hides the inserted part)
+        __hv(
+          `g`,
+          { style: { animation: !a ? `vxKeyIn 3.4s ${vxEase} infinite` : `none` } },
+          __hv(
+            `g`,
+            { style: { transformBox: `fill-box`, transformOrigin: `50% 50%`, animation: !a ? `vxKeyTurn 3.4s ${vxEase} infinite` : `none` } },
+            __hv(`path`, {
+              d: `M 410 252 L 560 252 L 560 270 L 520 270 L 516 278 L 506 270 L 496 280 L 486 270 L 476 278 L 466 270 L 452 270 L 448 276 L 440 270 L 410 270 Q 402 261 410 252 Z`,
+              fill: `url(#secSteel)`,
+              stroke: `#e8e2d6`,
+              strokeWidth: 1,
+            }),
+            __hv(`line`, { x1: 418, y1: 258, x2: 556, y2: 258, stroke: `#6e6a63`, strokeWidth: 1.5 }),
+            __hv(`circle`, { cx: 606, cy: 261, r: 50, fill: `url(#secSteel)`, stroke: `#e8e2d6`, strokeWidth: 1.5 }),
+            __hv(`circle`, { cx: 622, cy: 261, r: 14, fill: `#0e1020` }),
+            __hv(`rect`, { x: 552, y: 246, width: 14, height: 30, rx: 3, fill: `url(#secSteel)` }),
+          ),
+        ),
+        // escutcheon plate
+        __hv(`rect`, { x: 290, y: 46, width: 110, height: 316, rx: 55, fill: `url(#secBrass)`, stroke: `#f6dc9a`, strokeWidth: 1.5 }),
+        __hv(`rect`, { x: 300, y: 56, width: 90, height: 296, rx: 45, fill: `none`, stroke: `rgba(60,40,10,0.35)`, strokeWidth: 1.5 }),
+        // lever handle
+        __hv(`circle`, { cx: 345, cy: 136, r: 30, fill: `url(#secBrass)`, stroke: `#7a5a26`, strokeWidth: 1.5 }),
+        __hv(`rect`, { x: 340, y: 124, width: 210, height: 24, rx: 12, fill: `url(#secBrass)`, stroke: `#7a5a26`, strokeWidth: 1.5 }),
+        // keyhole
+        __hv(
+          `g`,
+          null,
+          __hv(`circle`, { cx: 345, cy: 252, r: 15, fill: `#07080f` }),
+          __hv(`path`, { d: `M 337 258 L 353 258 L 359 300 L 331 300 Z`, fill: `#07080f` }),
+        ),
       ),
-      // smart lock body
+      // Ananta smart lock body
       __hv(
         `g`,
         { style: vxFade(a) },
         __hv(`rect`, { x: 300, y: 40, width: 140, height: 320, rx: 22, fill: `rgba(10,12,26,0.9)`, ...vxLine }),
-        // keypad
         Array.from({ length: 12 }, (_, i) =>
           __hv(`circle`, {
             key: i,
@@ -63390,7 +63609,6 @@ function vxSec({ d: e }) {
             style: { animation: m === 0 && a ? `vxBlink 1.8s ${(i * 0.13).toFixed(2)}s infinite` : `none` },
           }),
         ),
-        // fingerprint
         __hv(
           `g`,
           { transform: `translate(370 290)` },
@@ -63405,22 +63623,6 @@ function vxSec({ d: e }) {
               })
             : null,
         ),
-        // alarm waves
-        [0, 1, 2].map((i) =>
-          __hv(`path`, {
-            key: i,
-            d: `M ${470 + i * 26} 120 Q ${492 + i * 26} 200 ${470 + i * 26} 280`,
-            fill: `none`,
-            stroke: `#ff9a5a`,
-            strokeWidth: 3,
-            strokeLinecap: `round`,
-            style: {
-              opacity: m === 2 && a ? 1 : 0,
-              transition: `opacity .6s`,
-              animation: m === 2 && a ? `vxBlink 1s ${(i * 0.2).toFixed(1)}s infinite` : `none`,
-            },
-          }),
-        ),
       ),
     ),
     __hv(
@@ -63430,76 +63632,167 @@ function vxSec({ d: e }) {
     ),
   );
 }
-// 05 · Luxury — single shower head vs panel with rainfall, multi-flow and body jets.
+// 05 · Luxury — basic shower head vs a brushed shower panel with rainfall head, multi-flow cascade and body jets.
 var vxLuxItems = [`Rainfall`, `Multi-flow`, `Body jets`];
 function vxLux({ d: e }) {
   let a = e.mode === `ana`,
     m = e.sub,
-    drop = (x, y, i, n) =>
-      __hv(`line`, {
-        key: `${x}-${i}`,
-        x1: x,
-        y1: y,
-        x2: x,
-        y2: y + 16,
-        stroke: `#bfe0ff`,
-        strokeWidth: 2,
-        strokeLinecap: `round`,
-        style: { animation: `vxFall ${n}s linear ${(i * 0.17) % n}s infinite`, opacity: 0 },
-      });
+    jetsY = [196, 246, 296];
   return __hv(
     v.Fragment,
     null,
     __hv(
       vxStage,
       { caption: a ? vxLuxItems[m] : `Basic fitting` },
-      // conventional
+      __hv(
+        `defs`,
+        null,
+        __hv(
+          `linearGradient`,
+          { id: `lxMetal`, x1: `0`, y1: `0`, x2: `1`, y2: `0` },
+          __hv(`stop`, { offset: `0`, stopColor: `#6f6a63` }),
+          __hv(`stop`, { offset: `0.35`, stopColor: `#f2ede2` }),
+          __hv(`stop`, { offset: `0.6`, stopColor: `#bdb7ab` }),
+          __hv(`stop`, { offset: `1`, stopColor: `#5d5953` }),
+        ),
+        __hv(
+          `linearGradient`,
+          { id: `lxGoldTrim`, x1: `0`, y1: `0`, x2: `1`, y2: `0` },
+          __hv(`stop`, { offset: `0`, stopColor: `#9a7434` }),
+          __hv(`stop`, { offset: `0.5`, stopColor: `#f6d48a` }),
+          __hv(`stop`, { offset: `1`, stopColor: `#9a7434` }),
+        ),
+        __hv(
+          `linearGradient`,
+          { id: `lxSheet`, x1: `0`, y1: `0`, x2: `0`, y2: `1` },
+          __hv(`stop`, { offset: `0`, stopColor: `#d9efff`, stopOpacity: `0.85` }),
+          __hv(`stop`, { offset: `1`, stopColor: `#9fd0ff`, stopOpacity: `0.05` }),
+        ),
+        __hv(
+          `radialGradient`,
+          { id: `lxMist`, cx: `50%`, cy: `50%`, r: `50%` },
+          __hv(`stop`, { offset: `0`, stopColor: `#cfe8ff`, stopOpacity: `0.55` }),
+          __hv(`stop`, { offset: `1`, stopColor: `#cfe8ff`, stopOpacity: `0` }),
+        ),
+      ),
+      // large-format wall tiles + floor
+      __hv(`path`, { d: `M 40 140 L 700 140 M 40 260 L 700 260 M 200 20 L 200 370 M 420 20 L 420 370 M 640 20 L 640 370`, stroke: `rgba(248,235,209,0.06)`, strokeWidth: 1.5 }),
+      __hv(`line`, { x1: 40, y1: 370, x2: 700, y2: 370, stroke: `rgba(244,197,109,0.45)`, strokeWidth: 1.5 }),
+      // conventional: small round head on a bare pipe, a few drips
       __hv(
         `g`,
         { style: vxFade(!a) },
-        __hv(`path`, { d: `M 300 20 L 300 60 L 340 60`, ...vxLine, stroke: vxDim }),
-        __hv(`ellipse`, { cx: 360, cy: 70, rx: 30, ry: 10, ...vxLine, stroke: vxDim }),
-        !a ? [345, 360, 375].map((x, i) => drop(x, 90, i, 1.6)) : null,
-      ),
-      // Ananta panel
-      __hv(
-        `g`,
-        { style: vxFade(a) },
-        __hv(`rect`, { x: 240, y: 20, width: 260, height: 26, rx: 6, fill: `rgba(244,197,109,0.12)`, ...vxLine }),
-        __hv(`rect`, { x: 520, y: 80, width: 54, height: 290, rx: 10, fill: `rgba(10,12,26,0.9)`, ...vxLine }),
-        [0, 1, 2, 3].map((i) => __hv(`circle`, { key: i, cx: 547, cy: 130 + i * 56, r: 7, fill: m === 2 ? vxGold : `rgba(244,197,109,0.3)` })),
-        a && m === 0
-          ? Array.from({ length: 14 }, (_, i) => drop(254 + i * 17, 52, i, 1.2))
-          : null,
-        a && m === 1
-          ? [0, 1, 2, 3, 4].map((i) =>
-              __hv(`path`, {
-                key: i,
-                d: `M ${300 + i * 34} 50 C ${292 + i * 34} 140 ${320 + i * 34} 230 ${300 + i * 34} 340`,
-                fill: `none`,
+        __hv(`path`, { d: `M 560 20 L 560 70 Q 560 80 550 80 L 470 80`, fill: `none`, stroke: `#8c877d`, strokeWidth: 8, strokeLinecap: `round` }),
+        __hv(`ellipse`, { cx: 452, cy: 88, rx: 26, ry: 10, fill: `#8c877d` }),
+        __hv(`circle`, { cx: 560, cy: 230, r: 16, fill: `#6f6a63`, stroke: `#8c877d`, strokeWidth: 2 }),
+        !a
+          ? [436, 446, 456, 466].map((x, i) =>
+              __hv(`line`, {
+                key: x,
+                x1: x,
+                y1: 100,
+                x2: x,
+                y2: 112,
                 stroke: `#bfe0ff`,
-                strokeWidth: 3,
-                strokeDasharray: `40 80`,
+                strokeOpacity: 0.7,
+                strokeWidth: 2,
                 strokeLinecap: `round`,
-                style: { animation: `vxCascade 1.8s linear ${(i * 0.25).toFixed(2)}s infinite`, opacity: 0 },
+                style: { animation: `vxFall 1.7s linear ${(i * 0.37).toFixed(2)}s infinite`, opacity: 0 },
               }),
             )
           : null,
-        a && m === 2
-          ? [0, 1, 2, 3].flatMap((i) =>
-              [-14, 0, 14].map((dy) =>
+      ),
+      // Ananta shower panel system
+      __hv(
+        `g`,
+        { style: vxFade(a) },
+        __hv(`ellipse`, { cx: 360, cy: 366, rx: 170, ry: 20, fill: `url(#lxMist)` }),
+        // arm + wide rainfall head
+        __hv(`path`, { d: `M 573 72 L 573 34 Q 573 26 565 26 L 430 26`, fill: `none`, stroke: `url(#lxMetal)`, strokeWidth: 9, strokeLinecap: `round` }),
+        __hv(`rect`, { x: 240, y: 26, width: 200, height: 16, rx: 6, fill: `url(#lxMetal)` }),
+        __hv(`rect`, { x: 240, y: 40, width: 200, height: 3, fill: `url(#lxGoldTrim)` }),
+        // panel column with mode display
+        __hv(`rect`, { x: 548, y: 72, width: 50, height: 298, rx: 14, fill: `url(#lxMetal)`, stroke: `rgba(244,197,109,0.6)`, strokeWidth: 1 }),
+        __hv(`rect`, { x: 558, y: 92, width: 30, height: 52, rx: 5, fill: `#0a0c18` }),
+        [0, 1, 2].map((i) =>
+          __hv(`rect`, { key: i, x: 563, y: 100 + i * 14, width: 20, height: 6, rx: 2, fill: a && i === m ? vxGold : `rgba(244,197,109,0.25)` }),
+        ),
+        jetsY.map((y) =>
+          __hv(
+            `g`,
+            { key: y },
+            __hv(`circle`, { cx: 548, cy: y, r: 9, fill: `#1a1826`, stroke: `url(#lxGoldTrim)`, strokeWidth: 3 }),
+            __hv(`circle`, { cx: 548, cy: y, r: 3, fill: m === 2 ? `#cfe8ff` : `#555` }),
+          ),
+        ),
+        // 1 · rainfall: dense fine streaks across the whole head
+        a && m === 0
+          ? __hv(`path`, { d: `M 244 44 L 436 44 L 450 366 L 230 366 Z`, fill: `url(#lxSheet)`, opacity: 0.35, style: { animation: `vxBreath 2.2s ease-in-out infinite` } })
+          : null,
+        a && m === 0
+          ? Array.from({ length: 30 }, (_, i) =>
+              __hv(`line`, {
+                key: `r${i}`,
+                x1: 248 + (i % 15) * 13 + (i >= 15 ? 6 : 0),
+                y1: 46,
+                x2: 248 + (i % 15) * 13 + (i >= 15 ? 6 : 0),
+                y2: 84,
+                stroke: `#eaf6ff`,
+                strokeWidth: 3.2,
+                strokeLinecap: `round`,
+                style: { animation: `vxRain 1.15s linear ${((i * 0.29) % 1.15).toFixed(2)}s infinite`, opacity: 0 },
+              }),
+            )
+          : null,
+        // 2 · multi-flow: a central cascade sheet plus curved side streams
+        a && m === 1
+          ? __hv(
+              `g`,
+              null,
+              __hv(`path`, { d: `M 300 44 L 380 44 L 400 366 L 280 366 Z`, fill: `url(#lxSheet)`, style: { animation: `vxBreath 1.6s ease-in-out infinite` } }),
+              [0, 1, 2, 3, 4].map((i) =>
                 __hv(`path`, {
-                  key: `${i}${dy}`,
-                  d: `M 512 ${130 + i * 56} L 420 ${130 + i * 56 + dy * 1.6}`,
+                  key: `s${i}`,
+                  d: `M ${308 + i * 16} 44 L ${292 + i * 24} 366`,
+                  fill: `none`,
+                  stroke: `#eaf6ff`,
+                  strokeWidth: 2,
+                  strokeDasharray: `30 60`,
+                  strokeLinecap: `round`,
+                  style: { animation: `vxCascade 1.2s linear ${(i * 0.2).toFixed(2)}s infinite`, opacity: 0 },
+                }),
+              ),
+              [`M 262 44 C 240 140 226 250 220 366`, `M 418 44 C 440 140 454 250 460 366`].map((d, i) =>
+                __hv(`path`, {
+                  key: `c${i}`,
+                  d,
                   fill: `none`,
                   stroke: `#bfe0ff`,
-                  strokeWidth: 2.5,
-                  strokeDasharray: `22 70`,
+                  strokeWidth: 3,
+                  strokeDasharray: `36 70`,
                   strokeLinecap: `round`,
-                  style: { animation: `vxJet 1.1s linear ${(i * 0.18).toFixed(2)}s infinite`, opacity: 0 },
+                  style: { animation: `vxCascade 1.5s linear ${(i * 0.4).toFixed(2)}s infinite`, opacity: 0 },
                 }),
               ),
             )
+          : null,
+        // 3 · body jets: fans of spray from the three nozzles, with mist
+        a && m === 2
+          ? jetsY.flatMap((y, i) => [
+              ...[-16, 0, 16].map((dy) =>
+                __hv(`path`, {
+                  key: `${y}${dy}`,
+                  d: `M 538 ${y} Q 470 ${y + dy * 0.6} 400 ${y + dy * 2}`,
+                  fill: `none`,
+                  stroke: `#eaf6ff`,
+                  strokeWidth: 4,
+                  strokeDasharray: `26 50`,
+                  strokeLinecap: `round`,
+                  style: { animation: `vxJet 0.9s linear ${(i * 0.15 + (dy + 16) * 0.01).toFixed(2)}s infinite`, opacity: 0 },
+                }),
+              ),
+              __hv(`ellipse`, { key: `m${y}`, cx: 405, cy: y, rx: 40, ry: 26, fill: `url(#lxMist)`, style: { animation: `vxBreath 1.4s ease-in-out ${(i * 0.2).toFixed(1)}s infinite` } }),
+            ])
           : null,
       ),
     ),
@@ -63698,62 +63991,29 @@ function JO() {
               dur: 2,
               y: 30,
               className: `abs`,
-              style: { left: 120, top: 200, width: 820 },
+              style: { left: 120, top: 190, width: 1400 },
               children: [
+                (0, Q.jsx)(`div`, { className: `h1`, style: { fontSize: 84 }, children: `Ananta Configurations` }),
                 (0, Q.jsx)(`div`, {
-                  className: `tag`,
-                  style: { marginBottom: 12 },
-                  children: `Guaranteed Launching Rate`,
-                }),
-                (0, Q.jsx)(`div`, {
-                  className: `hero`,
-                  style: { fontSize: 88, letterSpacing: `0.01em`, whiteSpace: `nowrap` },
-                  children: t.rate.value,
+                  className: `h3 gold`,
+                  style: { marginTop: 10, fontWeight: 200 },
+                  children: `2, 3 & 4 BHK residences · starting prices`,
                 }),
               ],
-            }),
-            (0, Q.jsxs)($, {
-              from: 7,
-              delay: 2.4,
-              dur: 2,
-              y: 30,
-              className: `abs`,
-              style: { left: 1e3, top: 200, width: 820 },
-              children: [
-                (0, Q.jsx)(`div`, {
-                  className: `tag`,
-                  style: { marginBottom: 12 },
-                  children: `Special Limited-Period Benefit`,
-                }),
-                (0, Q.jsx)(`div`, {
-                  className: `hero`,
-                  style: { fontSize: 88, letterSpacing: `0.01em`, whiteSpace: `nowrap` },
-                  children: t.benefit.value,
-                }),
-                (0, Q.jsx)(`div`, { className: `small`, style: { marginTop: 6 }, children: t.benefitNote.value }),
-              ],
-            }),
-            (0, Q.jsx)($, {
-              from: 7,
-              delay: 3.6,
-              dur: 1.6,
-              y: 0,
-              className: `abs hairline`,
-              style: { left: 120, right: 120, top: 560 },
             }),
             (0, Q.jsx)(`div`, {
               className: `abs`,
-              style: { left: 120, right: 120, top: 610, display: `flex`, gap: 40 },
+              style: { left: 120, right: 120, top: 440, display: `flex`, gap: 40 },
               children: t.configs.map((e, t) =>
                 (0, Q.jsxs)(
                   $,
                   {
                     from: 7,
-                    delay: 4.2 + t * 0.7,
+                    delay: 2 + t * 0.6,
                     dur: 1.8,
                     y: 34,
                     className: `glass`,
-                    style: { flex: 1, padding: `30px 38px` },
+                    style: { flex: 1, padding: `44px 44px` },
                     children: [
                       (0, Q.jsx)(`div`, { className: `tag`, style: { marginBottom: 10 }, children: e.label }),
                       (0, Q.jsx)(`div`, { className: `small`, style: { marginBottom: 10 }, children: e.size }),
@@ -63762,7 +64022,7 @@ function JO() {
                         style: { fontSize: 20, color: `rgba(248,235,209,0.6)` },
                         children: `Onwards`,
                       }),
-                      (0, Q.jsx)(`div`, { className: `h2`, style: { fontSize: 80 }, children: e.from.value }),
+                      (0, Q.jsx)(`div`, { className: `h2`, style: { fontSize: 96, color: `var(--gold)` }, children: e.from.value }),
                     ],
                   },
                   e.id,
@@ -63917,6 +64177,53 @@ function XO({ lit: e }) {
   });
 }
 var ZO = { stroke: `#F4C56D`, strokeWidth: 3, fill: `none`, strokeLinecap: `round`, strokeLinejoin: `round` };
+// International trip — rendered Earth with an airliner orbiting it (front pass visible, back pass behind the globe).
+var rwPlaneD = `M 20 0 L 7 -3 L -1 -18 L -6 -18 L -2 -3 L -12 -3 L -16 -9 L -20 -9 L -17 0 L -20 9 L -16 9 L -12 3 L -2 3 L -6 18 L -1 18 L 7 3 Z`;
+function rwGlobe() {
+  let rx = 250,
+    ry = 74,
+    cx = 230,
+    cy = 210,
+    orbit = `M ${cx - rx} ${cy} a ${rx} ${ry} 0 1 0 ${2 * rx} 0 a ${rx} ${ry} 0 1 0 ${-2 * rx} 0`,
+    h = (t, p, ...c) => v.createElement(t, p, ...c);
+  return h(
+    `div`,
+    { style: { position: `relative`, width: 460, height: 420 } },
+    // back half of the orbit (behind the globe)
+    h(
+      `svg`,
+      { width: 460, height: 420, viewBox: `0 0 460 420`, style: { position: `absolute`, inset: 0, overflow: `visible` } },
+      h(`g`, { transform: `rotate(-16 ${cx} ${cy})` }, h(`path`, { d: orbit, fill: `none`, stroke: `#F4C56D`, strokeOpacity: 0.35, strokeWidth: 2, strokeDasharray: `3 9` })),
+    ),
+    h(`img`, {
+      src: z(`rewards/globe.png`),
+      alt: `Globe`,
+      style: { position: `absolute`, left: cx - 180, top: cy - 180, width: 360, height: 360 },
+    }),
+    // front half of the orbit + the plane
+    h(
+      `svg`,
+      { width: 460, height: 420, viewBox: `0 0 460 420`, style: { position: `absolute`, inset: 0, overflow: `visible` } },
+      h(
+        `defs`,
+        null,
+        h(`clipPath`, { id: `rwFront` }, h(`rect`, { x: -100, y: cy, width: 700, height: 400 })),
+      ),
+      h(
+        `g`,
+        { transform: `rotate(-16 ${cx} ${cy})` },
+        h(`path`, { d: orbit, fill: `none`, stroke: `#F4C56D`, strokeWidth: 3, strokeDasharray: `3 9`, clipPath: `url(#rwFront)`, style: { filter: `drop-shadow(0 0 6px rgba(244,197,109,0.8))` } }),
+        h(
+          `g`,
+          null,
+          h(`path`, { d: rwPlaneD, fill: `#F8EBD1`, stroke: `#C48746`, strokeWidth: 1.2, transform: `scale(1.7)`, style: { filter: `drop-shadow(0 0 8px rgba(244,197,109,0.9))` } }),
+          h(`animateMotion`, { dur: `7s`, repeatCount: `indefinite`, rotate: `auto`, path: orbit }),
+          h(`animate`, { attributeName: `opacity`, dur: `7s`, repeatCount: `indefinite`, values: `1;1;0.12;0.12;1`, keyTimes: `0;0.47;0.53;0.97;1` }),
+        ),
+      ),
+    ),
+  );
+}
 function QO({ kind: e }) {
   let t = { filter: `drop-shadow(0 0 14px rgba(244,197,109,0.85))` };
   return e === `laptop`
@@ -63963,47 +64270,7 @@ function QO({ kind: e }) {
         ],
       })
     : e === `travel`
-      ? (0, Q.jsxs)(`svg`, {
-          width: `400`,
-          height: `400`,
-          viewBox: `0 0 400 400`,
-          style: t,
-          children: [
-            (0, Q.jsx)(`defs`, {
-              children: (0, Q.jsxs)(`radialGradient`, {
-                id: `hz`,
-                cx: `50%`,
-                cy: `72%`,
-                r: `50%`,
-                children: [
-                  (0, Q.jsx)(`stop`, { offset: `0`, stopColor: `#F8EBD1`, stopOpacity: `0.85` }),
-                  (0, Q.jsx)(`stop`, { offset: `1`, stopColor: `#F4C56D`, stopOpacity: `0` }),
-                ],
-              }),
-            }),
-            (0, Q.jsx)(`circle`, { cx: `200`, cy: `230`, r: `150`, fill: `url(#hz)`, opacity: `0.5` }),
-            (0, Q.jsx)(`circle`, { cx: `200`, cy: `230`, r: `120`, ...ZO, strokeWidth: `2.5` }),
-            (0, Q.jsx)(`ellipse`, {
-              cx: `200`,
-              cy: `230`,
-              rx: `52`,
-              ry: `120`,
-              ...ZO,
-              strokeWidth: `1.6`,
-              strokeOpacity: `0.7`,
-            }),
-            (0, Q.jsx)(`ellipse`, {
-              cx: `200`,
-              cy: `230`,
-              rx: `120`,
-              ry: `40`,
-              ...ZO,
-              strokeWidth: `1.6`,
-              strokeOpacity: `0.7`,
-            }),
-            (0, Q.jsx)(`path`, { d: `M 40 300 Q 200 20 360 190`, ...ZO, strokeWidth: `2.5`, strokeDasharray: `2 12` }),
-          ],
-        })
+      ? (0, Q.jsx)(rwGlobe, {})
       : (0, Q.jsxs)(`svg`, {
           width: `520`,
           height: `340`,
@@ -64027,7 +64294,7 @@ function $O({ i: e, final: t }) {
   let n = da.tiers[e];
   return (0, Q.jsx)(`div`, {
     style: {
-      transform: `scale(${t ? 0.78 : 1})`,
+      transform: `scale(${t === 1 ? 1 : t ? 0.78 : 1})`,
       transformOrigin: `50% 100%`,
       display: `flex`,
       justifyContent: `center`,
@@ -64123,7 +64390,8 @@ function tk() {
         ],
       }),
       da.tiers.map((n, r) => {
-        let i = e === 10 + r;
+        let i = e === 10 + r,
+          hit = [0.6, 1.6, 3.4][r];
         return (0, Q.jsxs)(
           `div`,
           {
@@ -64138,29 +64406,31 @@ function tk() {
                 style: { left: 660, top: 600, width: 600, height: 230 },
                 children: (0, Q.jsx)(XO, { lit: !0 }),
               }),
-              (0, Q.jsx)(`div`, {
-                className: `abs`,
+              // stage spotlight: the room darkens, a volumetric cone drops from a lamp overhead onto the pedestal
+              (0, Q.jsxs)(`div`, {
+                className: `fill rw-spot`,
                 style: {
-                  left: 810,
-                  top: 200,
-                  width: 300,
-                  height: 520,
-                  background: `linear-gradient(180deg, rgba(244,197,109,0) 0%, rgba(244,197,109,0.28) 70%, rgba(248,235,209,0.5) 100%)`,
-                  clipPath: `polygon(35% 0, 65% 0, 100% 100%, 0 100%)`,
                   opacity: +!!i,
-                  transition: `opacity 2s ease`,
-                  pointerEvents: `none`,
-                  filter: `blur(4px)`,
+                  transition: i ? `opacity 0.9s ease ${Math.max(0, hit - 0.35)}s` : `opacity 0.8s ease`,
                 },
+                children: [
+                  (0, Q.jsx)(`div`, { className: `fill rw-spot-dim` }),
+                  (0, Q.jsx)(`div`, { className: `abs rw-spot-cone` }),
+                  (0, Q.jsx)(`div`, { className: `abs rw-spot-core` }),
+                  (0, Q.jsx)(`div`, { className: `abs rw-spot-lamp` }),
+                  (0, Q.jsx)(`div`, { className: `abs rw-spot-pool` }),
+                  (0, Q.jsx)(`div`, { className: `abs rw-spot-dust` }),
+                ],
               }),
+              i && (0, Q.jsx)(`div`, { className: `fill rw-flash`, style: { animationDelay: `${hit - 0.02}s` } }, `fl${r}`),
               (0, Q.jsx)($, {
                 from: 10 + r,
                 until: 11 + r,
-                delay: 0.9,
-                dur: 2.6,
-                y: 50,
-                blur: 14,
-                scale: 0.94,
+                delay: hit - 0.12,
+                dur: [0.8, 0.9, 1.0][r],
+                y: 40,
+                blur: 10,
+                scale: 0.9,
                 className: `abs`,
                 style: { left: 680, top: 270, width: 560, display: `flex`, justifyContent: `center` },
                 children: (0, Q.jsx)($O, { i: r, final: !1 }),
@@ -64190,8 +64460,8 @@ function tk() {
               (0, Q.jsxs)($, {
                 from: 10 + r,
                 until: 11 + r,
-                delay: 1.9,
-                dur: 2,
+                delay: hit + 0.45,
+                dur: 1.6,
                 y: 24,
                 className: `abs center`,
                 style: { left: 260, right: 260, top: 840 },
@@ -64209,55 +64479,70 @@ function tk() {
           n.id,
         );
       }),
-      da.tiers.map((e, n) =>
-        (0, Q.jsxs)(
+      // Victory podium: 1st Royal Enfield (centre, tallest), 2nd International Trip (left), 3rd MacBook Neo (right).
+      [
+        { i: 2, rank: 1, cx: 960, h: 250, sc: 1.15, d: 1.6 },
+        { i: 1, rank: 2, cx: 480, h: 175, sc: 0.82, d: 1.2 },
+        { i: 0, rank: 3, cx: 1440, h: 115, sc: 0.6, d: 0.8 },
+      ].map((p) => {
+        let e = da.tiers[p.i],
+          top = 1010 - p.h,
+          photo = !!e.photo,
+          boxH = photo ? 380 : 420;
+        return (0, Q.jsxs)(
           `div`,
           {
             children: [
               (0, Q.jsx)($, {
                 from: 13,
-                delay: 0.8 + n * 0.5,
-                dur: 2.2,
-                y: 40,
-                className: `abs`,
-                style: { left: ek[n] - 280, top: 600, width: 560, height: 230 },
-                children: (0, Q.jsx)(`div`, {
-                  style: { transform: `scale(0.8)`, transformOrigin: `50% 100%` },
-                  children: (0, Q.jsx)(XO, { lit: !0 }),
-                }),
-              }),
-              (0, Q.jsx)($, {
-                from: 13,
-                delay: 0.9 + n * 0.5,
+                delay: p.d + 0.7,
                 dur: 2.4,
                 y: 40,
                 blur: 10,
                 className: `abs`,
-                style: { left: ek[n] - 260, top: 330, width: 520, display: `flex`, justifyContent: `center` },
-                children: (0, Q.jsx)($O, { i: n, final: !0 }),
+                style: { left: p.cx - 360, top: top - boxH + 6, width: 720, height: boxH, display: `flex`, justifyContent: `center`, alignItems: `flex-end` },
+                children: (0, Q.jsx)(`div`, {
+                  style: { transform: `scale(${p.sc})`, transformOrigin: `50% 100%` },
+                  children: (0, Q.jsx)($O, { i: p.i, final: 1 }),
+                }),
               }),
               (0, Q.jsxs)($, {
                 from: 13,
-                delay: 1.6 + n * 0.5,
+                delay: p.d,
                 dur: 1.8,
-                y: 20,
-                className: `abs center`,
-                style: { left: ek[n] - 290, top: 830, width: 580 },
+                y: 60,
+                className: `abs`,
+                style: {
+                  left: p.cx - 240,
+                  top,
+                  width: 480,
+                  height: p.h + 70,
+                  display: `flex`,
+                  alignItems: `flex-start`,
+                  justifyContent: `center`,
+                  textAlign: `center`,
+                  padding: `20px 26px`,
+                  background: `linear-gradient(180deg, rgba(244,197,109,${p.rank === 1 ? 0.34 : 0.22}) 0%, rgba(32,27,48,0.96) 55%)`,
+                  borderTop: `3px solid #F4C56D`,
+                  borderLeft: `1px solid rgba(244,197,109,0.35)`,
+                  borderRight: `1px solid rgba(244,197,109,0.35)`,
+                  boxShadow: p.rank === 1 ? `0 -10px 60px rgba(244,197,109,0.35)` : `0 -6px 30px rgba(244,197,109,0.15)`,
+                },
                 children: [
-                  t.show &&
-                    (0, Q.jsxs)(`div`, {
-                      className: `tag`,
-                      style: { marginBottom: 6 },
-                      children: [e.bookings, ` bookings`],
-                    }),
-                  (0, Q.jsx)(`div`, { className: `h3`, style: { fontSize: 38 }, children: e.title }),
+                  (0, Q.jsxs)(`div`, {
+                    style: { paddingTop: 4 },
+                    children: [
+                      (0, Q.jsx)(`div`, { className: `h3`, style: { fontSize: p.rank === 1 ? 36 : 30, lineHeight: 1.15 }, children: e.title.replace(/^1\s+/, ``) }),
+                      t.show && (0, Q.jsxs)(`div`, { className: `tag`, style: { marginTop: 6, fontSize: 18 }, children: [e.bookings, ` bookings`] }),
+                    ],
+                  }),
                 ],
               }),
             ],
           },
           e.id,
-        ),
-      ),
+        );
+      }),
       (0, Q.jsxs)($, {
         from: 13,
         delay: 0.3,
@@ -64436,7 +64721,13 @@ function dk() {
             style: { marginBottom: 10 },
             children: `Part A · The Financial Opportunity`,
           }),
-          (0, Q.jsx)(`div`, { className: `h1`, style: { fontSize: 84 }, children: `Your Earnings` }),
+          (0, Q.jsxs)(`div`, {
+            style: { display: `flex`, alignItems: `center`, gap: 28 },
+            children: [
+              (0, Q.jsx)(`div`, { className: `h1`, style: { fontSize: 84 }, children: `Your Earnings` }),
+              (0, Q.jsx)(`div`, { className: `qtr-badge`, children: `Quarterly Plan` }),
+            ],
+          }),
         ],
       }),
       (0, Q.jsxs)($, {
@@ -64447,11 +64738,11 @@ function dk() {
         x: -30,
         y: 0,
         className: `abs glass`,
-        style: { left: 120, top: 260, width: 640, padding: `34px 40px` },
+        style: { left: 120, top: 260, width: 660, height: 690, padding: `40px 44px`, display: `flex`, flexDirection: `column` },
         children: [
           (0, Q.jsx)(`div`, { className: `tag`, style: { marginBottom: 14, fontSize: 20 }, children: `Configuration` }),
           (0, Q.jsx)(`div`, {
-            style: { display: `flex`, gap: 14, marginBottom: 28 },
+            style: { display: `flex`, gap: 14, marginBottom: 64 },
             "data-no-shortcuts": !0,
             children: ck.map((t) =>
               (0, Q.jsx)(
@@ -64488,11 +64779,11 @@ function dk() {
           }),
           (0, Q.jsx)(`div`, {
             className: `h2`,
-            style: { fontSize: 66, marginBottom: 24 },
+            style: { fontSize: 76, marginBottom: 0 },
             children: (0, Q.jsx)(sk, { value: e.value, format: ik }),
           }),
           (0, Q.jsxs)(`div`, {
-            style: { display: `flex`, gap: 40 },
+            style: { display: `flex`, gap: 64, marginTop: `auto`, paddingTop: 40, borderTop: `1px solid rgba(248,235,209,0.18)` },
             children: [
               (0, Q.jsxs)(`div`, {
                 children: [
@@ -64611,16 +64902,19 @@ function dk() {
         className: `abs glass`,
         style: {
           left: 820,
-          top: 700,
+          top: 690,
           width: 980,
-          height: 230,
-          padding: `26px 44px`,
+          height: 260,
+          padding: `34px 44px`,
+          display: `flex`,
+          flexDirection: `column`,
+          justifyContent: `center`,
           borderColor: `rgba(248,235,209,0.4)`,
         },
         children: [
           (0, Q.jsx)(`div`, {
             className: `tag`,
-            style: { marginBottom: 6, color: `var(--ivory)` },
+            style: { marginBottom: 8, color: `var(--ivory)`, fontSize: 20, whiteSpace: `nowrap` },
             children: `Executive incentive · payable to your executive`,
           }),
           (0, Q.jsx)(`div`, {
@@ -64633,16 +64927,6 @@ function dk() {
             children: [ik(t.incentivePerBooking), ` per booking × `, e.bookings, ` · part of the Ongoing Brokerage Plan`],
           }),
         ],
-      }),
-      (0, Q.jsx)($, {
-        from: 5,
-        until: 6,
-        delay: 3.4,
-        dur: 1.4,
-        y: 0,
-        className: `abs small`,
-        style: { left: 120, bottom: 70, width: 640, fontSize: 22, color: `rgba(248,235,209,0.7)` },
-        children: `Brokerage and executive incentive go to different recipients and are never added together. Illustrative; subject to approved commercial terms.`,
       }),
     ],
   });
@@ -64707,7 +64991,7 @@ function pk() {
                 delay: 1.8 + n * 0.7,
                 dur: 1.4,
                 y: 10,
-                children: (0, Q.jsx)(`div`, {
+                children: (0, Q.jsxs)(`div`, {
                   className: `h3`,
                   style: { marginTop: 18, fontSize: 40 },
                   children: e.label,
@@ -64865,11 +65149,17 @@ function hk() {
               style: { left: 120, top: 80 },
               children: [
                 (0, Q.jsx)(fk, { children: `Part A · The Financial Opportunity` }),
-                (0, Q.jsx)(`div`, { className: `h1`, style: { fontSize: 88 }, children: `Ongoing Brokerage` }),
+                (0, Q.jsxs)(`div`, {
+                  style: { display: `flex`, alignItems: `center`, gap: 28 },
+                  children: [
+                    (0, Q.jsx)(`div`, { className: `h1`, style: { fontSize: 88 }, children: `Ongoing Brokerage` }),
+                    (0, Q.jsx)(`div`, { className: `qtr-badge`, children: `Quarterly Plan` }),
+                  ],
+                }),
                 (0, Q.jsx)(`div`, {
                   className: `small`,
                   style: { marginTop: 10 },
-                  children: `Quarterly, slab-based · earned by your organisation · the more you book, the higher the percentage climbs`,
+                  children: `Slab-based · earned by your organisation · the more you book, the higher the percentage climbs`,
                 }),
               ],
             }),
@@ -65182,13 +65472,13 @@ var _k = 960,
   Sk = {
     rm: `Dedicated Relationship Managers`,
     marketing: `Marketing & Campaign Support`,
-    registration: `Client Registration`,
+    registration: `Lead Protection`,
     wifi: `Wi-Fi-Enabled Workspace`,
     spot: `Spot-Booking Assistance`,
     cab: `Cab & Logistics Support`,
     whatsapp: `WhatsApp & On-Site Assistance`,
     lead: `Lead Coordination & Conflict Policy`,
-    payout: `Payout Support`,
+    payout: `Payout in 7 Days`,
   };
 function Ck({ from: e }) {
   return (0, Q.jsx)($, {
@@ -65611,8 +65901,17 @@ function kk() {
                 dur: 1.6,
                 y: 0,
                 className: `abs tag`,
-                style: { left: 1010, top: 120, fontSize: 28 },
+                style: { left: 1010, top: 120, fontSize: 28, padding: `8px 18px`, background: `rgba(14,16,32,0.7)`, textShadow: `0 2px 12px rgba(0,0,0,0.7)` },
                 children: [`Award · `, n],
+              }),
+              (0, Q.jsx)($, {
+                from: t.from,
+                until: t.from + 1,
+                delay: 0,
+                dur: 1.4,
+                y: 0,
+                className: `fill`,
+                style: { background: `linear-gradient(90deg, rgba(14,16,32,0) 30%, rgba(14,16,32,0.78) 52%, rgba(14,16,32,0.9) 100%)` },
               }),
               (0, Q.jsxs)($, {
                 from: t.from,
@@ -65621,7 +65920,17 @@ function kk() {
                 dur: 2,
                 y: 26,
                 className: `abs`,
-                style: { left: 1010, top: 330, width: 820 },
+                style: {
+                  left: 990,
+                  top: 300,
+                  width: 860,
+                  padding: `44px 50px`,
+                  background: `rgba(14,16,32,0.72)`,
+                  border: `1px solid rgba(244,197,109,0.45)`,
+                  boxShadow: `0 20px 70px rgba(0,0,0,0.5)`,
+                  backdropFilter: `blur(6px)`,
+                  textShadow: `0 2px 18px rgba(0,0,0,0.6)`,
+                },
                 children: [
                   (0, Q.jsx)(`div`, { className: `eyebrow`, style: { marginBottom: 18 }, children: `The Award For` }),
                   (0, Q.jsx)(`div`, {
@@ -67123,7 +67432,7 @@ function sA() {
     !r || !ga.url
       ? n(null)
       : iA
-          .toDataURL(ga.url, { margin: 1, width: 420, color: { dark: `#161D33`, light: `#F8EBD1` } })
+          .toDataURL(ga.url, { margin: 1, width: 1000, color: { dark: `#161D33`, light: `#F8EBD1` } })
           .then(n)
           .catch(() => n(null));
   }, [r]);
@@ -67142,7 +67451,6 @@ function sA() {
         style: { left: 0, right: 0, top: 170 },
         children: [Yi.closing.eyebrow, ` · `, Yi.closing.sub],
       }),
-      (0, Q.jsx)(oA, {}),
       i.map((e, t) =>
         (0, Q.jsx)(
           $,
@@ -67237,6 +67545,7 @@ function sA() {
           $,
           {
             from: 6,
+        until: 7,
             delay: 0.4 + t * 0.9,
             dur: 1.8,
             y: 22,
@@ -67254,6 +67563,7 @@ function sA() {
       ),
       (0, Q.jsx)($, {
         from: 6,
+        until: 7,
         delay: 3.4,
         dur: 2,
         y: 26,
@@ -67273,6 +67583,7 @@ function sA() {
       }),
       (0, Q.jsx)($, {
         from: 6,
+        until: 7,
         delay: 3.9,
         dur: 2,
         y: 26,
@@ -67296,6 +67607,7 @@ function sA() {
       }),
       (0, Q.jsx)($, {
         from: 6,
+        until: 7,
         delay: 4.6,
         dur: 2,
         y: 20,
@@ -67311,21 +67623,41 @@ function sA() {
         t &&
         (0, Q.jsxs)($, {
           from: 6,
+        until: 7,
           delay: 3,
           dur: 2,
           y: 20,
           className: `abs`,
           style: { left: 1420, top: 560, width: 340 },
           children: [
-            (0, Q.jsx)(`div`, {
-              className: `tag center`,
-              style: { marginBottom: 12, fontSize: 22 },
-              children: `Register Here`,
-            }),
             (0, Q.jsx)(`img`, { src: t, alt: `Registration QR code`, style: { width: 340, height: 340, border: `8px solid #F8EBD1`, display: `block` } }),
             (0, Q.jsx)(`div`, {
               className: `small center`,
               style: { marginTop: 12, fontSize: 22 },
+              children: ga.caption,
+            }),
+          ],
+        }),
+      // Final slide (its own Next): the QR grows to fill the stage, caption large beneath it.
+      r &&
+        t &&
+        (0, Q.jsxs)($, {
+          from: 7,
+          delay: 0.3,
+          dur: 1.6,
+          y: 0,
+          scale: 0.55,
+          className: `abs`,
+          style: { left: 0, right: 0, top: 70, display: `flex`, flexDirection: `column`, alignItems: `center` },
+          children: [
+            (0, Q.jsx)(`img`, {
+              src: t,
+              alt: `Registration QR code`,
+              style: { width: 680, height: 680, border: `14px solid #F8EBD1`, display: `block`, boxShadow: `0 0 90px rgba(244,197,109,0.35), 0 20px 70px rgba(0,0,0,0.5)` },
+            }),
+            (0, Q.jsx)(`div`, {
+              className: `h2 center`,
+              style: { marginTop: 40, fontSize: 54, lineHeight: 1.25, maxWidth: 1500, color: `#F8EBD1`, textShadow: `0 3px 24px rgba(14,16,32,0.9)` },
               children: ga.caption,
             }),
           ],
@@ -67641,6 +67973,7 @@ function _A() {
           display: `grid`,
           gridTemplateColumns: `1fr 1fr`,
           gap: `36px 40px`,
+          pointerEvents: `none`,
         },
       },
       na.map((e, t) =>
@@ -67654,9 +67987,17 @@ function _A() {
             dur: 1.8,
             y: 30,
             className: `glass`,
-            style: { display: `flex`, height: 310, overflow: `hidden`, padding: 0 },
+            style: { display: `flex`, height: 310, overflow: `hidden`, padding: 0, pointerEvents: `auto` },
           },
-          __h(`div`, { style: { width: 434, height: `100%`, flex: `none` } }, __h(`img`, { src: e.photo, alt: e.name, style: dA })),
+          __h(
+            `div`,
+            {
+              style: { width: 434, height: `100%`, flex: `none` },
+              className: `zoomable`,
+              onClick: (ev) => (ev.stopPropagation(), lbOpen(e.photo, `${e.brand} · ${e.name}`, `${e.location} · ${e.rooms} rooms`)),
+            },
+            __h(`img`, { src: e.photo, alt: e.name, style: { ...dA, objectPosition: e.pos || `50% 50%` } }),
+          ),
           __h(
             `div`,
             {
@@ -67693,8 +68034,12 @@ function _A() {
 function vA({ it: e, from: t, until: n, delay: r, h: a, fs: s = 30, big: b }) {
   return __h(
     $,
-    { from: t, until: n, delay: r, dur: 1.5, y: 26, style: { width: `100%` } },
-    __h(`div`, { style: { ...uA, height: a } }, __h(`img`, { src: e.photo, alt: e.name, style: dA })),
+    { from: t, until: n, delay: r, dur: 1.5, y: 26, style: { width: `100%`, pointerEvents: `auto` } },
+    __h(
+      `div`,
+      { style: { ...uA, height: a }, className: `zoomable`, onClick: (ev) => (ev.stopPropagation(), lbOpen(e.photo, e.name, [e.place, e.note].filter(Boolean).join(` · `))) },
+      __h(`img`, { src: e.photo, alt: e.name, style: { ...dA, transform: `scale(1.06)` } }),
+    ),
     __h(`div`, { className: `h3`, style: { fontSize: s, marginTop: b ? 22 : 14, lineHeight: 1.1 } }, e.name),
     __h(
       `div`,
@@ -67728,40 +68073,29 @@ var yA = ({ at: e }) =>
   );
 // Real estate — Past / On-going / Upcoming
 function bA() {
-  let L = [
-    { cols: 6, h: 232, fs: 26, gap: `34px 22px` },
-    { cols: 2, h: 470, fs: 44, gap: `0 40px`, big: !0 },
-    { cols: 5, h: 330, fs: 30, gap: `0 24px` },
-  ];
   return __h(
     v.Fragment,
     null,
     ia.map((t, n) => {
       let r = 6 + n,
-        i = n === 2 ? 99 : r + 1,
-        a = L[n];
+        i = n === ia.length - 1 ? 99 : r + 1,
+        k = 0;
       return __h(
         `div`,
         { key: t.label },
         __h(lA, { eyebrow: `${HEYE} · Real Estate`, title: t.label, sub: t.sub, from: r, until: i }),
         __h(
           `div`,
-          {
-            className: `abs`,
-            style: {
-              left: 120,
-              right: 120,
-              top: 300,
-              display: `grid`,
-              gridTemplateColumns: `repeat(${a.cols}, 1fr)`,
-              gap: a.gap,
-            },
-          },
-          t.items.map((e, t) =>
-            __h(vA, { key: e.id, it: e, from: r, until: i, delay: 0.6 + t * 0.18, h: a.h, fs: a.fs, big: a.big }),
+          { className: `abs`, style: { left: 120, right: 120, top: 300, display: `flex`, flexDirection: `column`, gap: 30, pointerEvents: `none` } },
+          t.rows.map((row, ri) =>
+            __h(
+              `div`,
+              { key: ri, style: { display: `grid`, gridTemplateColumns: `repeat(${row.cols}, 1fr)`, gap: row.cols >= 6 ? `34px 22px` : `0 28px` } },
+              row.items.map((e) => __h(vA, { key: e.id, it: e, from: r, until: i, delay: 0.6 + k++ * 0.16, h: row.h, fs: row.fs })),
+            ),
           ),
         ),
-        __h($, { from: r, until: i, y: 0, dur: 1, className: `fill` }, __h(yA, { at: n })),
+        __h($, { from: r, until: i, y: 0, dur: 1, className: `fill`, style: { pointerEvents: `none` } }, __h(yA, { at: n })),
       );
     }),
   );
@@ -67799,8 +68133,10 @@ var __hf = (t, p, ...c) => v.createElement(t, p, ...c),
     return { x: r(e[0], e[2], e[4], e[6]), y: r(e[1], e[3], e[5], e[7]) };
   },
   EA = [
-    { n: 1, title: `Build Momentum`, sub: `Ongoing Brokerage Plan`, sub2: `incl. Executive Incentives`, t: 0.14 },
-    { n: 2, title: `Reach New Heights`, sub: `Limitless Bonus Rewards`, t: 0.92 },
+    { n: 1, title: `3%`, sub: `1 – 2 bookings`, t: 0.1, pct: !0 },
+    { n: 2, title: `3.5%`, sub: `3 – 4 bookings`, t: 0.36, pct: !0 },
+    { n: 3, title: `4%`, sub: `5 bookings & above`, t: 0.62, pct: !0 },
+    { n: 4, title: `Limitless Bonus Rewards`, sub: `The 45-Day Success Challenge`, t: 0.93 },
   ],
   __tkCtx = null;
 // ---------- Synthesized takeoff sound (WebAudio, no files) ----------
@@ -68298,7 +68634,7 @@ function OA() {
             className: `h3`,
             style: { fontWeight: 300, fontSize: 36, letterSpacing: `0.16em`, color: `#F8EBD1`, textShadow: `0 2px 22px rgba(12,9,20,1)` },
           },
-          `Just 10 min from the Airport`,
+          `10 mins from the Airport`,
         ),
       ),
     )
@@ -68335,34 +68671,30 @@ function kA() {
           pointerEvents: `none`,
         },
       }),
-      // Airliner climbing out across the sky — makes the "takeoff" read instantly.
+      // On the brochure horizon (runway), before the climb into the sky
+      __hf(
+        $,
+        {
+          from: 2,
+          until: 3,
+          delay: 1.2,
+          dur: 2.2,
+          blur: 10,
+          x: -30,
+          y: 0,
+          className: `hero abs`,
+          style: { left: 120, top: 100, fontSize: 96, lineHeight: 1.08, letterSpacing: `0.04em`, textAlign: `left`, textShadow: `0 4px 40px rgba(14,16,32,0.85), 0 0 18px rgba(14,16,32,0.6)` },
+        },
+        `ARE YOU READY`,
+        __hf(`br`, null),
+        `TO TAKE OFF??`,
+      ),
+      // A real airliner (Pixabay photo, backlit silhouette) climbing away into the sunset — reads instantly as "takeoff".
       e === 4 &&
         __hf(
           `div`,
-          { key: `tk-plane`, className: `abs tk-plane-wrap`, style: { left: 0, top: 0, width: 1920, height: 1080, pointerEvents: `none` } },
-          __hf(`div`, { className: `tk-trail` }),
-          __hf(
-            `svg`,
-            { className: `tk-plane`, width: 560, height: 165, viewBox: `-40 -60 680 200` },
-            __hf(
-              `defs`,
-              null,
-              __hf(
-                `linearGradient`,
-                { id: `tkBody`, x1: `0`, y1: `0`, x2: `0`, y2: `1` },
-                __hf(`stop`, { offset: `0`, stopColor: `#F8EBD1` }),
-                __hf(`stop`, { offset: `0.22`, stopColor: `#5b4a5e` }),
-                __hf(`stop`, { offset: `1`, stopColor: `#1c1828` }),
-              ),
-            ),
-            __hf(`path`, { d: `M 22 22 L -6 -48 L 34 -48 L 116 22 Z`, fill: `url(#tkBody)` }),
-            __hf(`path`, { d: `M 40 46 L -6 74 L 24 74 L 112 50 Z`, fill: `#1c1828` }),
-            __hf(`path`, { d: `M 0 38 C 0 26 22 20 64 20 L 520 20 C 566 20 596 30 606 40 C 596 50 566 58 520 58 L 64 58 C 22 58 0 50 0 38 Z`, fill: `url(#tkBody)` }),
-            __hf(`path`, { d: `M 236 50 L 168 120 L 206 120 L 336 52 Z`, fill: `#241e30` }),
-            __hf(`ellipse`, { cx: 252, cy: 74, rx: 38, ry: 13, fill: `#2c2438` }),
-            __hf(`path`, { d: `M 64 21 L 520 21 C 560 21 590 30 604 39`, fill: `none`, stroke: `#F4C56D`, strokeOpacity: 0.85, strokeWidth: 2.5 }),
-            Array.from({ length: 16 }, (_, i) => __hf(`rect`, { key: i, x: 120 + i * 24, y: 30, width: 9, height: 7, rx: 3, fill: `#F8EBD1`, opacity: 0.55 })),
-          ),
+          { key: `tk-plane`, className: `abs`, style: { left: 0, top: 0, width: 1920, height: 1080, pointerEvents: `none`, overflow: `hidden` } },
+          __hf(`img`, { className: `tk-airliner`, src: z(`flight/airliner.png`), alt: `` }),
         ),
       __hf(
         $,
@@ -68388,10 +68720,50 @@ function kA() {
           delay: 2.4,
           dur: 2,
           y: 14,
-          className: `h3 center gold abs`,
-          style: { left: 0, right: 0, top: 440, fontWeight: 200, fontSize: 44, letterSpacing: `0.12em`, textShadow: `0 2px 22px rgba(14,16,32,0.9)` },
+          className: `abs`,
+          style: { left: 0, right: 0, top: 410, display: `flex`, justifyContent: `center` },
         },
-        `With Ananta, Aim Higher. Achieve More.`,
+        __hf(
+          `div`,
+          {
+            style: {
+              position: `relative`,
+              display: `flex`,
+              alignItems: `center`,
+              gap: 30,
+              padding: `22px 90px`,
+            },
+          },
+          __hf(`span`, {
+            style: {
+              position: `absolute`,
+              left: 40,
+              right: 40,
+              top: 6,
+              bottom: 6,
+              borderRadius: `50%`,
+              background: `rgba(26,20,36,0.5)`,
+              filter: `blur(26px)`,
+              zIndex: -1,
+            },
+          }),
+          __hf(`span`, { style: { width: 90, height: 1.5, background: `linear-gradient(90deg, transparent, #F4C56D)` } }),
+          __hf(
+            `span`,
+            {
+              className: `h3`,
+              style: {
+                fontWeight: 400,
+                fontSize: 48,
+                letterSpacing: `0.1em`,
+                color: `#FFF6E3`,
+                textShadow: `0 0 2px rgba(60,30,10,0.9), 0 2px 10px rgba(40,20,10,0.85), 0 0 34px rgba(30,16,8,0.7)`,
+              },
+            },
+            `With Ananta, Aim Higher. Achieve More.`,
+          ),
+          __hf(`span`, { style: { width: 90, height: 1.5, background: `linear-gradient(90deg, #F4C56D, transparent)` } }),
+        ),
       ),
       __hf(
         `svg`,
@@ -68444,6 +68816,12 @@ function kA() {
         { from: 5, delay: 0.3, dur: 2, y: 14, className: `abs`, style: { left: 120, top: 80 } },
         __hf(`div`, { className: `eyebrow`, style: { marginBottom: 12 } }, `Chapter 5 · Limitless Opportunities`),
         __hf(`div`, { className: `h1`, style: { fontSize: 82, textShadow: `0 3px 26px rgba(14,16,32,0.8)` } }, `The Flight Path of Success`),
+        __hf(
+          `div`,
+          { className: `h3 gold`, style: { fontSize: 30, fontWeight: 300, marginTop: 10, textShadow: `0 2px 18px rgba(14,16,32,0.9)` } },
+          `Ongoing Brokerage Plan (incl. Executive Incentives) — rising to Limitless Bonus Rewards`,
+        ),
+        __hf(`div`, { className: `qtr-badge`, style: { display: `inline-block`, marginTop: 16 } }, `Quarterly Plan`),
       ),
       EA.map((n) => {
         let t = TA(CA, n.t);
@@ -68456,12 +68834,15 @@ function kA() {
             dur: 1.8,
             y: 18,
             className: `abs glass`,
-            style: { left: Math.max(80, Math.min(t.x - 250, 1920 - 80 - 500)), top: t.y - (n.sub2 ? 236 : 196), width: 500, padding: `18px 26px`, textAlign: `center` },
+            style: n.pct
+              ? { left: t.x - 140, top: t.y - 210, width: 280, padding: `16px 20px`, textAlign: `center` }
+              : { left: Math.min(t.x - 260, 1920 - 80 - 520), top: t.y - 230, width: 520, padding: `20px 26px`, textAlign: `center`, borderColor: `var(--gold)`, boxShadow: `0 0 50px rgba(244,197,109,0.35)` },
           },
-          __hf(`div`, { className: `tag`, style: { marginBottom: 6 } }, `Stage `, n.n),
-          __hf(`div`, { className: `h3`, style: { fontSize: 42 } }, n.title),
-          __hf(`div`, { className: `small gold`, style: { marginTop: 4, fontSize: 26 } }, n.sub),
-          n.sub2 ? __hf(`div`, { className: `small`, style: { marginTop: 2, fontSize: 22, color: `var(--ivory)` } }, n.sub2) : null,
+          __hf(`div`, { className: `tag`, style: { marginBottom: 6 } }, n.pct ? `Brokerage` : `The Summit`),
+          n.pct
+            ? __hf(`div`, { className: `hero`, style: { fontSize: 72, lineHeight: 1, color: `var(--gold)` } }, n.title)
+            : __hf(`div`, { className: `h3`, style: { fontSize: 44, color: `var(--gold)` } }, n.title),
+          __hf(`div`, { className: `small`, style: { marginTop: 6, fontSize: 24, color: `var(--ivory)` } }, n.sub),
         );
       }),
     )
@@ -68633,6 +69014,175 @@ function jA() {
     children: [e <= 1 && (0, Q.jsx)(OA, {}), e >= 2 && e <= 5 && (0, Q.jsx)(kA, {}), e >= 6 && (0, Q.jsx)(AA, {})],
   });
 }
+// ---------- Floor plans (standalone specs file): Block -> Floor -> Flat, focus-zoom on the chosen flat ----------
+// Source: "Ananta Floor Plan Brochure_Final_271026.pdf". Area tables copied exactly (checked column by column against the
+// PDF text); room sizes and balcony widths read from the plans. Floors 1st-8th; Block C has one typical floor, Blocks D and E
+// alternate odd / even plans. Flat d = [type, carpet, alcove, balcony, built-up, saleable] in sq. ft.
+// Block C flat D is listed "3B-2T" in the brochure table but is drawn as a 2 BHK with the same areas as flat H (2B-2T).
+// Selecting a flat enters focus mode: the menu and heading slide away, the plan fills the screen and zooms onto the flat,
+// a details panel opens on the right. Space or Esc zooms back out to the normal view.
+var FP_DATA = {"blocks": [{"id": "C", "name": "Block C", "storeys": "G+8", "odd": {"img": "floorplans/c-hd.jpg", "flats": {"A": {"r": [0.031, 0.649, 0.246, 0.987], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′8″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["7′8″"]}, "B": {"r": [0.006, 0.192, 0.221, 0.543], "d": ["3B-2T", 763, 26, 50, 917, 1225], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′8″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["6′0″"]}, "C": {"r": [0.275, 0.205, 0.489, 0.536], "d": ["3B-2T", 763, 26, 50, 917, 1225], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′8″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["6′0″"]}, "D": {"r": [0.354, 0.669, 0.512, 0.993], "d": ["2B-2T", 565, 10, 49, 687, 920], "rooms": [["Living", "10′11″ × 9′10″"], ["Dining", "7′1″ × 8′2″"], ["Bedroom 1", "11′3″ × 10′2″"], ["Bedroom 2", "10′11″ × 10′2″"], ["Kitchen", "7′7″ × 6′8″"], ["Toilet 1", "7′7″ × 4′0″"], ["Toilet 2", "7′7″ × 4′0″"]], "balc": ["6′2″"]}, "E": {"r": [0.779, 0.642, 0.994, 0.98], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′4″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["7′8″"]}, "F": {"r": [0.835, 0.013, 0.976, 0.517], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "14′1″ × 10′7″"], ["Dining", "9′3″ × 6′6″"], ["Bedroom 1", "11′7″ × 11′8″"], ["Bedroom 2", "10′7″ × 11′1″"], ["Bedroom 3", "10′0″ × 11′8″"], ["Kitchen", "6′8″ × 7′3″"], ["Toilet 1", "4′6″ × 8′0″"], ["Toilet 2", "4′0″ × 7′3″"]], "balc": ["7′8″"]}, "G": {"r": [0.623, 0.013, 0.766, 0.517], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "14′5″ × 10′7″"], ["Dining", "9′7″ × 6′6″"], ["Bedroom 1", "11′7″ × 11′8″"], ["Bedroom 2", "10′7″ × 11′1″"], ["Bedroom 3", "10′0″ × 11′8″"], ["Kitchen", "6′8″ × 7′3″"], ["Toilet 1", "4′6″ × 8′0″"], ["Toilet 2", "4′0″ × 7′3″"]], "balc": ["7′8″"]}, "H": {"r": [0.514, 0.669, 0.671, 0.993], "d": ["2B-2T", 565, 10, 49, 687, 920], "rooms": [["Living", "10′11″ × 9′10″"], ["Dining", "7′1″ × 8′2″"], ["Bedroom 1", "11′3″ × 10′2″"], ["Bedroom 2", "10′11″ × 10′2″"], ["Kitchen", "7′7″ × 6′8″"], ["Toilet 1", "7′7″ × 4′0″"], ["Toilet 2", "7′7″ × 4′0″"]], "balc": ["6′2″"]}}}, "even": {"img": "floorplans/c-hd.jpg", "flats": {"A": {"r": [0.031, 0.649, 0.246, 0.987], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′8″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["7′8″"]}, "B": {"r": [0.006, 0.192, 0.221, 0.543], "d": ["3B-2T", 763, 26, 50, 917, 1225], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′8″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["6′0″"]}, "C": {"r": [0.275, 0.205, 0.489, 0.536], "d": ["3B-2T", 763, 26, 50, 917, 1225], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′8″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["6′0″"]}, "D": {"r": [0.354, 0.669, 0.512, 0.993], "d": ["2B-2T", 565, 10, 49, 687, 920], "rooms": [["Living", "10′11″ × 9′10″"], ["Dining", "7′1″ × 8′2″"], ["Bedroom 1", "11′3″ × 10′2″"], ["Bedroom 2", "10′11″ × 10′2″"], ["Kitchen", "7′7″ × 6′8″"], ["Toilet 1", "7′7″ × 4′0″"], ["Toilet 2", "7′7″ × 4′0″"]], "balc": ["6′2″"]}, "E": {"r": [0.779, 0.642, 0.994, 0.98], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "10′7″ × 14′1″"], ["Dining", "6′6″ × 9′3″"], ["Bedroom 1", "11′4″ × 11′7″"], ["Bedroom 2", "11′1″ × 10′7″"], ["Bedroom 3", "11′8″ × 10′0″"], ["Kitchen", "7′3″ × 6′8″"], ["Toilet 1", "8′0″ × 4′6″"], ["Toilet 2", "7′3″ × 4′0″"]], "balc": ["7′8″"]}, "F": {"r": [0.835, 0.013, 0.976, 0.517], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "14′1″ × 10′7″"], ["Dining", "9′3″ × 6′6″"], ["Bedroom 1", "11′7″ × 11′8″"], ["Bedroom 2", "10′7″ × 11′1″"], ["Bedroom 3", "10′0″ × 11′8″"], ["Kitchen", "6′8″ × 7′3″"], ["Toilet 1", "4′6″ × 8′0″"], ["Toilet 2", "4′0″ × 7′3″"]], "balc": ["7′8″"]}, "G": {"r": [0.623, 0.013, 0.766, 0.517], "d": ["3B-2T", 763, 25, 67, 932, 1245], "rooms": [["Living", "14′5″ × 10′7″"], ["Dining", "9′7″ × 6′6″"], ["Bedroom 1", "11′7″ × 11′8″"], ["Bedroom 2", "10′7″ × 11′1″"], ["Bedroom 3", "10′0″ × 11′8″"], ["Kitchen", "6′8″ × 7′3″"], ["Toilet 1", "4′6″ × 8′0″"], ["Toilet 2", "4′0″ × 7′3″"]], "balc": ["7′8″"]}, "H": {"r": [0.514, 0.669, 0.671, 0.993], "d": ["2B-2T", 565, 10, 49, 687, 920], "rooms": [["Living", "10′11″ × 9′10″"], ["Dining", "7′1″ × 8′2″"], ["Bedroom 1", "11′3″ × 10′2″"], ["Bedroom 2", "10′11″ × 10′2″"], ["Kitchen", "7′7″ × 6′8″"], ["Toilet 1", "7′7″ × 4′0″"], ["Toilet 2", "7′7″ × 4′0″"]], "balc": ["6′2″"]}}}}, {"id": "D", "name": "Block D", "storeys": "B+G+8", "odd": {"img": "floorplans/d-odd-hd.jpg", "flats": {"A": {"r": [0.007, 0.571, 0.212, 0.995], "d": ["3B-2T", 789, 23, 54, 932, 1245], "rooms": [["Living", "11′0″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′6″"], ["Bedroom 2", "12′3″ × 11′4″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′2″ × 7′6″"], ["Toilet 1", "4′7″ × 8′0″"], ["Toilet 2", "4′7″ × 7′6″"]], "balc": ["6′3″"]}, "B": {"r": [0.007, 0.034, 0.212, 0.458], "d": ["3B-2T", 789, 23, 54, 932, 1245], "rooms": [["Living", "11′1″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′6″"], ["Bedroom 2", "12′3″ × 11′4″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′1″ × 7′6″"], ["Toilet 1", "4′7″ × 8′0″"], ["Toilet 2", "4′7″ × 7′6″"]], "balc": ["6′3″"]}, "C": {"r": [0.212, 0.039, 0.442, 0.453], "d": ["3B-2T", 755, 25, 75, 935, 1250], "rooms": [["Living", "11′1″ × 10′2″"], ["Dining", "11′1″ × 6′8″"], ["Bedroom 1", "10′1″ × 11′10″"], ["Bedroom 2", "10′8″ × 11′0″"], ["Bedroom 3", "11′2″ × 10′2″"], ["Kitchen", "6′4″ × 8′4″"], ["Toilet 1", "7′10″ × 4′6″"], ["Toilet 2", "4′2″ × 7′10″"]], "balc": ["5′1″", "3′0″"]}, "D": {"r": [0.577, 0.005, 0.75, 0.532], "d": ["3B-2T", 784, 22, 103, 988, 1320], "rooms": [["Living", "12′10″ × 8′6″"], ["Dining", "8′4″ × 7′0″"], ["Bedroom 1", "13′0″ × 11′0″"], ["Bedroom 2", "12′3″ × 10′2″"], ["Bedroom 3", "12′3″ × 10′2″"], ["Kitchen", "6′0″ × 12′2″"], ["Toilet 1", "4′6″ × 9′0″"], ["Toilet 2", "8′11″ × 4′2″"]], "balc": ["4′5″", "4′4″", "3′4″"]}, "E": {"r": [0.792, 0.039, 0.993, 0.458], "d": ["3B-2T", 789, 23, 54, 932, 1245], "rooms": [["Living", "11′1″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′4″"], ["Bedroom 2", "12′3″ × 11′2″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′1″ × 7′6″"], ["Toilet 1", "4′7″ × 7′6″"], ["Toilet 2", "4′7″ × 7′11″"]], "balc": ["6′3″"]}, "F": {"r": [0.792, 0.571, 0.993, 0.995], "d": ["3B-2T", 789, 23, 54, 932, 1245], "rooms": [["Living", "11′0″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′6″"], ["Bedroom 2", "12′3″ × 11′4″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′2″ × 7′6″"], ["Toilet 1", "4′7″ × 7′6″"], ["Toilet 2", "4′7″ × 7′11″"]], "balc": ["6′3″"]}, "G": {"r": [0.536, 0.69, 0.792, 0.995], "d": ["2B-2T", 574, 17, 54, 702, 940], "rooms": [["Living", "8′6″ × 12′8″"], ["Dining", "6′9″ × 11′2″"], ["Bedroom 1", "10′1″ × 10′6″"], ["Bedroom 2", "10′1″ × 10′0″"], ["Kitchen", "6′5″ × 9′2″"], ["Toilet 1", "4′1″ × 9′2″"], ["Toilet 2", "4′1″ × 7′1″"]], "balc": ["5′7″"]}, "H": {"r": [0.212, 0.69, 0.532, 0.936], "d": ["3B-2T", 682, 17, 36, 802, 1075], "rooms": [["Living", "8′6″ × 10′4″"], ["Dining", "8′4″ × 10′4″"], ["Bedroom 1", "11′4″ × 10′0″"], ["Bedroom 2", "10′1″ × 10′6″"], ["Bedroom 3", "10′1″ × 10′0″"], ["Kitchen", "6′5″ × 9′2″"], ["Toilet 1", "4′1″ × 9′2″"], ["Toilet 2", "4′1″ × 7′2″"]], "balc": ["4′0″"]}}}, "even": {"img": "floorplans/d-even-hd.jpg", "flats": {"A": {"r": [0.007, 0.571, 0.212, 0.995], "d": ["3B-2T", 789, 23, 48, 927, 1240], "rooms": [["Living", "11′0″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′6″"], ["Bedroom 2", "12′3″ × 11′4″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′2″ × 7′6″"], ["Toilet 1", "4′7″ × 8′0″"], ["Toilet 2", "4′7″ × 7′6″"]], "balc": ["5′7″"]}, "B": {"r": [0.007, 0.034, 0.212, 0.458], "d": ["3B-2T", 789, 23, 48, 927, 1240], "rooms": [["Living", "11′1″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′6″"], ["Bedroom 2", "12′3″ × 11′4″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′1″ × 7′6″"], ["Toilet 1", "4′7″ × 8′0″"], ["Toilet 2", "4′7″ × 7′6″"]], "balc": ["5′7″"]}, "C": {"r": [0.212, 0.039, 0.442, 0.453], "d": ["3B-2T", 755, 25, 69, 930, 1245], "rooms": [["Living", "11′1″ × 10′2″"], ["Dining", "11′1″ × 6′8″"], ["Bedroom 1", "10′1″ × 11′10″"], ["Bedroom 2", "10′8″ × 11′0″"], ["Bedroom 3", "11′2″ × 10′2″"], ["Kitchen", "6′4″ × 8′4″"], ["Toilet 1", "7′10″ × 4′6″"], ["Toilet 2", "4′2″ × 7′10″"]], "balc": ["4′5″", "3′0″"]}, "D": {"r": [0.577, 0.005, 0.75, 0.532], "d": ["3B-2T", 784, 22, 96, 981, 1310], "rooms": [["Living", "12′10″ × 8′6″"], ["Dining", "8′4″ × 7′0″"], ["Bedroom 1", "13′0″ × 11′0″"], ["Bedroom 2", "12′3″ × 10′2″"], ["Bedroom 3", "12′3″ × 10′2″"], ["Kitchen", "6′0″ × 12′2″"], ["Toilet 1", "4′6″ × 9′0″"], ["Toilet 2", "8′11″ × 4′2″"]], "balc": ["3′9″", "4′4″", "3′4″"]}, "E": {"r": [0.792, 0.039, 0.993, 0.458], "d": ["3B-2T", 789, 23, 48, 927, 1240], "rooms": [["Living", "11′1″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′4″"], ["Bedroom 2", "12′3″ × 11′2″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′1″ × 7′6″"], ["Toilet 1", "4′7″ × 7′6″"], ["Toilet 2", "4′7″ × 7′11″"]], "balc": ["5′7″"]}, "F": {"r": [0.792, 0.571, 0.993, 0.995], "d": ["3B-2T", 789, 23, 48, 927, 1240], "rooms": [["Living", "11′0″ × 11′6″"], ["Dining", "9′1″ × 7′1″"], ["Bedroom 1", "12′3″ × 11′6″"], ["Bedroom 2", "12′3″ × 11′4″"], ["Bedroom 3", "10′1″ × 11′4″"], ["Kitchen", "8′2″ × 7′6″"], ["Toilet 1", "4′7″ × 7′6″"], ["Toilet 2", "4′7″ × 7′11″"]], "balc": ["5′7″"]}, "G": {"r": [0.536, 0.69, 0.792, 0.995], "d": ["2B-2T", 574, 17, 61, 709, 950], "rooms": [["Living", "8′6″ × 12′8″"], ["Dining", "6′9″ × 11′2″"], ["Bedroom 1", "10′1″ × 10′6″"], ["Bedroom 2", "10′1″ × 10′0″"], ["Kitchen", "6′5″ × 9′2″"], ["Toilet 1", "4′1″ × 9′2″"], ["Toilet 2", "4′1″ × 7′1″"]], "balc": ["6′3″"]}, "H": {"r": [0.212, 0.69, 0.532, 0.936], "d": ["3B-2T", 682, 17, 42, 808, 1080], "rooms": [["Living", "8′6″ × 10′4″"], ["Dining", "8′4″ × 10′4″"], ["Bedroom 1", "11′4″ × 10′0″"], ["Bedroom 2", "10′1″ × 10′6″"], ["Bedroom 3", "10′1″ × 10′0″"], ["Kitchen", "6′5″ × 9′2″"], ["Toilet 1", "4′1″ × 9′2″"], ["Toilet 2", "4′1″ × 7′2″"]], "balc": ["4′8″"]}}}}, {"id": "E", "name": "Block E", "storeys": "B+G+8", "odd": {"img": "floorplans/e-odd-hd.jpg", "flats": {"A": {"r": [0.027, 0.005, 0.2, 0.36], "d": ["4B-4T", 1085, 17, 154, 1352, 1805], "rooms": [["Living / Dining", "25′6″ × 10′6″"], ["Bedroom 1", "11′0″ × 12′4″"], ["Bedroom 2", "10′10″ × 12′2″"], ["Bedroom 3", "10′10″ × 11′0″"], ["Bedroom 4", "11′0″ × 10′4″"], ["Kitchen", "7′4″ × 6′0″"], ["Toilet 1", "4′6″ × 8′4″"], ["Toilet 2", "4′6″ × 8′4″"], ["Toilet 3", "7′4″ × 5′0″"], ["Toilet 4", "7′4″ × 4′0″"]], "balc": ["8′2″", "6′4″"]}, "B": {"r": [0.01, 0.475, 0.2, 0.655], "d": ["3B-2T", 766, 24, 62, 923, 1230], "rooms": [["Living", "10′0″ × 15′2″"], ["Dining", "9′0″ × 10′8″"], ["Bedroom 1", "11′0″ × 11′2″"], ["Bedroom 2", "11′4″ × 10′0″"], ["Bedroom 3", "11′4″ × 10′0″"], ["Kitchen", "6′0″ × 10′0″"], ["Toilet 1", "6′0″ × 5′6″"], ["Toilet 2", "10′2″ × 4′0″"]], "balc": ["6′8″"]}, "C": {"r": [0, 0.655, 0.2, 0.99], "d": ["4B-4T", 1138, 23, 100, 1340, 1790], "rooms": [["Living / Dining", "27′4″ × 10′0″"], ["Family Space", "9′11″ × 10′8″"], ["Bedroom 1", "10′9″ × 12′4″"], ["Bedroom 2", "10′8″ × 11′2″"], ["Bedroom 3", "10′3″ × 10′0″"], ["Bedroom 4", "10′5″ × 9′8″"], ["Kitchen", "6′8″ × 8′10″"], ["Toilet 1", "5′10″ × 6′8″"], ["Toilet 2", "7′6″ × 4′4″"], ["Toilet 3", "4′2″ × 7′10″"], ["Toilet 4", "4′2″ × 7′10″"]], "balc": ["6′4″", "4′0″"]}, "D": {"r": [0.2, 0.725, 0.455, 0.955], "d": ["3B-2T", 879, 18, 47, 1023, 1365], "rooms": [["Living / Dining", "23′0″ × 10′6″"], ["Bedroom 1", "10′6″ × 11′8″"], ["Bedroom 2", "11′0″ × 11′0″"], ["Bedroom 3", "11′0″ × 10′2″"], ["Kitchen", "11′6″ × 6′10″"], ["Toilet 1", "8′4″ × 5′6″"], ["Toilet 2", "4′0″ × 7′8″"]], "balc": ["4′8″"]}, "E": {"r": [0.585, 0.725, 0.8, 0.94], "d": ["3B-2T", 842, 17, 57, 989, 1320], "rooms": [["Living", "13′10″ × 14′0″"], ["Dining", "7′10″ × 9′0″"], ["Bedroom 1", "11′0″ × 11′10″"], ["Bedroom 2", "10′4″ × 12′4″"], ["Bedroom 3", "12′6″ × 10′2″"], ["Kitchen", "11′0″ × 6′0″"], ["Toilet 1", "10′6″ × 4′6″"], ["Toilet 2", "4′8″ × 8′6″"]], "balc": ["6′8″"]}, "F": {"r": [0.8, 0.7, 0.995, 0.995], "d": ["4B-4T", 1138, 23, 100, 1340, 1790], "rooms": [["Living", "12′6″ × 10′0″"], ["Dining", "14′10″ × 10′0″"], ["Family Space", "9′11″ × 10′8″"], ["Bedroom 1", "10′9″ × 12′4″"], ["Bedroom 2", "10′8″ × 11′2″"], ["Bedroom 3", "10′3″ × 10′0″"], ["Bedroom 4", "10′5″ × 9′8″"], ["Kitchen", "6′8″ × 8′10″"], ["Toilet 1", "5′10″ × 6′8″"], ["Toilet 2", "7′6″ × 4′4″"], ["Toilet 3", "4′2″ × 7′10″"], ["Toilet 4", "4′2″ × 7′10″"]], "balc": ["6′4″", "4′0″"]}, "G": {"r": [0.8, 0.475, 0.995, 0.7], "d": ["3B-2T", 766, 24, 62, 923, 1230], "rooms": [["Living", "10′0″ × 15′2″"], ["Dining", "9′0″ × 10′8″"], ["Bedroom 1", "11′0″ × 11′2″"], ["Bedroom 2", "11′4″ × 10′0″"], ["Bedroom 3", "11′4″ × 10′0″"], ["Kitchen", "6′0″ × 10′0″"], ["Toilet 1", "6′0″ × 5′6″"], ["Toilet 2", "10′2″ × 4′0″"]], "balc": ["6′8″"]}, "H": {"r": [0.8, 0.005, 0.974, 0.362], "d": ["4B-4T", 1085, 17, 154, 1352, 1805], "rooms": [["Living / Dining", "25′6″ × 10′6″"], ["Bedroom 1", "11′0″ × 12′4″"], ["Bedroom 2", "10′10″ × 12′2″"], ["Bedroom 3", "10′10″ × 11′0″"], ["Bedroom 4", "11′0″ × 10′4″"], ["Kitchen", "7′4″ × 6′0″"], ["Toilet 1", "4′6″ × 8′4″"], ["Toilet 2", "4′6″ × 8′4″"], ["Toilet 3", "7′4″ × 5′0″"], ["Toilet 4", "7′4″ × 4′0″"]], "balc": ["8′2″", "6′4″"]}, "J": {"r": [0.623, 0.053, 0.773, 0.362], "d": ["3B-3T", 867, 20, 93, 1051, 1405], "rooms": [["Living / Dining", "20′8″ × 10′0″"], ["Family Space", "9′6″ × 5′0″"], ["Bedroom 1", "12′0″ × 11′0″"], ["Bedroom 2", "10′10″ × 10′7″"], ["Bedroom 3", "10′2″ × 10′8″"], ["Kitchen", "11′0″ × 6′0″"], ["Toilet 1", "7′6″ × 5′9″"], ["Toilet 2", "7′6″ × 5′2″"], ["Toilet 3", "8′8″ × 4′0″"]], "balc": ["6′4″", "3′0″"]}, "K": {"r": [0.615, 0.475, 0.775, 0.69], "d": ["2B-2T", 648, 19, 36, 760, 1015], "rooms": [["Living", "15′0″ × 10′8″"], ["Dining", "7′2″ × 9′0″"], ["Bedroom 1", "10′0″ × 11′4″"], ["Bedroom 2", "10′0″ × 11′0″"], ["Kitchen", "10′4″ × 8′0″"], ["Toilet 1", "4′7″ × 7′4″"], ["Toilet 2", "4′0″ × 7′0″"]], "balc": ["4′2″"]}, "L": {"r": [0.445, 0.475, 0.615, 0.69], "d": ["3B-3T", 733, 26, 27, 847, 1130], "rooms": [["Living", "12′0″ × 10′4″"], ["Dining", "10′2″ × 9′0″"], ["Bedroom 1", "10′0″ × 10′4″"], ["Bedroom 2", "10′0″ × 10′2″"], ["Bedroom 3", "10′0″ × 10′0″"], ["Kitchen", "7′4″ × 8′4″"], ["Toilet 1", "4′0″ × 8′4″"], ["Toilet 2", "4′0″ × 8′4″"], ["Toilet 3", "4′0″ × 7′0″"]], "balc": ["3′2″"]}, "M": {"r": [0.225, 0.475, 0.445, 0.69], "d": ["3B-3T", 771, 25, 28, 900, 1200], "rooms": [["Living", "11′10″ × 10′2″"], ["Dining", "10′4″ × 9′2″"], ["Bedroom 1", "13′6″ × 10′4″"], ["Bedroom 2", "10′0″ × 10′0″"], ["Bedroom 3", "10′0″ × 10′0″"], ["Kitchen", "8′4″ × 6′0″"], ["Toilet 1", "9′2″ × 4′2″"], ["Toilet 2", "9′2″ × 4′2″"], ["Toilet 3", "4′0″ × 8′2″"]], "balc": ["3′2″"]}, "N": {"r": [0.223, 0.058, 0.377, 0.362], "d": ["3B-3T", 867, 20, 93, 1051, 1405], "rooms": [["Living / Dining", "20′8″ × 10′0″"], ["Family Space", "9′6″ × 5′0″"], ["Bedroom 1", "12′0″ × 11′0″"], ["Bedroom 2", "10′10″ × 10′7″"], ["Bedroom 3", "10′2″ × 10′4″"], ["Kitchen", "11′0″ × 6′6″"], ["Toilet 1", "7′6″ × 5′9″"], ["Toilet 2", "7′6″ × 5′2″"], ["Toilet 3", "8′8″ × 4′0″"]], "balc": ["6′4″", "3′0″"]}}}, "even": {"img": "floorplans/e-even-hd.jpg", "flats": {"A": {"r": [0.027, 0.005, 0.2, 0.36], "d": ["4B-4T", 1085, 17, 142, 1341, 1790], "rooms": [["Living / Dining", "25′6″ × 10′6″"], ["Bedroom 1", "11′0″ × 12′4″"], ["Bedroom 2", "10′10″ × 12′2″"], ["Bedroom 3", "10′10″ × 11′0″"], ["Bedroom 4", "11′0″ × 10′4″"], ["Kitchen", "7′4″ × 6′0″"], ["Toilet 1", "4′6″ × 8′4″"], ["Toilet 2", "4′6″ × 8′4″"], ["Toilet 3", "7′4″ × 5′0″"], ["Toilet 4", "7′4″ × 4′0″"]], "balc": ["8′2″", "5′8″"]}, "B": {"r": [0.01, 0.475, 0.2, 0.655], "d": ["3B-2T", 766, 24, 62, 923, 1230], "rooms": [["Living", "10′0″ × 15′2″"], ["Dining", "9′0″ × 10′8″"], ["Bedroom 1", "11′0″ × 11′2″"], ["Bedroom 2", "11′4″ × 10′0″"], ["Bedroom 3", "11′4″ × 10′0″"], ["Kitchen", "6′0″ × 10′0″"], ["Toilet 1", "6′0″ × 5′6″"], ["Toilet 2", "10′2″ × 4′0″"]], "balc": ["6′8″"]}, "C": {"r": [0, 0.655, 0.2, 0.99], "d": ["4B-4T", 1138, 23, 103, 1343, 1795], "rooms": [["Living / Dining", "27′4″ × 10′0″"], ["Family Space", "9′11″ × 10′8″"], ["Bedroom 1", "10′9″ × 12′4″"], ["Bedroom 2", "10′8″ × 11′2″"], ["Bedroom 3", "10′3″ × 10′0″"], ["Bedroom 4", "10′5″ × 9′8″"], ["Kitchen", "6′8″ × 8′10″"], ["Toilet 1", "5′10″ × 6′8″"], ["Toilet 2", "7′6″ × 4′4″"], ["Toilet 3", "4′2″ × 7′10″"], ["Toilet 4", "4′2″ × 7′10″"]], "balc": ["6′4″", "4′8″"]}, "D": {"r": [0.2, 0.725, 0.455, 0.955], "d": ["3B-2T", 879, 18, 63, 1038, 1385], "rooms": [["Living / Dining", "23′0″ × 10′6″"], ["Bedroom 1", "10′6″ × 11′8″"], ["Bedroom 2", "11′0″ × 11′0″"], ["Bedroom 3", "11′0″ × 10′2″"], ["Kitchen", "11′6″ × 6′10″"], ["Toilet 1", "8′4″ × 5′6″"], ["Toilet 2", "4′0″ × 7′8″"]], "balc": ["6′4″"]}, "E": {"r": [0.585, 0.725, 0.8, 0.94], "d": ["3B-2T", 842, 17, 56, 989, 1320], "rooms": [["Living", "13′10″ × 14′0″"], ["Dining", "7′10″ × 9′0″"], ["Bedroom 1", "11′0″ × 11′10″"], ["Bedroom 2", "10′4″ × 12′4″"], ["Bedroom 3", "12′6″ × 10′2″"], ["Kitchen", "11′0″ × 6′0″"], ["Toilet 1", "10′6″ × 4′6″"], ["Toilet 2", "4′8″ × 8′6″"]], "balc": ["6′8″"]}, "F": {"r": [0.8, 0.7, 0.995, 0.995], "d": ["4B-4T", 1138, 23, 103, 1343, 1795], "rooms": [["Living", "12′6″ × 10′0″"], ["Dining", "14′10″ × 10′0″"], ["Family Space", "9′11″ × 10′8″"], ["Bedroom 1", "10′9″ × 12′4″"], ["Bedroom 2", "10′8″ × 11′2″"], ["Bedroom 3", "10′3″ × 10′0″"], ["Bedroom 4", "10′5″ × 9′8″"], ["Kitchen", "6′8″ × 8′10″"], ["Toilet 1", "5′10″ × 6′8″"], ["Toilet 2", "7′6″ × 4′4″"], ["Toilet 3", "4′2″ × 7′10″"], ["Toilet 4", "4′2″ × 7′10″"]], "balc": ["6′4″", "4′8″"]}, "G": {"r": [0.8, 0.475, 0.995, 0.7], "d": ["3B-2T", 766, 24, 62, 923, 1230], "rooms": [["Living", "10′0″ × 15′2″"], ["Dining", "9′0″ × 10′8″"], ["Bedroom 1", "11′0″ × 11′2″"], ["Bedroom 2", "11′4″ × 10′0″"], ["Bedroom 3", "11′4″ × 10′0″"], ["Kitchen", "6′0″ × 10′0″"], ["Toilet 1", "6′0″ × 5′6″"], ["Toilet 2", "10′2″ × 4′0″"]], "balc": ["6′8″"]}, "H": {"r": [0.8, 0.005, 0.974, 0.362], "d": ["4B-4T", 1085, 17, 142, 1341, 1790], "rooms": [["Living / Dining", "25′6″ × 10′6″"], ["Bedroom 1", "11′0″ × 12′4″"], ["Bedroom 2", "10′10″ × 12′2″"], ["Bedroom 3", "10′10″ × 11′0″"], ["Bedroom 4", "11′0″ × 10′4″"], ["Kitchen", "7′4″ × 6′0″"], ["Toilet 1", "4′6″ × 8′4″"], ["Toilet 2", "4′6″ × 8′4″"], ["Toilet 3", "7′4″ × 5′0″"], ["Toilet 4", "7′4″ × 4′0″"]], "balc": ["8′2″", "5′8″"]}, "J": {"r": [0.623, 0.053, 0.773, 0.362], "d": ["3B-3T", 867, 20, 76, 1034, 1380], "rooms": [["Living / Dining", "20′8″ × 10′0″"], ["Family Space", "9′6″ × 5′0″"], ["Bedroom 1", "12′0″ × 11′0″"], ["Bedroom 2", "10′10″ × 10′7″"], ["Bedroom 3", "10′2″ × 10′8″"], ["Kitchen", "11′0″ × 6′0″"], ["Toilet 1", "7′6″ × 5′9″"], ["Toilet 2", "7′6″ × 5′2″"], ["Toilet 3", "8′8″ × 4′0″"]], "balc": ["4′8″", "3′0″"]}, "K": {"r": [0.615, 0.475, 0.775, 0.69], "d": ["2B-2T", 648, 19, 27, 751, 1005], "rooms": [["Living", "15′0″ × 10′8″"], ["Dining", "7′2″ × 9′0″"], ["Bedroom 1", "10′0″ × 11′4″"], ["Bedroom 2", "10′0″ × 11′0″"], ["Kitchen", "10′4″ × 8′0″"], ["Toilet 1", "4′7″ × 7′4″"], ["Toilet 2", "4′0″ × 7′0″"]], "balc": ["3′2″"]}, "L": {"r": [0.445, 0.475, 0.615, 0.69], "d": ["3B-3T", 733, 26, 27, 847, 1130], "rooms": [["Living", "12′0″ × 10′4″"], ["Dining", "10′2″ × 9′0″"], ["Bedroom 1", "10′0″ × 10′4″"], ["Bedroom 2", "10′0″ × 10′2″"], ["Bedroom 3", "10′0″ × 10′0″"], ["Kitchen", "7′4″ × 8′4″"], ["Toilet 1", "4′0″ × 8′4″"], ["Toilet 2", "4′0″ × 8′4″"], ["Toilet 3", "4′0″ × 7′0″"]], "balc": ["3′2″"]}, "M": {"r": [0.225, 0.475, 0.445, 0.69], "d": ["3B-3T", 771, 25, 28, 902, 1205], "rooms": [["Living", "11′10″ × 10′2″"], ["Dining", "10′4″ × 9′2″"], ["Bedroom 1", "13′6″ × 10′4″"], ["Bedroom 2", "10′0″ × 10′0″"], ["Bedroom 3", "10′0″ × 10′0″"], ["Kitchen", "8′4″ × 6′0″"], ["Toilet 1", "9′2″ × 4′2″"], ["Toilet 2", "9′2″ × 4′2″"], ["Toilet 3", "4′0″ × 8′2″"]], "balc": ["3′2″"]}, "N": {"r": [0.223, 0.058, 0.377, 0.362], "d": ["3B-3T", 867, 20, 76, 1034, 1380], "rooms": [["Living / Dining", "20′8″ × 10′0″"], ["Family Space", "9′6″ × 5′0″"], ["Bedroom 1", "12′0″ × 11′0″"], ["Bedroom 2", "10′10″ × 10′7″"], ["Bedroom 3", "10′2″ × 10′4″"], ["Kitchen", "11′0″ × 6′6″"], ["Toilet 1", "7′6″ × 5′9″"], ["Toilet 2", "7′6″ × 5′2″"], ["Toilet 3", "8′8″ × 4′0″"]], "balc": ["4′8″", "3′0″"]}}}}]};
+var fpType = (t) => {
+    let m = /^(\d)B-(\d)T$/.exec(t);
+    return m ? `${m[1]} BHK · ${m[2]} Toilets` : t;
+  },
+  fpOrd = (n) => n + ([, `st`, `nd`, `rd`][n] || `th`),
+  fpN = (n) => n.toLocaleString(`en-IN`);
+function FpScene() {
+  let h = (t, p, ...c) => v.createElement(t, p, ...c),
+    [bi, setB] = v.useState(0),
+    [fl, setF] = v.useState(1),
+    [sel, setSel] = v.useState(null),
+    [nat, setNat] = v.useState({}),
+    blk = FP_DATA.blocks[bi],
+    lay = fl % 2 ? blk.odd : blk.even,
+    flats = Object.keys(lay.flats),
+    cur = sel && lay.flats[sel] ? lay.flats[sel] : null,
+    focus = !!cur,
+    // normal view: plan beside the menu · focus view: plan fills the screen
+    SL = focus ? 40 : 500,
+    ST = focus ? 40 : 245,
+    VW = focus ? 1840 : 1370,
+    VH = focus ? 1000 : 790,
+    CARD = 520,
+    a = nat[lay.img] || 2,
+    dW = Math.min(VW, VH * a),
+    dH = dW / a,
+    L0 = (VW - dW) / 2,
+    T0 = (VH - dH) / 2,
+    tf = `translate(0px,0px) scale(1)`;
+  // Space / Esc zoom back out (captured before the deck's own Next handler)
+  v.useEffect(() => {
+    if (!focus) return;
+    let k = (e) => {
+      if (e.code === `Space` || e.key === ` ` || e.key === `Escape`) {
+        e.preventDefault(), e.stopImmediatePropagation(), setSel(null);
+      }
+    };
+    window.addEventListener(`keydown`, k, !0);
+    return () => window.removeEventListener(`keydown`, k, !0);
+  }, [focus]);
+  if (cur) {
+    let [x0, y0, x1, y1] = cur.r,
+      fw = (x1 - x0) * dW,
+      fh = (y1 - y0) * dH,
+      availW = VW - CARD - 50,
+      k = Math.min((availW * 0.95) / fw, (VH * 0.92) / fh, 12),
+      cx = ((x0 + x1) / 2) * dW,
+      cy = ((y0 + y1) / 2) * dH;
+    tf = `translate(${20 + availW / 2 - L0 - k * cx}px,${VH / 2 - T0 - k * cy}px) scale(${k})`;
+  }
+  let stop = vxStop,
+    btn = (on, label, onClick, cls = ``, sub) =>
+      h(
+        `button`,
+        { key: label, className: `fp-btn ${cls}${on ? ` on` : ``}`, onClick: (ev) => (stop(ev), onClick()), onPointerDown: stop, tabIndex: -1 },
+        label,
+        sub ? h(`small`, null, sub) : null,
+      ),
+    d = cur && cur.d,
+    rooms = cur ? cur.rooms : [],
+    pick = (re) => rooms.filter(([k]) => re.test(k)),
+    group = (title, list) =>
+      list.length ? h(`div`, { className: `fq-group`, key: title }, h(`div`, { className: `fq-h` }, title), list.map(([k, val]) => h(`div`, { className: `fq-row`, key: k }, h(`span`, null, k), h(`b`, null, val)))) : null;
+  return h(
+    `div`,
+    { className: `fill fp-scene${focus ? ` focus` : ``}`, "data-testid": `scene-floorplans`, "data-no-shortcuts": !0 },
+    h(
+      `div`,
+      { className: `abs fp-side`, style: { left: 70, top: 56 } },
+      h(`div`, { className: `mp-head` }, h(`div`, { className: `eyebrow`, style: { marginBottom: 10 } }, `${oa.name} · ${oa.at}`), h(`div`, { className: `h2` }, `Floor Plans`)),
+    ),
+    h(
+      `div`,
+      { className: `abs fp-panel fp-side`, style: { left: 70, top: 250, width: 400 } },
+      h(`div`, { className: `tag` }, `1 · Choose Block`),
+      h(`div`, { className: `fp-row` }, FP_DATA.blocks.map((b, i) => btn(i === bi, b.name, () => (setB(i), setSel(null)), `blk`, b.storeys))),
+      h(`div`, { className: `tag` }, `2 · Choose Floor`),
+      h(`div`, { className: `fp-grid4` }, [1, 2, 3, 4, 5, 6, 7, 8].map((n) => btn(n === fl, fpOrd(n), () => setF(n)))),
+      h(`div`, { className: `tag` }, `3 · Choose Flat`),
+      h(
+        `div`,
+        { className: flats.length > 8 ? `fp-grid5` : `fp-grid4` },
+        flats.map((f) => btn(f === sel, f, () => setSel(f === sel ? null : f), `flat`, fpType(lay.flats[f].d[0]).split(` ·`)[0])),
+      ),
+    ),
+    h(
+      `div`,
+      { className: `abs fp-stage`, style: { left: SL, top: ST, width: VW, height: VH } },
+      h(
+        `div`,
+        { className: `fp-layer`, style: { left: L0, top: T0, width: dW, height: dH, transform: tf } },
+        h(`img`, {
+          src: z(lay.img),
+          alt: `${blk.name} floor plan`,
+          draggable: !1,
+          onLoad: (ev) => {
+            let im = ev.currentTarget;
+            im.naturalWidth && setNat((o) => ({ ...o, [lay.img]: im.naturalWidth / im.naturalHeight }));
+          },
+        }),
+        flats.map((f) => {
+          let [x0, y0, x1, y1] = lay.flats[f].r;
+          return h(
+            `div`,
+            {
+              key: f,
+              className: `fp-hit${f === sel ? ` on` : ``}${sel && f !== sel ? ` dim` : ``}`,
+              style: { left: `${x0 * 100}%`, top: `${y0 * 100}%`, width: `${(x1 - x0) * 100}%`, height: `${(y1 - y0) * 100}%` },
+              onClick: (ev) => (stop(ev), setSel(f === sel ? null : f)),
+              onPointerDown: stop,
+            },
+            h(`span`, null, f),
+          );
+        }),
+      ),
+      h(`div`, { className: `fp-caption` }, `${blk.name} (${blk.storeys}) · ${fpOrd(fl)} Floor${blk.id === `C` ? `` : fl % 2 ? ` · odd-floor plan` : ` · even-floor plan`}`),
+      h(
+        `button`,
+        { className: `fp-back${focus ? ` on` : ``}`, onClick: (ev) => (stop(ev), setSel(null)), onPointerDown: stop, tabIndex: -1 },
+        h(`kbd`, null, `Space`),
+        `Back to full floor`,
+      ),
+      h(
+        `div`,
+        { className: `fq-card${cur ? ` on` : ``}`, style: { width: CARD } },
+        d &&
+          h(
+            v.Fragment,
+            null,
+            h(`div`, { className: `fq-eyebrow` }, `${blk.name} · ${fpOrd(fl)} Floor`),
+            h(`div`, { className: `fq-title` }, `Flat ${sel}`),
+            h(`div`, { className: `fq-chip` }, fpType(d[0])),
+            h(
+              `div`,
+              { className: `fq-kpis` },
+              h(`div`, null, h(`b`, null, fpN(d[1])), h(`span`, null, `Carpet area · sq. ft.`)),
+              h(`div`, null, h(`b`, null, fpN(d[5])), h(`span`, null, `Saleable area · sq. ft.`)),
+            ),
+            h(`div`, { className: `fq-note` }, `Carpet area excludes balcony & alcove`),
+            h(
+              `div`,
+              { className: `fq-groups` },
+              group(`Living`, pick(/^(Living|Dining|Family)/)),
+              group(`Bedrooms`, pick(/^Bedroom/)),
+              group(`Kitchen & Toilets`, [...pick(/^Kitchen/), ...pick(/^Toilet/)]),
+            ),
+            h(
+              `div`,
+              { className: `fq-foot` },
+              h(`div`, null, h(`b`, null, fpN(d[4])), h(`span`, null, `Built-up`)),
+              h(`div`, null, h(`b`, null, fpN(d[3])), h(`span`, null, `Balcony`)),
+              h(`div`, null, h(`b`, null, fpN(d[2])), h(`span`, null, `Alcove`)),
+            ),
+            h(`div`, { className: `fq-balc` }, `Balcon${cur.balc.length > 1 ? `ies` : `y`} ${cur.balc.map((w) => `${w} wide`).join(` · `)}`),
+          ),
+      ),
+    ),
+    h(`div`, { className: `abs small fp-foot fp-side` }, `Areas as per the Ananta floor plan brochure. Room sizes are as marked on the plans. Plans are indicative; furniture is for illustration.`),
+  );
+}
+
 var MA = {
     opening: CE,
     legacy: wE,
@@ -68645,6 +69195,7 @@ var MA = {
     support: Ek,
     achievements: Ak,
     closing: sA,
+    floorplans: FpScene,
   },
   NA = 0;
 function PA() {
@@ -68731,6 +69282,419 @@ function FA({ children: e, className: t = `` }) {
     })
   );
 }
+// ---------- Click-to-zoom photo viewer (projects + hotels) ----------
+// Click a photo to open it full screen; click the photo again to zoom 2.4× at that point; click outside, ✕ or any key to close.
+var __lbSet = null;
+function lbOpen(src, title, sub) {
+  __lbSet && __lbSet({ src, title, sub });
+}
+function Lightbox() {
+  let [it, set] = v.useState(null),
+    [zoom, setZoom] = v.useState(null),
+    h = (t, p, ...c) => v.createElement(t, p, ...c);
+  v.useEffect(
+    () => (
+      (__lbSet = (x) => {
+        set(x), setZoom(null);
+      }),
+      () => void (__lbSet = null)
+    ),
+    [],
+  );
+  v.useEffect(() => {
+    if (!it) return;
+    let k = (e) => {
+      e.stopImmediatePropagation(), e.preventDefault(), set(null);
+    };
+    return window.addEventListener(`keydown`, k, !0), () => window.removeEventListener(`keydown`, k, !0);
+  }, [it]);
+  if (!it) return null;
+  let stop = (e) => e.stopPropagation();
+  return h(
+    `div`,
+    { className: `lb`, "data-no-shortcuts": !0, onClick: (e) => (stop(e), set(null)), onPointerDown: stop, onMouseDown: stop },
+    h(`img`, {
+      src: it.src,
+      alt: it.title || ``,
+      className: zoom ? `zoomed` : ``,
+      style: zoom ? { transform: `scale(2.4)`, transformOrigin: `${zoom.x}% ${zoom.y}%` } : null,
+      onClick: (e) => {
+        stop(e);
+        if (zoom) return setZoom(null);
+        let r = e.currentTarget.getBoundingClientRect();
+        setZoom({ x: ((e.clientX - r.left) / r.width) * 100, y: ((e.clientY - r.top) / r.height) * 100 });
+      },
+    }),
+    it.title ? h(`div`, { className: `lb-cap` }, h(`div`, { className: `lb-t` }, it.title), it.sub ? h(`div`, { className: `lb-s` }, it.sub) : null) : null,
+    h(`button`, { className: `lb-x`, onClick: (e) => (stop(e), set(null)), tabIndex: -1, title: `Close` }, `✕`),
+    h(`div`, { className: `lb-hint` }, zoom ? `Click to zoom out` : `Click the photo to zoom in · click outside or press any key to close`),
+  );
+}
+// ---------- Film player controls (play / pause / scrub) ----------
+var fmt = (s) => (isFinite(s) ? `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, `0`)}` : `0:00`);
+function FilmCtl({ vid: vref, target: tg, status: st }) {
+  let [cur, setCur] = v.useState(0),
+    [dur, setDur] = v.useState(0),
+    [drag, setDrag] = v.useState(null),
+    [show, setShow] = v.useState(!0),
+    tm = v.useRef(0),
+    h = (t, p, ...c) => v.createElement(t, p, ...c);
+  v.useEffect(() => {
+    let n = vref.current;
+    if (!n) return;
+    let u = () => {
+      setCur(n.currentTime || 0), setDur(n.duration || 0);
+    };
+    return (
+      n.addEventListener(`timeupdate`, u),
+      n.addEventListener(`loadedmetadata`, u),
+      n.addEventListener(`seeked`, u),
+      u(),
+      () => {
+        n.removeEventListener(`timeupdate`, u), n.removeEventListener(`loadedmetadata`, u), n.removeEventListener(`seeked`, u);
+      }
+    );
+  }, [vref]);
+  v.useEffect(() => {
+    let f = () => {
+      setShow(!0), clearTimeout(tm.current), (tm.current = setTimeout(() => setShow(!1), 2800));
+    };
+    return f(), window.addEventListener(`mousemove`, f), () => (window.removeEventListener(`mousemove`, f), clearTimeout(tm.current));
+  }, []);
+  let playing = st === `playing`,
+    stop = (e) => e.stopPropagation(),
+    toggle = (e) => {
+      stop(e);
+      st === `playing`
+        ? to({ t: `media`, target: tg, type: `pause` })
+        : st === `paused`
+          ? to({ t: `media`, target: tg, type: `resume` })
+          : to({ t: `media`, target: tg, type: `play` });
+    },
+    seek = (x) => {
+      setDrag(null), setCur(x), to({ t: `media`, target: tg, type: `seek`, time: x });
+    },
+    shown = show || !playing || drag != null,
+    val = drag ?? cur;
+  return h(
+    `div`,
+    {
+      className: `vp-ctl${shown ? ` show` : ``}`,
+      "data-no-shortcuts": !0,
+      onClick: stop,
+      onPointerDown: stop,
+      onMouseDown: stop,
+      onKeyDown: stop,
+    },
+    h(`button`, { className: `vp-btn`, onClick: toggle, tabIndex: -1, title: playing ? `Pause` : `Play` }, playing ? `❚❚` : `▶`),
+    h(`span`, { className: `vp-time` }, fmt(val)),
+    h(`input`, {
+      type: `range`,
+      className: `vp-bar`,
+      min: 0,
+      max: dur || 1,
+      step: 0.1,
+      value: Math.min(val, dur || 1),
+      style: { "--p": `${dur ? (val / dur) * 100 : 0}%` },
+      onInput: (e) => setDrag(Number(e.target.value)),
+      onChange: (e) => setDrag(Number(e.target.value)),
+      onPointerUp: (e) => seek(Number(e.target.value)),
+      onKeyUp: (e) => seek(Number(e.target.value)),
+      tabIndex: -1,
+    }),
+    h(`span`, { className: `vp-time` }, fmt(dur)),
+  );
+}
+// ---------- Master-plan hotspot tour (Next / Prev step through the hotspots before leaving the slide) ----------
+// Standalone specs file: pick a master-plan hotspot with a button instead of stepping through them with Next.
+function HsButtons() {
+  let tour = Fa((e) => e.tour || 0),
+    h = (t, p, ...c) => v.createElement(t, p, ...c),
+    go = (n) => (ev) => (vxStop(ev), to({ t: `tour`, value: n }));
+  return h(
+    `div`,
+    { className: `abs hs-buttons`, "data-no-shortcuts": !0, style: { right: 70, top: 150, width: 430 } },
+    h(`div`, { className: `tag`, style: { marginBottom: 14 } }, `Explore the Master Plan`),
+    h(`button`, { className: `hs-btn${tour === 0 ? ` on` : ``}`, onClick: go(0), onPointerDown: vxStop, tabIndex: -1 }, h(`span`, null, `◎`), `Full Overview`),
+    ...oa.hotspots.map((e, i) =>
+      h(`button`, { key: e.id, className: `hs-btn${tour === i + 1 ? ` on` : ``}`, onClick: go(i + 1), onPointerDown: vxStop, tabIndex: -1 }, h(`span`, null, e.legend), e.label),
+    ),
+  );
+}
+function HsCard() {
+  let tour = Fa((e) => e.tour || 0),
+    n = oa.hotspots.length,
+    hs = tour > 0 ? oa.hotspots[tour - 1] : null,
+    h = (t, p, ...c) => v.createElement(t, p, ...c);
+  return h(
+    `div`,
+    { className: `abs hs-card${hs ? ` on` : ``}`, style: { left: 120, bottom: 96, width: 640, pointerEvents: `none` } },
+    hs
+      ? h(
+          v.Fragment,
+          null,
+          h(`div`, { className: `tag`, style: { marginBottom: 8 } }, `Hotspot ${tour} / ${n} · Legend ${hs.legend}`),
+          h(`div`, { className: `h3`, style: { fontSize: 46, lineHeight: 1.1 } }, hs.label),
+          hs.note ? h(`div`, { className: `small`, style: { fontSize: 26, marginTop: 8 } }, hs.note) : null,
+        )
+      : null,
+  );
+}
+// ---------- Show sound design: section score + cinematic cues (all original, see tools/make-score.py & tools/make-sfx.py) ----------
+// SCORE: one looping bed per emotional section, chosen from the current slide. Beds crossfade (3 s); only one bed is
+//   ever audible; `null` means strategic silence. The score dips under films, the takeoff sound and the big reveals.
+// CUES: fire only when the presenter moves FORWARD onto a slide (or presses Replay) — never on backward moves, jumps
+//   backwards or a reload. One cue channel: a new cue fades out the previous one. `hit` = impact time the visuals use.
+var sfxCues = {
+    // v2: built from the client's cinematic library (Pixabay + Epidemic Sound) + original orchestral layers. No bells/chimes.
+    "open-2": { src: `opening`, hit: 4.4, major: !0 },
+    "leg-intro": { src: `whoosh` },
+    "her-tl-b": { src: `surge` },
+    "liv-positioning": { src: `whoosh` },
+    "val-interior": { src: `whoosh` },
+    "fly-path": { src: `surge` },
+    "opp-intro": { src: `whoosh` },
+    "opp-brokerage": { src: `stinger` },
+    "opp-payout": { src: `stinger` },
+    "rew-dark": { src: `accent-dark` },
+    "ach-intro-1": { src: `whoosh` },
+    "ach-intro": { src: `whoosh` },
+    "rew-welcome": { src: `surge` },
+    "rew-macbook": { src: `reward-1`, hit: 0.6, major: !0 },
+    "rew-trip": { src: `reward-2`, hit: 1.6, major: !0 },
+    // closing slides (THE CHOICE IS YOURS · Register/Schedule/Start · QR): background music only, no effects
+    "rew-bullet": { src: `reward-3-enfield`, hit: 3.4, major: !0 }, // real Royal Enfield 350 revs (Pixabay)
+  },
+  sfxCueFor = (id) => sfxCues[id] || null,
+  scoreBeds = {
+    prestige: 0.85,
+    legacy: 0.9,
+    momentum: 1,
+    luxury: 0.85,
+    opportunity: 1,
+    tension: 0.8,
+    honour: 0.85,
+    finale: 1,
+  };
+function scoreBedFor(c) {
+  if (!c) return null;
+  let id = c.id;
+  if (c.chapter === 0) return `prestige`;
+  if (/^her-tl-|^leg-pull$/.test(id)) return `momentum`;
+  if (c.chapter === 1) return `legacy`;
+  if (id === `par-silhouette`) return `prestige`;
+  if (c.chapter === 2) return `momentum`;
+  if (id === `liv-logo` || id === `liv-overview`) return null; // own audio · film
+  if (id === `liv-emerge`) return `prestige`;
+  if (c.chapter === 3 || (c.chapter === 4 && c.scene === `value`)) return `luxury`;
+  if (id === `opp-conversion`) return `opportunity`;
+  if (id === `fly-runway` || id === `fly-takeoff`) return null; // synthesized takeoff sound plays here
+  if (c.scene === `achievements` || c.scene === `support`) return `honour`;
+  if (/^rew-(macbook|trip|bullet)$/.test(id)) return null; // the reveal cues own the room
+  if (/^rew-(dark|platforms|beyond|welcome)$/.test(id)) return `tension`;
+  if (c.chapter === 5) return `opportunity`;
+  if (c.chapter === 8) return `finale`;
+  return null;
+}
+var sfxBuf = {},
+  sfxLoading = null,
+  sfxCur = null,
+  sfxDuckTimer = 0,
+  scoreCur = null,
+  scoreOut = null;
+function sfxCtx() {
+  try {
+    return __tkCtx || (__tkCtx = new (window.AudioContext || window.webkitAudioContext)());
+  } catch {
+    return null;
+  }
+}
+function sfxPreload() {
+  if (sfxLoading) return sfxLoading;
+  let C = sfxCtx();
+  if (!C) return Promise.resolve();
+  let names = [
+      ...new Set(Object.values(sfxCues).map((c) => c.src)),
+    ].map((n) => [n, z(`media/sfx/${n}.ogg`)]),
+    beds = Object.keys(scoreBeds).map((n) => [`bed:${n}`, z(`media/score/${n}.ogg`)]);
+  return (sfxLoading = Promise.all(
+    [...names, ...beds].map(([k, u]) =>
+      fetch(u)
+        .then((r) => r.arrayBuffer())
+        .then((b) => C.decodeAudioData(b))
+        .then((buf) => {
+          (sfxBuf[k] = buf), k.startsWith(`bed:`) && scoreSync();
+        })
+        .catch(() => {}),
+    ),
+  ));
+}
+var sfxLevel = (st) => (st.muted || st.sfxOn === !1 ? 0 : Math.max(0, Math.min(1, st.volume)));
+function sfxStop(fade = 0.3) {
+  let c = sfxCur,
+    C = sfxCtx();
+  if (!c || !C) return;
+  sfxCur = null;
+  try {
+    let n = C.currentTime;
+    c.g.gain.cancelScheduledValues(n), c.g.gain.setValueAtTime(c.g.gain.value, n), c.g.gain.linearRampToValueAtTime(0, n + fade);
+    c.s.stop(n + fade + 0.05);
+  } catch {}
+}
+function sfxDuck(sec) {
+  clearTimeout(sfxDuckTimer);
+  window.__deckAudio && window.__deckAudio.duck(!0, `sfx`);
+  sfxDuckTimer = setTimeout(() => window.__deckAudio && window.__deckAudio.duck(!1, `sfx`), sec * 1e3);
+}
+function sfxPlay(id) {
+  let st = Ma(),
+    C = sfxCtx(),
+    cue = sfxCueFor(id),
+    buf = cue && sfxBuf[cue.src];
+  if (!st.armed || !C || !buf) return;
+  C.state === `suspended` && !st.paused && C.resume().catch(() => {});
+  sfxStop(0.2);
+  let s = C.createBufferSource(),
+    g = C.createGain(),
+    n = C.currentTime;
+  s.buffer = buf;
+  g.gain.setValueAtTime(0, n), g.gain.linearRampToValueAtTime(sfxLevel(st), n + 0.03);
+  s.connect(g).connect(C.destination);
+  s.start(n);
+  sfxCur = { s, g, id };
+  s.onended = () => void (sfxCur && sfxCur.s === s && (sfxCur = null));
+  // big moments clear the room: the score dips through the cue and the applause pause after it
+  cue.major && sfxDuck(buf.duration + 3);
+}
+// ---- score engine ----
+function scoreOutNode() {
+  let C = sfxCtx();
+  return C ? scoreOut || ((scoreOut = C.createGain()), (scoreOut.gain.value = 0), scoreOut.connect(C.destination), scoreOut) : null;
+}
+function scoreSet(key, fade = 3) {
+  let C = sfxCtx(),
+    out = scoreOutNode();
+  if (!C || !out) return;
+  let buf = key && sfxBuf[`bed:${key}`];
+  if ((scoreCur && scoreCur.key) === key && (scoreCur || !buf)) return;
+  let n = C.currentTime;
+  if (scoreCur) {
+    let o = scoreCur;
+    try {
+      o.g.gain.cancelScheduledValues(n), o.g.gain.setValueAtTime(o.g.gain.value, n), o.g.gain.linearRampToValueAtTime(0, n + fade), o.s.stop(n + fade + 0.1);
+    } catch {}
+    scoreCur = null;
+  }
+  if (!buf) return;
+  let s = C.createBufferSource(),
+    g = C.createGain();
+  (s.buffer = buf), (s.loop = !0);
+  g.gain.setValueAtTime(0, n), g.gain.linearRampToValueAtTime(scoreBeds[key], n + fade);
+  s.connect(g).connect(out);
+  s.start(n);
+  scoreCur = { key, s, g };
+}
+// Dynamic level: `base` comes from the music component (0 when muted / under films; dipped under big cues).
+// Each slide change lifts the score for ~4.5 s (transition / visual moment), then it settles to a "talk" level so the
+// presenter is never fighting the music. Explanation-heavy slides settle lower.
+var scoreBase = 0,
+  scoreLiftUntil = 0,
+  scoreLiftTimer = 0,
+  SCORE_LIFT = 0.62,
+  SCORE_TALK = 0.4,
+  SCORE_TALK_LOW = 0.28,
+  scoreTalkLow = /^(opp-(brokerage|incentive|payout|calc|conversion)|val-(smartness|grandeur|entrance|security|luxury|offer)|liv-(explore|positioning|lifestyle)|fly-airport-\d|her-(miles|hotels|tl-[abc]))$/;
+function scoreApply(tc = 0.45) {
+  let C = sfxCtx(),
+    out = scoreOutNode();
+  if (!C || !out) return;
+  let lift = performance.now() < scoreLiftUntil,
+    talk = scoreTalkLow.test(Ma().cueId) ? SCORE_TALK_LOW : SCORE_TALK;
+  out.gain.setTargetAtTime(scoreBase * (lift ? SCORE_LIFT : talk), C.currentTime, tc);
+}
+function scoreLevel(v) {
+  (scoreBase = v), scoreApply();
+}
+function scoreLift(ms = 4500) {
+  (scoreLiftUntil = performance.now() + ms), scoreApply(0.35), clearTimeout(scoreLiftTimer);
+  scoreLiftTimer = setTimeout(() => scoreApply(1.4), ms);
+}
+function scoreSync() {
+  let st = Ma();
+  st.armed && scoreSet(scoreBedFor(Da(st.cueId)));
+}
+// Watch the shared deck state: preload once armed, follow volume / mute / pause, change beds, fire cues on forward moves.
+(() => {
+  let last = Ma(),
+    order = (id) => wa.findIndex((c) => c.id === id);
+  Na(() => {
+    let st = Ma(),
+      prev = last,
+      C = sfxCtx();
+    if (((last = st), st.armed && !prev.armed && (sfxPreload(), scoreSync()), sfxCur && C))
+      sfxCur.g.gain.setTargetAtTime(sfxLevel(st), C.currentTime, 0.05);
+    // presenter pause (P) freezes the show — freeze the audio with it so nothing drifts out of sync
+    C && st.paused !== prev.paused && (st.paused ? C.suspend().catch(() => {}) : C.resume().catch(() => {}));
+    if (st.cueId !== prev.cueId) {
+      let fwd = order(st.cueId) > order(prev.cueId);
+      sfxStop(0.6);
+      scoreSync();
+      scoreLift();
+      fwd && sfxCueFor(st.cueId) && sfxPlay(st.cueId);
+    } else {
+      st.replay !== prev.replay && sfxCueFor(st.cueId) && sfxPlay(st.cueId);
+      (st.tour || 0) !== (prev.tour || 0) && scoreLift(3000);
+    }
+  });
+})();
+// Discreet on-screen sound control (bottom-right). Hidden until the mouse moves; never advances the slide.
+function SfxCtl() {
+  let vol = Fa((e) => e.volume),
+    muted = Fa((e) => e.muted),
+    on = Fa((e) => e.sfxOn !== !1),
+    [show, setShow] = v.useState(!1),
+    tm = v.useRef(0);
+  v.useEffect(() => {
+    let f = () => {
+      setShow(!0), clearTimeout(tm.current), (tm.current = setTimeout(() => setShow(!1), 2600));
+    };
+    return window.addEventListener(`mousemove`, f), () => window.removeEventListener(`mousemove`, f);
+  }, []);
+  let stop = (ev) => ev.stopPropagation(),
+    h = (t, p, ...c) => v.createElement(t, p, ...c);
+  return h(
+    `div`,
+    {
+      className: `sfx-ctl${show ? ` show` : ``}`,
+      "data-no-shortcuts": !0,
+      onClick: stop,
+      onPointerDown: stop,
+      onMouseDown: stop,
+      onKeyDown: stop,
+    },
+    h(
+      `button`,
+      {
+        title: on ? `Sound effects on — click to turn off` : `Sound effects off — click to turn on`,
+        onClick: (ev) => (ev.stopPropagation(), on && sfxStop(0.3), to({ t: `sfx`, value: !on })),
+        tabIndex: -1,
+      },
+      on && !muted ? `♪ FX ON` : `♪ FX OFF`,
+    ),
+    h(`input`, {
+      type: `range`,
+      min: 0,
+      max: 100,
+      step: 1,
+      value: Math.round((muted ? 0 : vol) * 100),
+      title: `Volume`,
+      onChange: (ev) => {
+        let x = Number(ev.target.value) / 100;
+        to({ t: `audio`, volume: x, muted: x === 0 });
+      },
+    }),
+  );
+}
 function IA({ role: e }) {
   let t = Fa((e) => e.armed),
     n = Fa((e) => e.paused),
@@ -68772,6 +69736,8 @@ function IA({ role: e }) {
           ],
         }),
         (0, Q.jsx)(yE, {}),
+        (0, Q.jsx)(SfxCtl, {}),
+        (0, Q.jsx)(Lightbox, {}),
       ],
     })
   );
@@ -69060,6 +70026,7 @@ function VA({ role: e, embedded: t = !1 }) {
                   (0, Q.jsx)(`div`, {
                     className: `pd-chapters`,
                     children: ba.map((e, t) =>
+                      wa.some((c) => c.chapter === t) &&
                       (0, Q.jsxs)(
                         `button`,
                         {
@@ -69467,12 +70434,6 @@ function UA() {
         children: `Open Presenter Console — laptop`,
       }),
       (0, Q.jsx)(`a`, { href: `#/solo`, children: `Single-screen rehearsal (audience + console)` }),
-      (0, Q.jsx)(`a`, {
-        href: `#/certificates`,
-        target: `_blank`,
-        rel: `noreferrer`,
-        children: `Print-ready award certificates (all 20)`,
-      }),
       (0, Q.jsx)(`small`, {
         children: `Open the Audience Display on the projector, press once to arm sound and fullscreen, then run the show from the Presenter Console. The two windows stay in sync.`,
       }),
@@ -69517,4 +70478,51 @@ function GA() {
             : (0, Q.jsx)(UA, {})
   );
 }
+// ---------- Touch navigation (phones / tablets, especially in landscape) ----------
+// Previous / Next buttons on the screen edges plus left/right swipe, on the audience screen only (the presenter console
+// has its own controls). They appear after "Click to begin", fade back when idle, and wake on any touch.
+(() => {
+  let touch = window.matchMedia && (window.matchMedia(`(pointer: coarse)`).matches || window.matchMedia(`(hover: none)`).matches);
+  if (!touch || HA() === `presenter`) return;
+  let mk = (cls, label, svg, fn) => {
+      let b = document.createElement(`button`);
+      (b.className = `tnav ${cls}`), b.setAttribute(`aria-label`, label), b.setAttribute(`data-no-shortcuts`, ``), (b.innerHTML = svg);
+      let go = (e) => (e.preventDefault(), e.stopPropagation(), wake(), fn());
+      b.addEventListener(`click`, go), b.addEventListener(`pointerdown`, (e) => e.stopPropagation());
+      return b;
+    },
+    prev = mk(`prev`, `Previous slide`, `<svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></svg>`, () => so()),
+    next = mk(`next`, `Next slide`, `<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>`, () => oo()),
+    t = 0,
+    wake = () => {
+      document.body.classList.add(`tnav-awake`), clearTimeout(t), (t = setTimeout(() => document.body.classList.remove(`tnav-awake`), 2600));
+    },
+    sync = () => {
+      let st = Ma(),
+        on = st.armed && HA() !== `presenter`;
+      document.body.classList.toggle(`tnav-on`, !!on);
+      let i = wa.findIndex((c) => c.id === st.cueId);
+      prev.disabled = i <= 0;
+      next.disabled = i >= wa.length - 1;
+    };
+  document.body.append(prev, next), Na(sync), sync();
+  window.addEventListener(`touchstart`, wake, { passive: !0 });
+  // swipe left = next, swipe right = previous (ignored on buttons and while the 3D master plan is in Explore mode)
+  let sx = 0, sy = 0, st0 = 0, ok = !1;
+  window.addEventListener(`touchstart`, (e) => {
+    let p = e.touches[0];
+    (ok = e.touches.length === 1 && !e.target.closest?.(`button,input`) && !Ma().explore), (sx = p.clientX), (sy = p.clientY), (st0 = Date.now());
+  }, { passive: !0 });
+  // claim horizontal swipes so the browser does not treat them as back / forward navigation
+  window.addEventListener(`touchmove`, (e) => {
+    if (!ok || !Ma().armed || e.touches.length !== 1) return;
+    let p = e.touches[0], dx = p.clientX - sx, dy = p.clientY - sy;
+    Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy) && e.cancelable && e.preventDefault();
+  }, { passive: !1 });
+  window.addEventListener(`touchend`, (e) => {
+    if (!ok || !Ma().armed) return;
+    let p = e.changedTouches[0], dx = p.clientX - sx, dy = p.clientY - sy;
+    Date.now() - st0 < 700 && Math.abs(dx) > 70 && Math.abs(dx) > 1.6 * Math.abs(dy) && (dx < 0 ? oo() : so());
+  }, { passive: !0 });
+})();
 (0, y.createRoot)(document.getElementById(`root`)).render((0, Q.jsx)(v.StrictMode, { children: (0, Q.jsx)(GA, {}) }));

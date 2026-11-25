@@ -9,7 +9,7 @@ const here = path.dirname(fileURLToPath(import.meta.url))
 // works both from the project (serves ../dist) and from inside the offline folder (serves itself)
 const root = fs.existsSync(path.join(here, 'index.html')) ? here : path.resolve(here, '..', 'dist')
 const port = Number(process.env.PORT || 4173)
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.mp4': 'video/mp4', '.webm': 'video/webm', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.woff': 'font/woff', '.glb': 'model/gltf-binary', '.mp3': 'audio/mpeg', '.wav': 'audio/wav', '.webp': 'image/webp' }
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.mp4': 'video/mp4', '.webm': 'video/webm', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.woff': 'font/woff', '.glb': 'model/gltf-binary', '.mp3': 'audio/mpeg', '.wav': 'audio/wav', '.ogg': 'audio/ogg', '.webp': 'image/webp' }
 
 http.createServer((req, res) => {
   const url = decodeURIComponent((req.url || '/').split('?')[0])

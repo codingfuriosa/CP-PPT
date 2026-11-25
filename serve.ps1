@@ -9,7 +9,7 @@ Write-Host "Limitless Success is running at http://localhost:$port/  (close this
 
 $handler = {
   param($c, $root)
-  $types = @{ '.html'='text/html; charset=utf-8'; '.js'='text/javascript'; '.css'='text/css'; '.json'='application/json'; '.mp4'='video/mp4'; '.webm'='video/webm'; '.jpg'='image/jpeg'; '.jpeg'='image/jpeg'; '.png'='image/png'; '.svg'='image/svg+xml'; '.woff2'='font/woff2'; '.woff'='font/woff'; '.glb'='model/gltf-binary'; '.mp3'='audio/mpeg'; '.wav'='audio/wav'; '.webp'='image/webp' }
+  $types = @{ '.html'='text/html; charset=utf-8'; '.js'='text/javascript'; '.css'='text/css'; '.json'='application/json'; '.mp4'='video/mp4'; '.webm'='video/webm'; '.jpg'='image/jpeg'; '.jpeg'='image/jpeg'; '.png'='image/png'; '.svg'='image/svg+xml'; '.woff2'='font/woff2'; '.woff'='font/woff'; '.glb'='model/gltf-binary'; '.mp3'='audio/mpeg'; '.wav'='audio/wav'; '.ogg'='audio/ogg'; '.webp'='image/webp' }
   $req = $c.Request; $res = $c.Response
   try {
     $p = [Uri]::UnescapeDataString($req.Url.AbsolutePath).TrimStart('/')
