@@ -58,7 +58,7 @@ def data_uri(path):
 def build(probe=False):
     js = patch_js(open(os.path.join(A, 'app.js'), encoding='utf-8').read())
     css = open(os.path.join(A, 'app.css'), encoding='utf-8').read()
-    head = f'<script>window.__SPECS_ONLY = {json.dumps(CUES)};</script>'
+    head = f'<script>window.__SPECS_ONLY = {json.dumps(CUES)};document.documentElement.classList.add("specs-only");</script>'
     if probe:
         open(os.path.join(A, '_specs-probe.js'), 'w', encoding='utf-8').write(js)
         html = (f'<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>probe</title>{head}'

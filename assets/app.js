@@ -69027,7 +69027,8 @@ var fpType = (t) => {
     return m ? `${m[1]} BHK · ${m[2]} Toilets` : t;
   },
   fpOrd = (n) => n + ([, `st`, `nd`, `rd`][n] || `th`),
-  fpN = (n) => n.toLocaleString(`en-IN`);
+  fpN = (n) => n.toLocaleString(`en-IN`),
+  fpTouch = () => !!(window.matchMedia && (matchMedia(`(pointer: coarse)`).matches || matchMedia(`(hover: none)`).matches));
 function FpScene() {
   let h = (t, p, ...c) => v.createElement(t, p, ...c),
     [bi, setB] = v.useState(0),
@@ -69051,6 +69052,12 @@ function FpScene() {
     L0 = (VW - dW) / 2,
     T0 = (VH - dH) / 2,
     tf = `translate(0px,0px) scale(1)`;
+  // Touch screens: while zoomed the Previous button / right swipe zoom back out (see the touch-navigation block)
+  v.useEffect(() => {
+    if (!focus) return;
+    window.__fpZoomOut = () => (setSel(null), !0);
+    return () => void (window.__fpZoomOut = null);
+  }, [focus]);
   // Space / Esc zoom back out (captured before the deck's own Next handler)
   v.useEffect(() => {
     if (!focus) return;
@@ -69130,7 +69137,7 @@ function FpScene() {
               key: f,
               className: `fp-hit${f === sel ? ` on` : ``}${sel && f !== sel ? ` dim` : ``}`,
               style: { left: `${x0 * 100}%`, top: `${y0 * 100}%`, width: `${(x1 - x0) * 100}%`, height: `${(y1 - y0) * 100}%` },
-              onClick: (ev) => (stop(ev), setSel(f === sel ? null : f)),
+              onClick: (ev) => (stop(ev), focus && fpTouch() ? f === sel && setSel(null) : setSel(f === sel ? null : f)),
               onPointerDown: stop,
             },
             h(`span`, null, f),
@@ -70491,7 +70498,8 @@ function GA() {
       b.addEventListener(`click`, go), b.addEventListener(`pointerdown`, (e) => e.stopPropagation());
       return b;
     },
-    prev = mk(`prev`, `Previous slide`, `<svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></svg>`, () => so()),
+    back = () => (window.__fpZoomOut ? window.__fpZoomOut() : so()), // zoomed into a flat: first zoom back out
+    prev = mk(`prev`, `Previous slide`, `<svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7"/></svg>`, () => back()),
     next = mk(`next`, `Next slide`, `<svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>`, () => oo()),
     t = 0,
     wake = () => {
@@ -70502,10 +70510,15 @@ function GA() {
         on = st.armed && HA() !== `presenter`;
       document.body.classList.toggle(`tnav-on`, !!on);
       let i = wa.findIndex((c) => c.id === st.cueId);
-      prev.disabled = i <= 0;
+      prev.disabled = i <= 0 && !window.__fpZoomOut;
       next.disabled = i >= wa.length - 1;
     };
-  document.body.append(prev, next), Na(sync), sync();
+  // portrait phones: a gentle, recurring "rotate your phone" hint (CSS shows it only in portrait)
+  let hint = document.createElement(`div`);
+  (hint.className = `rot-hint`),
+    (hint.innerHTML = `<svg viewBox="0 0 48 48"><rect class="ph" x="15" y="6" width="18" height="36" rx="3.5"/><path class="ar" d="M38 15a17 17 0 0 1 2 18m0 0 3.5-3.5M40 33l-4-2.5"/></svg><span>Rotate your phone for the full view</span>`);
+  document.body.classList.add(`is-touch`);
+  document.body.append(prev, next, hint), Na(sync), sync();
   window.addEventListener(`touchstart`, wake, { passive: !0 });
   // swipe left = next, swipe right = previous (ignored on buttons and while the 3D master plan is in Explore mode)
   let sx = 0, sy = 0, st0 = 0, ok = !1;
@@ -70522,7 +70535,7 @@ function GA() {
   window.addEventListener(`touchend`, (e) => {
     if (!ok || !Ma().armed) return;
     let p = e.changedTouches[0], dx = p.clientX - sx, dy = p.clientY - sy;
-    Date.now() - st0 < 700 && Math.abs(dx) > 70 && Math.abs(dx) > 1.6 * Math.abs(dy) && (dx < 0 ? oo() : so());
+    Date.now() - st0 < 700 && Math.abs(dx) > 70 && Math.abs(dx) > 1.6 * Math.abs(dy) && (dx < 0 ? oo() : back());
   }, { passive: !0 });
 })();
 (0, y.createRoot)(document.getElementById(`root`)).render((0, Q.jsx)(v.StrictMode, { children: (0, Q.jsx)(GA, {}) }));
